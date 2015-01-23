@@ -1,0 +1,23 @@
+﻿
+# =============================================================================
+# Interface Mode
+# =============================================================================
+
+interfacedeployment_jobs                             Jobs                           
+
+# =============================================================================
+# Research Names + Captions
+# =============================================================================
+
+researchtooltip_ReducePenalty1                       (CURRENTLY SERVES NO PURPOSE)\nReduces the number of Penalty Points awarded by 50.
+researchtooltip_ReducePenalty2                       (CURRENTLY SERVES NO PURPOSE)\nReduces the number of Penalty Points awarded by 50.
+researchtooltip_ReducePenalty3                       (CURRENTLY SERVES NO PURPOSE)\nReduces the number of Penalty Points awarded by 50.
+researchtooltip_ReducePenalty4                       (CURRENTLY SERVES NO PURPOSE)\nReduces the number of Penalty Points awarded by 50.
+researchtooltip_ReducePenalty5                       (CURRENTLY SERVES NO PURPOSE)\n Reduces the number of Penalty Points awarded by 50.
+
+# =============================================================================
+# Misc
+# =============================================================================
+
+deploymentscheduler_add                              Add a new deployment schedule. You can customise this new schedule to deploy specific numbers of guards at specific times of day.
+deploymentscheduler_remove                           Delete this deployment schedule.
