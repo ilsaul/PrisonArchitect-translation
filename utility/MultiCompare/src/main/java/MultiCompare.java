@@ -36,14 +36,16 @@ public class MultiCompare implements Runnable {
 	private File dstFile;
 
 	public MultiCompare() {
-		srcEng = new File("../../English/base-language.txt");
+		srcEng = new File("../../../PrisonArchitect-traslate-3/English/base-language-28.txt");
+
 
 		src = new ArrayList<File>();
-		src.add(new File("../../Italian/mecripper/data/language/base-language.txt"));
-		src.add(new File("../../Italian/MetalCross/data/language/base-language.txt"));
-		src.add(new File("../../Italian/PaulGhost/data/language/base-language.txt"));
+		src.add(new File("../../../PrisonArchitect-traslate-3/English/base-language.txt"));
+		//src.add(new File("../../Italian/mecripper/data/language/base-language.txt"));
+		//src.add(new File("../../Italian/MetalCross/data/language/base-language.txt"));
+		//src.add(new File("../../Italian/PaulGhost/data/language/base-language.txt"));
 
-		dstFile = new File("../../Italian/base-language.txt");
+		dstFile = new File("../../Italian/new_future.txt");
 
 		translateSequence = new LinkedList<Row>();
 		translateKeys = new HashMap<String, List<Translate>>();
