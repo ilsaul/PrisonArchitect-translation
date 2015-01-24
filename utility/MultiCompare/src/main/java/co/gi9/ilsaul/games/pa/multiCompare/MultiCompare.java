@@ -24,29 +24,28 @@ import java.util.Set;
 import java.util.stream.Stream;
 
 import org.apache.commons.lang.mutable.MutableInt;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class MultiCompare implements Runnable {
+	private static final Logger logger = LoggerFactory.getLogger(MultiCompare.class);
 	private static final String CRLF = "\r\n";
 
+	/** provides a list of all lines of the file */
 	private List<Row> translateSequence;
+	/** translation key map */
 	private Map<String, List<Translate>> translateKeys;
+	/** column widths for printing */
 	private List<MutableInt> columnsSize;
 
 	private File srcEng;
 	private List<File> src;
 	private File dstFile;
 
-	public MultiCompare() {
-		srcEng = new File("../../../PrisonArchitect-traslate-3/English/base-language-28.txt");
-
-
-		src = new ArrayList<File>();
-		src.add(new File("../../../PrisonArchitect-traslate-3/English/base-language.txt"));
-		//src.add(new File("../../Italian/mecripper/data/language/base-language.txt"));
-		//src.add(new File("../../Italian/MetalCross/data/language/base-language.txt"));
-		//src.add(new File("../../Italian/PaulGhost/data/language/base-language.txt"));
-
-		dstFile = new File("../../Italian/new_future.txt");
+	public MultiCompare(File english, List<File> traslations, File destination) {
+		srcEng = english;
+		src = traslations;
+		dstFile = destination;
 
 		translateSequence = new LinkedList<Row>();
 		translateKeys = new HashMap<String, List<Translate>>();
@@ -68,7 +67,7 @@ public class MultiCompare implements Runnable {
 
 		writeReport(dstFile);
 
-		System.out.println("FINE");
+		logger.info("THE END");
 	}
 
 	private void makeBase(File src) {
@@ -78,6 +77,7 @@ public class MultiCompare implements Runnable {
 
 		try {
 			String s;
+			logger.info("Load English file {}", src.getAbsolutePath());
 			ins = new FileInputStream(src);
 			r = new InputStreamReader(ins, "UTF-8"); // leave charset out for default
 			br = new BufferedReader(r);
@@ -85,7 +85,7 @@ public class MultiCompare implements Runnable {
 			int iVal = 0;
 			int iLine = 0;
 			while ((s = br.readLine()) != null) {
-				System.out.println(iLine);
+				logger.trace("Line {}", iLine);
 				Row e = new Row(s);
 				translateSequence.add(e);
 
@@ -104,7 +104,7 @@ public class MultiCompare implements Runnable {
 
 			columnsSize.get(1).setValue(columnsSize.get(1).longValue() / iVal);
 		} catch (Exception e) {
-			System.err.println(e.getMessage()); // handle exception
+			logger.error("Errore", e);
 		} finally {
 			if (br != null) {
 				try {
@@ -137,15 +137,14 @@ public class MultiCompare implements Runnable {
 
 		try {
 			String s;
-			System.out.println("Caricamento file: " + file.getAbsolutePath());
+			logger.info("Load traslation {}", file.getAbsolutePath());
 			ins = new FileInputStream(file);
 			r = new InputStreamReader(ins, "UTF-8"); // leave charset out for default
 			br = new BufferedReader(r);
 
 			int iLine = 0;
 			while ((s = br.readLine()) != null) {
-				System.out.println(iLine);
-
+				logger.trace("Line {}", iLine);
 				Row e = new Row(s);
 
 				if (!e.isComment()) {
@@ -156,14 +155,15 @@ public class MultiCompare implements Runnable {
 					if (list != null) {
 						list.add(t);
 					} else {
-						System.out.println("Riga sconosciuta: " + s);
+						// normally lines removed
+						logger.warn("unknown line: {}", s);
 					}
 				}
 
 				iLine++;
 			}
 		} catch (Exception e) {
-			System.err.println(e.getMessage()); // handle exception
+			logger.error("Errore", e); // handle exception
 		} finally {
 			if (br != null) {
 				try {
@@ -191,55 +191,71 @@ public class MultiCompare implements Runnable {
 		Writer w = null;
 		BufferedWriter bw = null;
 		try {
-//			/String s;
 			out = new FileOutputStream(dstFile);
 			w = new OutputStreamWriter(out, "UTF-8");
 			bw = new BufferedWriter(w);
 			int iLine = 0;
-			while (iLine < translateSequence.size()) {
-				System.out.println(iLine);
 
+			String oldComment = null;
+
+			// runs all lines of the English version
+			while (iLine < translateSequence.size()) {
+				logger.trace("Line {}", iLine);
 				Row r = translateSequence.get(iLine);
 
 				if (r.isComment()) {
-					bw.write(r.getLine() + CRLF);
+					// I avoid too many blank lines
+					if (!r.getLine().equals(oldComment) || r.getLine().length() > 3) {
+						bw.write(r.getLine() + CRLF);
+						oldComment = r.getLine();
+					}
 				} else {
-					List<Translate> tk = translateKeys.get(r.getKey());
+					List<Translate> translations = translateKeys.get(r.getKey());
 
-					// Creo la struttura per capire quanti valori ci sono
-					Map<String, List<Translate>> qta = new HashMap<String, List<Translate>>();
-					for (int i = 0; i < tk.size(); i++) {
-						Translate t = tk.get(i);
+					// I create the structure to understand how many values there are
+					Map<String, List<Translate>> qtaTraslations = new HashMap<String, List<Translate>>();
+					for (int i = 0; i < translations.size(); i++) {
+						Translate translate = translations.get(i);
 
-						List<Translate> l = qta.get(t.getValue());
+						List<Translate> l = qtaTraslations.get(translate.getValue());
 
 						if (l == null) {
 							l = new ArrayList<Translate>();
 						}
-						l.add(t);
+						l.add(translate);
 
-						qta.put(t.getValue(), l);
+						qtaTraslations.put(translate.getValue(), l);
 					}
 
-					// Scrivo solo quelli diversi
-					if (qta.size() == 0) {
+					// I write only those different
+					if (qtaTraslations.size() == 0) {
+						// It lacks the translation so I add the original line
 						bw.write(String.format("%-" + columnsSize.get(0).intValue() + "s  %-" + columnsSize.get(1).intValue() + "s\r\n", r.getKey(), r.getValue()));
 
-					} else if (qta.size() > 1) {
+					} else if (qtaTraslations.size() == 1) {
+
+						// If there is only one translation means that we are comparing the new and the old English file
+						if (translations.size() == 1) {
+							// I am interested only if the value is changed
+							if (!r.getValue().equals(translations.get(0).getValue())) {
+								bw.write(String.format("%-" + columnsSize.get(0).intValue() + "s  %s -> %s%s", r.getKey(), translations.get(0).getValue(), r.getValue(), CRLF));
+							}
+						}
+
+					} else if (qtaTraslations.size() > 1) {
 						StringBuilder pLine = new StringBuilder();
 
 						pLine.append(String.format("%-" + columnsSize.get(0).intValue() + "s  %-" + columnsSize.get(1).intValue() + "s", r.getKey(), r.getValue()));
 
-						// TODO: ordinare dal più importante
-						qta = sortByValue(qta);
-						Set<String> keys = qta.keySet();
+						qtaTraslations = sortByValue(qtaTraslations);
+						Set<String> keys = qtaTraslations.keySet();
 						for (Iterator<String> iter = keys.iterator(); iter.hasNext();) {
 							String sTraslate = (String) iter.next();
 							pLine.append(" | ");
 
 							pLine.append(sTraslate);
-							if (qta.get(sTraslate).size() > 1) {
-								pLine.append("(").append(qta.get(sTraslate).size()).append(")");
+							if (qtaTraslations.get(sTraslate).size() > 1) {
+								pLine.append("(").append(qtaTraslations.get(sTraslate).size()).append(")");
 							}
 						}
 
@@ -248,25 +264,10 @@ public class MultiCompare implements Runnable {
 					}
 				}
 
-//				// 1) I casi sono tutti uguali?
-//				String val = null;
-//				String valPrec = null;
-//				for (int i = 0; i < tk.size(); i++) {
-//					Translate t = tk.get(i);
-//					val = t.getValue();
-//					if (valPrec == null) {
-//						valPrec = val;
-//					} else {
-//						if (val.equals(valPrec)) {
-//
-//						}
-//					}
-//				}
-
 				iLine++;
 			}
 		} catch (Exception e) {
-			System.err.println(e.getMessage()); // handle exception
+			logger.error("Errore", e); // handle exception
 		} finally {
 			if (bw != null) {
 				try {
@@ -289,38 +290,29 @@ public class MultiCompare implements Runnable {
 		}
 	}
 
-
-//	private Entity parserLine(String line) {
-//		String s = line.trim();
-//
-//		//System.out.println((int) s.charAt(0));
-//		//System.out.println(Integer.toHexString(s.charAt(0)));
-//		//System.out.println(Character.isValidCodePoint(s.charAt(0)));
-//
-//		if (s.startsWith("#") || s.isEmpty() || s.length() < 3) {
-//			return new Entity(s);
-//		} else {
-//			MutableInt pos = new MutableInt(0);
-//			String key = getWord(line, pos);
-//			String value = getAllFromPos(line, pos);
-//
-//			return new Entity(key, value);
-//		}
-//	}
-
-	public static void main(String[] args) {
-		MultiCompare convert = new MultiCompare();
-
-		convert.run();
-	}
-
 	private static Map<String, List<Translate>> sortByValue(Map<String, List<Translate>> map) {
 		Map<String, List<Translate>> result = new LinkedHashMap<>();
 		Stream <Entry<String, List<Translate>>> st = map.entrySet().stream();
 
-		//st.sorted(Comparator.comparing(e -> e.getValue().size())).forEach(e ->result.put(e.getKey(), e.getValue()));
 		st.sorted(Comparator.comparing(e -> (e.getValue().size() * -1))).forEach(e ->result.put(e.getKey(), e.getValue()));
 
 		return result;
+	}
+
+	public static void main(String[] args) {
+
+		// always the latest in English
+		File srcEng = new File("../../../PrisonArchitect-traslate-3/English/base-language-28.txt");
+
+		List<File> src = new ArrayList<File>();
+		src.add(new File("../../../PrisonArchitect-traslate-3/English/base-language-27.txt"));
+		//src.add(new File("../../Italian/mecripper/data/language/base-language.txt"));
+		//src.add(new File("../../Italian/MetalCross/data/language/base-language.txt"));
+		//src.add(new File("../../Italian/PaulGhost/data/language/base-language.txt"));
+
+		File dstFile = new File("../../Italian/new_future.txt");
+
+		MultiCompare convert = new MultiCompare(srcEng, src, dstFile);
+		convert.run();
 	}
 }
