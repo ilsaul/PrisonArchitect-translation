@@ -1,3 +1,4 @@
+package co.gi9.ilsaul.games.pa.multiCompare;
 import org.apache.commons.lang.mutable.MutableInt;
 
 

@@ -1,3 +1,4 @@
+package co.gi9.ilsaul.games.pa.multiCompare;
 
 public class Translate {
 	private String maker;
