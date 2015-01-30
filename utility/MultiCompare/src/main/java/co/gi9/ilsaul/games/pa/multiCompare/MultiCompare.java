@@ -1,4 +1,5 @@
 package co.gi9.ilsaul.games.pa.multiCompare;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,7 +12,7 @@ import java.io.OutputStreamWriter;
 import java.io.Reader;
 import java.io.Writer;
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -24,12 +25,27 @@ import java.util.Set;
 import java.util.stream.Stream;
 
 import org.apache.commons.lang.mutable.MutableInt;
+import org.kohsuke.args4j.CmdLineException;
+import org.kohsuke.args4j.CmdLineParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * It can work in many way:<ol>
+ * <li>Compare multiple transtation files</li>
+ * <li>Compare 2 english versions</li>
+ * </ol>
+ * If you specified 2 file the procedure think you are compare english versions, else compare several translations.<br><br>
+ *
+ * @author ilSaul <ilsaul2@gmail.com>
+ */
 public class MultiCompare implements Runnable {
 	private static final Logger logger = LoggerFactory.getLogger(MultiCompare.class);
 	private static final String CRLF = "\r\n";
+
+	public File dstFile;
+	public File srcEng;
+	public List<File> src;
 
 	/** provides a list of all lines of the file */
 	private List<Row> translateSequence;
@@ -38,13 +54,9 @@ public class MultiCompare implements Runnable {
 	/** column widths for printing */
 	private List<MutableInt> columnsSize;
 
-	private File srcEng;
-	private List<File> src;
-	private File dstFile;
-
-	public MultiCompare(File english, List<File> traslations, File destination) {
+	public MultiCompare(File destination, File english, File...traslations) {
 		srcEng = english;
-		src = traslations;
+		src = Arrays.asList(traslations);
 		dstFile = destination;
 
 		translateSequence = new LinkedList<Row>();
@@ -303,19 +315,44 @@ public class MultiCompare implements Runnable {
 	}
 
 	public static void main(String[] args) {
+		File dstFile = null;
+		File srcEng = null;
+		File src[] = null;
 
-		// always the latest in English
-		File srcEng = new File("../../../PrisonArchitect-traslate-3/English/base-language-28.txt");
+		if (args.length == 0) {
+			dstFile = new File("../../Italian/new_future.txt");
 
-		List<File> src = new ArrayList<File>();
-		//src.add(new File("../../../PrisonArchitect-traslate-3/English/base-language-27.txt"));
-		src.add(new File("../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/base-language.txt"));
-		src.add(new File("../../../PrisonArchitect-traslate-3/Italian/mecripper/data/language/base-language.txt"));
-		src.add(new File("../../../PrisonArchitect-traslate-3/Italian/MetalCross/data/language/base-language.txt"));
+			// always the latest in English
+			srcEng = new File("../../../PrisonArchitect-traslate-3/English/base-language-28.txt");
 
-		File dstFile = new File("../../Italian/new_future.txt");
+			src = new File[3];
+			//src[0] = new File("../../../PrisonArchitect-traslate-3/English/base-language-27.txt");
+			src[0] = new File("../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/base-language.txt");
+			src[1] = new File("../../../PrisonArchitect-traslate-3/Italian/mecripper/data/language/base-language.txt");
+			src[2] = new File("../../../PrisonArchitect-traslate-3/Italian/MetalCross/data/language/base-language.txt");
+		} else {
+			final Parameters params = new Parameters();
+			CmdLineParser parser = new CmdLineParser(params);
 
-		MultiCompare convert = new MultiCompare(srcEng, src, dstFile);
+			try {
+				parser.parseArgument(args);
+			} catch (CmdLineException e) {
+				e.printStackTrace();
+			}
+
+			// print usage
+			if (params.help || !(params.compEnglish || params.compTranslate)) {
+				//parser.setUsageWidth(Integer.MAX_VALUE);
+				parser.printUsage(System.err);
+				return;
+			}
+
+			dstFile = params.dstFile;
+			srcEng = params.srcEng;
+			src = params.src;
+		}
+
+		MultiCompare convert = new MultiCompare(dstFile, srcEng, src);
 		convert.run();
 	}
 }

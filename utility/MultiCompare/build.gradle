@@ -22,6 +22,8 @@ dependencies {
     // The production code uses the SLF4J logging API at compile time
     compile 'org.slf4j:slf4j-api:1.7.+'
 	compile 'commons-lang:commons-lang:2.+'
+	compile 'args4j:args4j:2.0.+'
+
 	runtime 'ch.qos.logback:logback-classic:1.1.+'
 
     // Declare the dependency for your favourite test framework you want to use in your tests.
