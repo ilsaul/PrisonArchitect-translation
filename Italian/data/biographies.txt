@@ -1,0 +1,800 @@
+
+BEGIN Names
+    Forename Christopher
+    Forename John
+    Forename Mark
+    Forename Ian
+    Forename Tom
+    Forename Scott
+    Forename Gareth
+    Forename Andrew
+    Forename Paul
+    Forename Tim
+    Forename Warren
+    Forename Paul
+    Forename Ed
+    Forename Alex
+    Forename Dan
+    Forename Adam
+    Forename Aston
+    Forename Simon
+    Forename Paul
+    Forename Matt
+    Forename Stephen
+    Forename Benjamin
+    Forename Richard
+    Forename Duncan
+    Forename James
+    Forename Sean
+    Forename Felix
+    Surname Alexander
+    Surname Almond
+    Surname Ansley
+    Surname Ashby
+    Surname Austin
+    Surname Bailey
+    Surname Baker
+    Surname Balthazor
+    Surname Baly
+    Surname Barnard
+    Surname Barry
+    Surname Barsby
+    Surname Batty
+    Surname Beck-Slatter
+    Surname Beckwith
+    Surname Bennet
+    Surname Beswick
+    Surname Beteridge
+    Surname Bird
+    Surname Blake
+    Surname Bolton
+    Surname Boughtflower
+    Surname Boughton
+    Surname Boyer
+    Surname Boyes
+    Surname Bray
+    Surname Brindley
+    Surname Broomfield
+    Surname Brown
+    Surname Buckwell
+    Surname Burgess
+    Surname Busby
+    Surname Cadwallader
+    Surname Cadwell
+    Surname Cantlow
+    Surname Cantopher
+    Surname Carter
+    Surname Chafer
+    Surname Chappell
+    Surname Chislett-Trim
+    Surname Chislohm
+    Surname Clark
+    Surname Clegg
+    Surname Cliefe
+    Surname Cocks
+    Surname Colley
+    Surname Comrie
+    Surname Conaghan
+    Surname Coombs
+    Surname Corner
+    Surname Cowell
+    Surname Crease
+    Surname Creaser
+    Surname Crouch
+    Surname Curtis
+    Surname Darley
+    Surname Davies
+    Surname Daymond
+    Surname Dayner
+    Surname Denning
+    Surname Dennington
+    Surname Dillon
+    Surname Donelly
+    Surname Doney
+    Surname Doyle
+    Surname Dummer
+    Surname Eades
+    Surname Eaton
+    Surname Edwards
+    Surname Elison
+    Surname Ellison
+    Surname Evans
+    Surname Fairbairn
+    Surname Featherstone
+    Surname Findlay
+    Surname Fletcher
+    Surname Forrest
+    Surname France
+    Surname Frost
+    Surname Gall
+    Surname Gaskin
+    Surname Gibbs
+    Surname Gilmour
+    Surname Godwin
+    Surname Gordon
+    Surname Grant
+    Surname Green
+    Surname Griffin
+    Surname Gullidge
+    Surname Gulliford
+    Surname Hackett
+    Surname Hail
+    Surname Hancock
+    Surname Hare
+    Surname Harris
+    Surname Harvey
+    Surname Hawkins
+    Surname Headland
+    Surname Henderson
+    Surname Hey
+    Surname Hill
+    Surname Hoar
+    Surname Holdaway
+    Surname Holt
+    Surname Hornibrook
+    Surname Hornik
+    Surname Howell
+    Surname Hughes
+    Surname Hurdley
+    Surname Hurford
+    Surname Ingham
+    Surname Jackson
+    Surname Jay
+    Surname Jayant
+    Surname Jerrom
+    Surname Joines
+    Surname Jones
+    Surname Kates
+    Surname Keevil
+    Surname Kenway
+    Surname King
+    Surname Knight
+    Surname Lacey
+    Surname Langdon
+    Surname Lawrence
+    Surname Lee
+    Surname Levers
+    Surname Leversedge
+    Surname Lindsay
+    Surname Lock
+    Surname Lovegrove
+    Surname Luther
+    Surname Lutheran
+    Surname Macauley
+    Surname McEvoy
+    Surname Mackenzie
+    Surname Maconachie
+    Surname Malone
+    Surname Marples
+    Surname Martin
+    Surname Mathwani
+    Surname Matile
+    Surname Mead
+    Surname Merwood
+    Surname Miller
+    Surname Mitchell
+    Surname Moon
+    Surname Morgan
+    Surname Moss
+    Surname Mundy
+    Surname Nash
+    Surname Newell
+    Surname Nightingale
+    Surname Nowbati
+    Surname Nowell
+    Surname Okwechime
+    Surname Olberechts
+    Surname Osborne
+    Surname Page
+    Surname Palmer
+    Surname Parkin
+    Surname Paton
+    Surname Pearce
+    Surname Pennington
+    Surname Pennock
+    Surname Pettit
+    Surname Piddock
+    Surname Pidgeon
+    Surname Platten
+    Surname Platter
+    Surname Porter
+    Surname Pratt
+    Surname Pritchard
+    Surname Quayle
+    Surname Ranger
+    Surname Redman
+    Surname Rennie
+    Surname Richardson
+    Surname Roach
+    Surname Robinson
+    Surname Rogers
+    Surname Rowe
+    Surname Russell
+    Surname Sadler
+    Surname Sandy
+    Surname Scales
+    Surname Scutt
+    Surname Sexton
+    Surname Shelley
+    Surname Shopland
+    Surname Shore
+    Surname Simpson
+    Surname Slater
+    Surname Smith
+    Surname Smyth
+    Surname Speed
+    Surname Stacey
+    Surname Steel
+    Surname Stevenson
+    Surname Stonelake
+    Surname Stoneman
+    Surname Stubbs
+    Surname Swatton
+    Surname Tapper
+    Surname Taylor
+    Surname Thomas
+    Surname Thomson
+    Surname Timms
+    Surname Totham
+    Surname Tothill
+    Surname Trise
+    Surname Trish
+    Surname Turner
+    Surname Underwood
+    Surname Venni
+    Surname Venning
+    Surname Wagstaff
+    Surname Wallace
+    Surname Ward
+    Surname Waterhouse
+    Surname Waymark
+    Surname Welch
+    Surname Western
+    Surname White
+    Surname Whiteman
+    Surname Wilders
+    Surname Widley
+    Surname Williams
+    Surname Willson
+    Surname Winer
+    Surname Wood
+    Surname Woollven
+    Surname Wuyts
+    Surname Wyatt
+    Surname Young
+END
+
+# =============================================================================
+# Traits
+
+BEGIN CriminalTrait
+     Name Violento
+     ChanceLow 10
+     ChanceMedium 50
+     ChanceHigh 90
+END
+
+BEGIN CriminalTrait
+     Name Imbroglione
+     ChanceLow 80
+     ChanceMedium 40
+     ChanceHigh 0
+END
+
+BEGIN CriminalTrait
+     Name Pericoloso
+     ChanceLow 0
+     ChanceMedium 30
+     ChanceHigh 80
+END
+
+BEGIN CriminalTrait
+     Name Distruttivo
+     ChanceLow 20
+     ChanceMedium 50
+     ChanceHigh 90
+END
+
+BEGIN CriminalTrait
+     Name Ladro
+     ChanceLow 90
+     ChanceMedium 70
+     ChanceHigh 30
+END
+
+BEGIN CriminalTrait
+     Name Spacciatore
+     ChanceLow 50
+     ChanceMedium 50
+     ChanceHigh 20
+END
+
+BEGIN CriminalTrait
+     Name Letale
+     ChanceLow 0
+     ChanceMedium 10
+     ChanceHigh 90
+END
+
+BEGIN CriminalTrait
+     Name Maniaco
+     ChanceLow 0
+     ChanceMedium 10
+     ChanceHigh 10
+END
+
+BEGIN CriminalTrait
+     Name Ossessivo
+     ChanceLow 0
+     ChanceMedium 30
+     ChanceHigh 60
+END
+
+BEGIN CriminalTrait
+     Name Veicolare
+     ChanceLow 20
+     ChanceMedium 40
+     ChanceHigh 0
+END
+
+BEGIN CriminalTrait
+     Name Sveglio
+     ChanceLow 30
+     ChanceMedium 20
+     ChanceHigh 10
+END
+
+BEGIN CriminalTrait
+     Name Insignificante
+     ChanceLow 50
+     ChanceMedium 10
+     ChanceHigh 0
+END
+# =============================================================================
+# Crimes
+
+BEGIN Crime
+     Name Corruzione
+     MinSentence 2
+     MaxSentence 10
+     Risk Basso
+     Trait Imbroglione
+END
+
+BEGIN Crime
+     Name CorruzioneAggravata
+     MinSentence 10
+     MaxSentence 25
+     Risk medio
+     Trait Ladro
+     Trait Pericoloso 
+END
+
+BEGIN Crime
+     Name Furto
+     MinSentence 5
+     MaxSentence 10
+     Risk Basso
+     Concurrent true
+     Trait Ladro
+END
+
+BEGIN Crime
+     Name IncendioDoloso
+     MinSentence 15
+     MaxSentence 25
+     Risk medio
+     Trait Pericoloso 
+     Trait Distruttivo
+END
+
+BEGIN Crime
+     Name Danni
+     MinSentence 2
+     MaxSentence 10
+     Risk Basso
+     Trait Distruttivo
+END
+
+BEGIN Crime
+     Name Vandalismo
+     MinSentence 1
+     MaxSentence 2
+     Rischio Basso
+     Trait Distruttivo
+     Trait Giovane
+END
+
+BEGIN Crime
+     Name DistrurboViolento
+     MinSentence 2
+     MaxSentence 5
+     Risk medio
+     Trait Violento
+END
+
+BEGIN Crime
+     Name PossessoDiStupefacenti
+     MinSentence 2
+     MaxSentence 7
+     Risk medio
+     Trait Spacciatore
+END
+
+BEGIN Crime
+     Name Spaccio
+     MinSentence 3
+     MaxSentence 14
+     Risk Basso
+     Trait Spacciatore
+END
+
+BEGIN Crime
+     Name Contraffazione
+     MinSentence 2
+     MaxSentence 10
+     Risk Basso
+     Trait Imbroglione
+END
+
+BEGIN Crime
+     Name Imbroglione
+     MinSentence 2
+     MaxSentence 10
+     Risk Basso
+     Trait Imbroglione
+END
+
+BEGIN Crime
+     Name ContraffazioneDiMoneta
+     MinSentence 2
+     MaxSentence 10
+     Risk Basso
+     Trait Imbroglione
+     Trait Sveglio
+END
+
+BEGIN Crime
+     Name FalsaIdentita'
+     MinSentence 1
+     MaxSentence 7
+     Risk Basso
+     Trait Imbroglione
+     Trait Sveglio
+END
+
+BEGIN Crime
+     Name InsiderTrading
+     MinSentence 1
+     MaxSentence 7
+     Risk Basso
+     Trait Imbroglione
+     Trait Sveglio
+END
+
+BEGIN Crime
+     Name RiciclaggioDiDenaro
+     MinSentence 5
+     MaxSentence 14
+     Risk Basso
+     Trait Imbroglione
+     Trait Sveglio
+END
+
+BEGIN Crime
+     Name FurtoD'AutoAggravato
+     MinSentence 3
+     MaxSentence 10
+     Risk Medio
+     Trait Ladro
+     Trait Pericoloso 
+     Trait veicolare
+     Trait Giovane
+END
+
+BEGIN Crime
+     Name FurtoD'Auto
+     MinSentence 1
+     MaxSentence 5
+     Risk medio
+     Trait Pericoloso
+     Trait veicolare
+     Trait Giovane
+END
+
+BEGIN Crime
+     Name GuidaPericolosa
+     MinSentence 1
+     MaxSentence 2
+     Risk Basso
+     Trait Pericoloso 
+     Trait veicolare
+END
+
+BEGIN Crime
+     Name OmicidioStradale
+     MinSentence 8
+     MaxSentence 14
+     Risk Medio
+     Trait Pericoloso 
+     Trait veicolare
+END
+
+BEGIN Crime
+     Name GuidaSottoSostanzeStupefacenti
+     MinSentence 1
+     MaxSentence 4
+     Risk Medio
+     Trait Pericoloso 
+     Trait Spacciatore
+     Trait veicolare
+END
+
+BEGIN Crime
+     Name Rapimento
+     MinSentence 4
+     MaxSentence 7
+     Risk medio
+     Trait Ossessivo
+END
+
+BEGIN Crime
+     Name FalsoImprigionamento
+     MinSentence 5
+     MaxSentence 15
+     Risk medio
+     Trait Ossessivo
+END
+
+BEGIN Crime
+     Name Tortura
+     MinSentence 5
+     MaxSentence 15
+     Risk Alto
+     Trait Violento
+     Trait Ossessivo
+END
+
+BEGIN Crime
+     Name Assalto
+     MinSentence 1
+     MaxSentence 10
+     Risk medio
+     Trait Violento
+END
+
+BEGIN Crime
+     Name AssaltoAggravato
+     MinSentence 10
+     MaxSentence 15
+     Risk Alto
+     Trait Violento
+     Trait Pericoloso 
+END
+
+BEGIN Crime
+     Name AggressioneAPubblicoUfficiale
+     MinSentence 3
+     MaxSentence 10
+     Risk Medio
+     Trait Violento
+END
+
+BEGIN Crime
+     Name LesioniGravi
+     MinSentence 7
+     MaxSentence 15
+     RiskAlto
+     Trait Violento
+     Trait Pericoloso 
+END
+
+BEGIN Crime
+     Name Omicidio
+     MinSentence 25
+     MaxSentence 25
+     Risk Alto
+     Trait Violento
+     Trait Letale
+END
+
+BEGIN Crime
+     Name TentatoOmicidio
+     MinSentence 10
+     MaxSentence 25
+     Risk Alto
+     Trait Violento
+     Trait Letale
+END
+
+BEGIN Crime
+     Name OmicidioColposo
+     MinSentence 10
+     MaxSentence 25
+     Risk Medio
+     Trait Letale
+END
+
+# BEGIN Crime
+# Name GiustiziaPersonale
+# MinSentence 5
+# MaxSentence 15
+# Risk Basso
+# END
+
+# BEGIN Crime
+# Name ConcorsoDiColpa
+# MinSentence 1
+# MaxSentence 2
+# Risk Basso
+# END
+
+BEGIN Crime
+     Name Alcolismo
+     MinSentence 1
+     MaxSentence 2
+     Risk Basso
+     Trait Spaccio
+END
+
+# BEGIN Crime
+# Name FugaDallaCustidia
+# MinSentence 1
+# MaxSentence 3
+# Risk Basso
+# END
+
+BEGIN Crime
+     Name Spergiuro
+     MinSentence 3
+     MaxSentence 7
+     Risk Basso
+END
+
+BEGIN Crime
+     Name Insurrezione
+     MinSentence 5
+     MaxSentence 10
+     Risk Medio
+     Trait Violento
+     Trait Distruttivo
+END
+
+# BEGIN Crime
+# Name Spionaggio
+# MinSentence 3
+# MaxSentence 14
+# Risk Basso
+# END
+
+BEGIN Crime
+     Name DistrurboViolento
+     MinSentence 3
+     MaxSentence 5
+     Risk medio
+     Trait Violento
+     Trait Distruttivo
+END
+
+BEGIN Crime
+     Name Narcotraffico
+     MinSentence 10
+     MaxSentence 15
+     Risk medio
+     Trait Ossessivo
+END
+
+BEGIN Crime
+     Name RapinaArmata
+     MinSentence 15
+     MaxSentence 25
+     Risk Alto
+     Trait Ladro
+     Trait Pericoloso 
+END
+
+BEGIN Crime
+     Name Rapina
+     MinSentence 5
+     MaxSentence 15
+     Risk Medio
+     Trait Ladro
+END
+
+BEGIN Crime
+     Name AssaltoAUnVeicolo
+     MinSentence 5
+     MaxSentence 15
+     Risk medio
+     Trait Ladro
+     Trait veicolare
+     Trait Giovane
+END
+
+BEGIN Crime
+     Name MercatoNero
+     MinSentence 6
+     MaxSentence 14
+     Risk Basso
+     Trait Imbroglione
+END
+
+BEGIN Crime
+     Name Furto
+     MinSentence 2
+     MaxSentence 14
+     Risk Basso
+     Trait Ladro
+     cTrait Insignificante
+END
+
+BEGIN Crime
+     Name SoftwarePirata
+     MinSentence 2
+     MaxSentence 4
+     Risk Basso
+     Trait Ladro
+     Trait Sveglio
+END
+
+BEGIN Crime
+     Name GiochiIndiePirata
+     MinSentence 3
+     MaxSentence 6
+     Risk Basso
+     Trait Ladro
+     Trait Sveglio
+END
+
+BEGIN Crime
+     Name RapinaInNegozio
+     MinSentence 2
+     MaxSentence 10
+     Risk Basso
+     Trait Ladro
+     Trait Insignificante
+END
+
+BEGIN Crime
+     Name FurtoConScasso
+     MinSentence 2
+     MaxSentence 10
+     Risk Basso
+     Trait Ladro
+     Trait Insignificante
+     Trait Giovane
+END
+
+BEGIN Crime
+     Name FurtoD'Auto
+     MinSentence 5
+     MaxSentence 14
+     Risk Basso
+     Trait Ladro
+     Trait veicolare
+END
+
+BEGIN Crime
+     Name Stupro
+     MinSentence 4
+     MaxSentence 15
+     Risk Alto
+     Trait Maniaco Sessuale
+     Trait Violento
+END
+
+BEGIN Crime
+     Name AttiOsceni
+     MinSentence 2
+     MaxSentence 10
+     Risk Basso
+     Trait Maniaco Sessuale
+END
+
+BEGIN Crime
+     Name Voyeurismo
+     MinSentence 1
+     MaxSentence 2
+     Risk Basso
+     Trait Maniaco Sessuale
+END

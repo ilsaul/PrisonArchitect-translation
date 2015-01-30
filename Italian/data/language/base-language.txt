@@ -1,0 +1,2317 @@
+﻿# =============================================================================
+# Basic dialog strings
+# =============================================================================
+
+dialog_new                              Nuovo
+dialog_load                             Carica
+dialog_save                             Salva
+dialog_saveas                           Salva come
+dialog_delete                           Elimina
+dialog_width                            Larghezza
+dialog_height                           Altezza
+dialog_name                             Nome
+dialog_type                             Tipo
+dialog_x                                X
+dialog_y                                Y
+dialog_z				Z
+dialog_w                                L
+dialog_h                                A
+dialog_exit                             Esci
+dialog_cancel                           Annulla
+dialog_ok                               Ok
+dialog_open                             Apri
+dialog_close                            Riponi
+dialog_closed                           Chiuso
+dialog_add                              Aggiungi
+dialog_up                               Su
+dialog_down                             Giù
+dialog_yes                              Sì
+dialog_no                               No
+dialog_loading                          Caricamento
+dialog_low                              Basso
+dialog_medium                           Medio
+dialog_high                             Alto
+dialog_none                             No
+ellipsis                                ...
+
+
+# =============================================================================
+# Dialog Editor
+# =============================================================================
+
+dialogeditor_title                      Modifica dialogo
+dialogeditor_back                       Dietro
+dialogeditor_front                      Fronte
+dialogeditor_reloadlanguage             Ricarica lingua
+dialogeditor_test                       Testo
+dialogeditor_window                     Finestra
+dialogeditor_grid                       Griglia
+dialogeditor_caption                    Didascalia
+dialogeditor_component                  Componenti
+dialogeditor_select			Seleziona
+dialogeditor_create			Crea
+dialogeditor_background                 Sfondo
+dialogeditor_panel                      Pannello
+
+dialogcomponent_custom                  Personalizzato
+dialogcomponent_button                  Bottone
+dialogcomponent_container               Contenitore
+dialogcomponent_caption                 Didascalia
+dialogcomponent_titlecaption            Titolo
+dialogcomponent_checkbox                Casella di controllo
+dialogcomponent_inputfield              Campo di immissione
+dialogcomponent_inputslider             Campo di scorrimento
+dialogcomponent_dropdownmenu            Menù a discesa
+dialogcomponent_selectionlist           Elenco selezione
+dialogcomponent_selectionlistitem       Oggetti dell'elenco
+dialogcomponent_scrollbar               Barra di scorrimento
+dialogcomponent_progressbar             Barra di progressione
+dialogcomponent_canvas                  Tela
+dialogcomponent_iconbox			Casella icone
+
+dialogposition_absolute                 Assoluto
+dialogposition_relative                 Relativo
+dialogposition_scaled                   In scala
+
+
+# =============================================================================
+# Profiler
+# =============================================================================
+
+profiler_title                          Profilo
+profiler_name                           Nome
+profiler_timings                        Tempi
+profiler_totaltime                      Tempo totale
+profiler_glfinishcaption                glFinish
+profiler_reset                          Azzera
+
+
+# =============================================================================
+# Sound tools
+# =============================================================================
+
+soundchannelviewer_title                Canali Audio
+soundeditor_title                       Editor Audio
+soundinstanceeditor_title		Editor Istanza Suono
+
+soundeditor_positiontitle		Tipo Posizione
+soundeditor_instancetitle		Tipo Istanza
+soundeditor_looptitle			Tipo Loop
+soundeditor_sourcetypetitle		Tipo Suono
+soundeditor_soundnametitle		Nome Suono
+
+soundeditor_volumetitle			Volume
+soundeditor_frequencytitle              Frequenza
+soundeditor_mindistancetitle            Min Distanza
+soundeditor_attacktitle                 Attacco
+soundeditor_sustaintitle                Sostegno
+soundeditor_releasetitle                Rilascio
+soundeditor_loopdelaytitle              Ritardo Loop
+soundeditor_dsptitle                    DSP
+soundeditor_nexteventtitle              Prossimo Evento
+
+soundeditor_play                        Play
+soundeditor_stop                        Stop
+
+soundparametereditor_title              Parametri Suono
+soundparametereditor_typetitle          Tipo
+soundparametereditor_linktitle          Collegato a
+soundparametereditor_updatetitle        Aggiorna Tipo
+soundparametereditor_smoothing          Smoothing
+soundparametereditor_chaintitle         Catena
+
+soundeditor_newdsp                      Aggiungi DSP
+sounddspeditor_title                    Editor DSP
+samplebankeditor_title                  Editor Banca Campioni
+samplebankeditor_addsample              Aggiungi Suono
+samplebank                             (Banca Campioni)
+
+
+# =============================================================================
+# Interface Mode
+# =============================================================================
+
+interfacemode_done                            Fatto
+interfacemode_destroy                         Distruggi
+interfacemode_foundations		      Fondamenta
+interfacemode_construction                    Materiali
+interfacemode_planning                        Progetto
+interfacemode_objects                         Oggetti
+interfacemode_designation                     Stanze
+interfacemode_utilities                       Servizi
+interfacemode_staff                           Personale
+interfacemode_deployment                      Organizza
+interfacemode_logistics                       Logistica
+interfacemode_prisoners                       Detenuti
+interfacemode_needs                           Esigenze
+interfacemode_threats                         Minacce
+interfacemode_overlays                        Rivestimento
+interfacemode_research                        Burocrazia
+interfacemode_emergencies                     Emergenze
+interfacemode_spawn                           (Produzione)
+interfacemode_clone                           Copia
+interfacemode_properties                      (Proprietà)
+interfacemode_contraband                      Contrabbando
+interfacemode_grading                         Statistiche
+interfacemode_cutscenes                       Cutscenes
+
+interfaceoverlay_security                       Sicurezza
+interfaceoverlay_patrols                        Pattuglie
+interfaceoverlay_decay                          Degrado
+interfaceoverlay_territory                      Territorio
+interfaceoverlay_contraband                     Contrabbando
+
+interfaceproperty_indoor                        Interno
+interfaceproperty_visible                       Visibile
+interfaceproperty_territoryprisoner             Banda
+interfaceproperty_territoryguard                Guardie
+interfaceproperty_sectorprisoner                Rivolte
+interfaceproperty_tunnel                        Galleria
+
+interfacedeployment_guards                      Guardie
+interfacedeployment_patrols                     Pattuglia
+interfacedeployment_dogpatrols                  Cane pattuglia
+interfacedeployment_armedpatrols                Pattuglia armata
+interfacedeployment_targetting                  Logistica
+interfacedeployment_targettingfood              Logistica Vitto
+interfacedeployment_targettinglaundry           Logistica Lavanderia
+interfacedeployment_jobs                        Lavoro
+interfacedeployment_securearea                  Area Sicura
+interfacedeployment_sharedzone                  Area Condivisa
+interfacedeployment_staffonlyzone               Solo Personale
+interfacedeployment_maxseczone                  Sicurezza massima
+interfacedeployment_medseczone                  Sicurezza media
+interfacedeployment_minseczone                  Sicurezza minima
+interfacedeployment_protectedzone               Solo Protetti
+interfacedeployment_supermaxzone                Sicurezza SuperMax
+interfacedeployment_unlockedzone                Sbloccata
+interfacedeployment_zonered                     Ala rossa
+interfacedeployment_zonegreen                   Ala verde
+interfacedeployment_zoneblue                    Ala blu
+interfacedeployment_zoneyellow                  Ala gialla
+
+
+interfacelogistics_jobs                         Lavoto Detenuti
+interfacelogistics_targettingfood               Distribuzione Vitto
+interfacelogistics_targettinglaundry            Distribuzione Indumenti
+
+interfaceplanning_wall				Muri
+interfaceplanning_object			Oggetti
+interfaceplanning_route				Strade
+interfaceplanning_clear				Niente
+
+interfacecontraband_source                      Pericoli
+interfacecontraband_day                         -24 Ore
+interfacecontraband_week                        -7 Giorni
+interfacecontraband_alltime                     In assoluto
+interfacecontraband_informants                  Informatori
+
+
+interfaceclone_copy                             Copia
+interfaceclone_paste                            Incolla
+
+
+interfacetopbar_todo				Incarichi
+interfacetopbar_balance				Bilancio *B
+interfacetopbar_budget				Contanti *C
+interfacetopbar_income				Entrate *I
+interfacetopbar_expenses			Uscite *C
+interfacetopbar_day				Al Giorno *D
+
+interfacetopbar_title_balance			Saldo
+interfacetopbar_title_budget			Entrate
+interfacetopbar_title_cctv			CCTV
+interfacetopbar_title_day 			Giornaliero
+interfacetopbar_title_prisoners			Detenuti
+interfacetopbar_title_guards			Guardie
+interfacetopbar_title_tension                   Minaccia
+
+interfacetopbar_tooltip_balance			Soldi in banca.\n\nPuoi raccogliere fondi tramite sovvenzioni.
+interfacetopbar_tooltip_budget			Denaro che ricevi ogni giorno, basato su entrate e uscite.\n\nAccedi al dettaglio finanziario.
+interfacetopbar_tooltip_cctv			Telecamere CCTV e monitor che possiedi.
+interfacetopbar_tooltip_day			Tempo passato da quando sei stato assunto per gestire la prigione.
+interfacetopbar_tooltip_prisoners		Numero di detenuti che hai attualmente e quanti ne puoi ospitare.
+interfacetopbar_tooltip_guards			Quante guardie ci sono al lavoro.
+interfacetopbar_tooltip_tension                 Livello di pericolo nella prigione, secondo il capo della sicurezza.
+
+interfacetopbar_tooltip_recenttransactions      operazioni recenti
+
+interfacetopbar_tooltip_gametime                Tempo totale giocato : *X ore, *Y minuti, *Z secondi
+
+interfacetopbar_tooltip_totalguards             *X Guardie totali
+interfacetopbar_tooltip_guardincapacitated      *X Impossibilitati
+interfacetopbar_tooltip_guardstationed          *X Assegnati
+interfacetopbar_tooltip_guardpatrolling         *X In pattugliamento
+interfacetopbar_tooltip_guardavailable          *X Disponibili
+interfacetopbar_tooltip_guardresting            *X Si riposano
+interfacetopbar_tooltip_guardactive             (*X Risposta agli incidenti)
+interfacetopbar_tooltip_guarddoingjob           (*X Compito assegnato)
+interfacetopbar_tooltip_idle                    (*X Inattive)
+interfacetopbar_tooltip_armedguards             + *X Guardie armate
+interfacetopbar_tooltip_dogs                    + *X Addestratori cani
+
+interfacetopbar_unlimitedfunds                  FONDI ILLIMITATI
+
+interfacetopbar_budget_moneyin			Entrate: $*M /giorno
+interfacetopbar_budget_moneyout			Uscite: $*M /giorno
+interfacetopbar_budget_cantgonegative           Non puoi avere un conto negativo (spendi più di quanto incassi) prima di aver assunto un commercialista.
+
+interfacetopbar_prisoners_types			Attualmente ci sono *X detenuti:
+interfacetopbar_prisoners_capacity              Capacità massima: *X
+interfacetopbar_prisonercells_shared            Capacità Nuovi Giunti: *X
+interfacetopbar_prisonercells_unlocked          Capacità sbloccata: *X
+interfacetopbar_prisonercells_minseconly        Capacità Minima sicurezza: *X
+interfacetopbar_prisonercells_medseconly        Capacità Media sicurezza: *X
+interfacetopbar_prisonercells_maxseconly        Capacità Massima sicurezza: *X
+interfacetopbar_prisonercells_protectedonly     Capacità detenuti protetti: *X
+interfacetopbar_prisonercells_supermaxonly      Capacità SuperMassima: *X
+interfacetopbar_prisonercells_staffonly         Non disponibile: *X
+
+interfacetopbar_cctv_current			Attualmente ci sono *C videocamere
+interfacetopbar_cctv_cap			Spazio per *C videocamere
+
+interfacetopbar_tension_currentlevel            Il livello di minaccia è *X
+interfacetopbar_tension_increasing              ed è in aumento
+interfacetopbar_tension_decreasing              ed è in diminuzione
+interfacetopbar_tension_description             FATTORI:
+interfacetopbar_tension_happyprisoners          - *X detenuti sono trattati bene
+interfacetopbar_tension_unhappyprisoners        + *X detenuti hanno gravi disagi
+interfacetopbar_tension_lockedupprisoners       + *X detenuti sono rinchiusi per nessun motivo
+interfacetopbar_tension_riotingprisoners        + *X detenuti in rivolta
+interfacetopbar_tension_wellfedprisoners        - *X detenuti sono ben nutriti
+interfacetopbar_tension_suppressedprisoners     = *X detenuti sono stati repressi
+interfacetopbar_tension_activeriotguards        + *X agenti anti-sommossa sono sul sito
+interfacetopbar_tension_activearmedguards       + *X agenti armati in servizio
+interfacetopbar_tension_recentdeaths            + *X persone uccise di recente
+interfacetopbar_tension_recentsearches          + *X detenuti sono stati perquisiti di recente senza motivo
+interfacetopbar_tension_angrygangmembers        + *X MEMBRI DELLA BANDA SONO FURIOSI (il capo sta subendo una punizione)
+interfacetopbar_tension_recentpunishments       = (DETERRENTE) *X punizioni eseguite di recente
+
+
+interfacecontrol_mainmenu                       Menù (Esc)
+interfacecontrol_mainmenu_tooltip               Apri il Menù (Nuovo/Carica/Salva/Esci)
+interfacecontrol_todo                           Cose da Fare
+interfacecontrol_todo_tooltip                   Apri le Cose da Fare
+interfacecontrol_research                       Burocrazia
+interfacecontrol_research_tooltip               Apri la schermata burocrazia dove puoi far sbloccare ai tuoi amministratori nuovi oggetti, tipi di personale e strutture.
+interfacecontrol_grading                        Classificazione Prigione
+interfacecontrol_grading_tooltip                Apre la schermata di Classificazione Prigione, ti mostra una scala di quanto hai avuto successo o insuccesso.
+
+interface_confirmlandbuy                        Sei sicuro di voler comprare questo terreno per $*X?
+interface_loadconfirm                           Sei sicuro di voler caricare questa mappa? Tutti i progressi non salvati saranno persi.
+interface_saveconfirm                           Sei sicuro di salvare con questo nome? Il salvataggio sovrascriverà un file esistente.
+
+interface_landbuylabel                          *Xm x *Ym. Area totale *A Metri quadri *C
+
+interface_action_dismantle                      Riponi
+interface_action_dump                           Elimina
+interface_action_repair                         Ripara
+interface_action_medicalbay                     Cassetta medica
+interface_action_search                         Cerca
+interface_action_searchcell                     Cerca nella cella
+interface_action_searchcellblock                Cerca nel blocco cella
+interface_action_sack                           Licenzia
+interface_action_doormodenormal                 Stato porta: Normale
+interface_action_doormodelockedshut             Stato porta: Sempre Chiusa
+interface_action_doormodelockedopen             Stato porta: Sempre Aperta
+interface_action_switchon                       Accendi
+interface_action_switchoff                      Spegni
+interface_action_sellobject                     Vendi
+interface_action_dismiss                        Scarta
+interface_action_connect                        Connetti
+interface_action_clearconnections               Disconnetti
+interface_action_servoopen                      Apertura automatica
+interface_action_servoclose                     Chiusura automatica
+
+interface_contents_container                    Contenuto : *X 
+interface_contents_stack                        Contenuto : *X x *Y 
+
+interface_skip                                  SALTA
+
+interface_foundationsinprogress                 Opera in corso
+riot_underway                                   Rivolta in corso
+riot_status_prisoners                           *X detenuti in Rivolta
+shakedown_underway                              PERQUISIZIONE IN CORSO
+shakedown_found                                 Trovati:
+
+gameover_caption                                Premi ESC per continuare
+
+sector_jobs_max                                 Lavoratori Massimi *X
+sector_jobs_qualified                           Detenuti Qualificati: *X
+sector_noaccess                                 INACCESSIBILE
+
+patrol_assign_1                                 Per assegnare guardie al Pattugliamento:
+patrol_assign_2                                 Clicca su una pattuglia esistente
+
+
+# =============================================================================
+# Hardware Compatibility
+# =============================================================================
+
+hardware_compat_title					Test compatibilità hardware
+hardware_compat_message					Con il vostro permesso, vorremmo raccogliere le seguenti informazioni hardware.\n\nQueste informazioni sono completamente anonime aiuteranno Prison Architect a supportare la più ampia gamma possibile di hardware.\n\nGrazie!
+hardware_compat_accept					Accetta
+hardware_compat_decline					Rifiuta
+
+
+# =============================================================================
+# Build Toolbar
+# =============================================================================
+
+buildtoolbar_title                      Costruisci
+buildtoolbar_reports                    Rapporti
+buildtoolbar_bangup                     Tutti dentro
+buildtoolbar_lockdown                   Blocca porte
+buildtoolbar_shakedown                  Perquisizione
+buildtoolbar_weaponsfree                Armi Letali
+
+buildtoolbar_tooltip_reports		Apri la finestra dei rapporti per vedere le informazioi su detenuti, personale, reddito, prestiti e altro.
+buildtoolbar_tooltip_bangup		Manda tutti i (volenterosi) detenuti alle loro celle. Tenere i detenuti richiusi per troppo tempo li farà arrabbiare.
+buildtoolbar_tooltip_lockdown		Blocca immediatamente tutte le porte della prigione.
+buildtoolbar_tooltip_shakedown          Ordina un'immediata ricerca in tutta la prigione. Questo richiederà del tempo e infastidirà i detenuti.
+buildtoolbar_tooltip_weaponsfree        Autorizza le guardie armate ad utilizzare armi letali
+
+buildtoolbar_cost					Costo: $*C
+buildtoolbar_cost_sqrft					Costo: $*C /mq
+buildtoolbar_wages					Salario : $*W al giorno
+buildtoolbar_outdoor					Solo esterno
+buildtoolbar_indoor					Solo interno
+buildtoolbar_walk_speed					Passo: *S
+buildtoolbar_walk_speed_slow			Lento
+buildtoolbar_walk_speed_norm			Normale
+buildtoolbar_walk_speed_fast			Veloce
+buildtoolbar_locked				BLOCCATO (Richiede *B)
+buildtoolbar_room						Stanza
+
+buildtoolbar_electrical                 - Elettrico
+buildtoolbar_highpower                  - Alta Tensione
+buildtoolbar_water                      - Richiede collegamento idrico
+buildtoolbar_wired                      - Cavo (connettere ad altri oggetti cavo)
+buildtoolbar_modcontent                 - Contenuto Mod
+
+buildtoolbar_popup_foundations			Costruisci/Demolisci gli edifici per modellare la prigione.
+buildtoolbar_popup_construction			Differenti tipi di pavimenti e muri.
+buildtoolbar_popup_planning			Pianifica la tua prigione senza la paura che i lavorati non facciano nulla.
+buildtoolbar_popup_designation			Disegna le aree della tua prigione con funzioni specifiche.
+buildtoolbar_popup_objects			Metti oggetti utili nella tua prigione.
+buildtoolbar_popup_overlays			Identifica visivamente i punti deboli della tua prigione.
+buildtoolbar_popup_utilities			Impianti idraulici ed elettrici.
+buildtoolbar_popup_staff			Assumi le persone necessarie per mandare avanti la tua prigione.
+buildtoolbar_popup_deployment			Assegna il personale in un'area della prigione.
+buildtoolbar_popup_logistics                    Assagna i detenuti in varie mansioni nella prigione. Controlla manualmente lavoranti e cucinieri.
+buildtoolbar_popup_research			Sblocca nuove possibilità per la tua prigione.
+buildtoolbar_popup_emergencies			Chiama i servizi di emergenza se le cose prendono una brutta piega.
+buildtoolbar_popup_spawn			Genera? Cosa fa questo?
+buildtoolbar_popup_clone			La pigrizia è la madre di tutte le invenzioni.
+buildtoolbar_popup_properties			Guarda altra roba.
+buildtoolbar_popup_contraband                   Scopri le fonti di contrabbando e tutti gli oggetti rinvenuti nella prigione
+buildtoolbar_popup_grading                      Esamina le statistiche della tua prigione - punizioni, riforme, sicurezza, salute. Mostra anche la recidività.
+buildtoolbar_popup_room_cell			Dove vivono i detenuti.
+buildtoolbar_popup_room_holdingcell		Dove vengono messi i nuovi arrivi in attesa di una cella libera.
+buildtoolbar_popup_room_solitary		Stanza di isolamento per il peggio del peggio.
+buildtoolbar_popup_room_canteen			Dove i vostri detenuti prenderanno il loro tè del pomeriggio.
+buildtoolbar_popup_room_kitchen			Area per i cuochi, per preparare il cibo per i vostri detenuti.
+buildtoolbar_popup_room_shower			Per tenere i vostri detenuti puliti e senza pidocchi.
+buildtoolbar_popup_room_yard 			Lasciate che i vostri detenuti vedano il sole per alcune ore al giorno sotto l'occhio vigile dei cecchini.
+buildtoolbar_popup_room_storage			Area designata a contenere ogni materiale di cui ha bisogno il personale.
+buildtoolbar_popup_room_deliveries		Area dove vengono lascati merci, materiali e detenuti.
+buildtoolbar_popup_room_garbage			Dove i rifiuti vengono raccolti.
+buildtoolbar_popup_room_execution		Dove vengono inviati i detenuti a morire.
+buildtoolbar_popup_room_workshop		Dove vengono inviati i detenuti a morire di noia mentre fanno targhe di auto.
+buildtoolbar_popup_room_security		Uffici per i vostri ufficiali.
+buildtoolbar_popup_room_office			Area lavorativa per il personale amministrativo.
+buildtoolbar_popup_room_medicalward		Area lavorativa per il personale medico.
+buildtoolbar_popup_room_morgue			Dove mandare i detenuti morti (e anche il personale).
+buildtoolbar_popup_room_commonroom		Consenti ai detenuti di avere un po' di tempo libero, per rilassarsi.
+buildtoolbar_popup_room_kennel                  Dove vivono i cani.
+
+buildtoolbar_popup_obj_bed 			Non troppo duro, non troppo soffice, il giusto. Bhe', in realtà è davvero scomodo e piccolo.
+buildtoolbar_popup_obj_toilet			Un diritto umano fondamentale.
+buildtoolbar_popup_obj_table			Si abbina molto bene con una sedia.
+buildtoolbar_popup_obj_chair			Si abbina molto bene con un tavolo.
+buildtoolbar_popup_obj_bench                    Panca per sedersi.
+buildtoolbar_popup_obj_electricchair	        Offre 2000V di giustizia.
+buildtoolbar_popup_obj_jaildoor			Tiene i detenuti dove dovrebbero stare.
+buildtoolbar_popup_obj_jaildoorlarge	        Tiene molti detenuti dove dovrebbero stare.
+buildtoolbar_popup_obj_door			Una porta semplice.
+buildtoolbar_popup_obj_solitarydoor		Una porta rinforzata per frenare ogni idea di fuga.
+buildtoolbar_popup_obj_staffdoor		Porta chiusa che può essere aperta dal personale, non solo dalle guardie.
+buildtoolbar_popup_obj_window			Per intravedere il sole.
+buildtoolbar_popup_obj_windowlarge		Per intravedere ancor più sole.
+buildtoolbar_popup_obj_tree			L'adozione di misure contro il riscaldamento globale è una nostra responsabilità.
+buildtoolbar_popup_obj_light 			Assicura ai detenuti di poter vedere in ogni momento della giornata.
+buildtoolbar_popup_obj_cooker			Fai star bene i tuoi detenuti dandogli del buon cibo.
+buildtoolbar_popup_obj_fridge			Conserva le tue riserve di cibo e non le fa marcire.
+buildtoolbar_popup_obj_bin			L'ordine è importante quando si tratta di contrabbando.
+buildtoolbar_popup_obj_sink			Tutti i dipendenti sono tenuti a lavarsi le mani.
+buildtoolbar_popup_obj_servingtable		Tavolo dei pasti per i vostri detenuti.
+buildtoolbar_popup_obj_showerhead		Soffione doccia. Per lavarsi.
+buildtoolbar_popup_obj_bookshelf		Scaffale pieno di libri.
+buildtoolbar_popup_obj_officedesk		Il personale deve scrivere molto, dagli una scrivania lucida per poter lavorare.
+buildtoolbar_popup_obj_filingcabinet	        Il personale ha bisogno di tenere in ordine.
+buildtoolbar_popup_obj_medicalbed		Un posto per conservare i narcotici finchè i detenuti non li rubano.
+buildtoolbar_popup_obj_morgueslab		Assicurati che i morti abbiano un posto per riposare prima di essere spostati.
+buildtoolbar_popup_obj_drain			Rimuove l'acqua dal pavimento.
+buildtoolbar_popup_obj_sprinkler		Spruzza acqua automaticamente in caso di incendio.
+buildtoolbar_popup_obj_metaldetector	        Trova materiale di contrabbando. Ha bisogno di una guardia vicino.
+buildtoolbar_popup_obj_weightsbench		Permette ai vostri detenuti di fare esercizio fisico, questo li rende felici.
+buildtoolbar_popup_obj_phonebooth		I detenuti vorranno parlare con le loro famiglie, questa cabina del telefono gli sarà d'aiuto.
+buildtoolbar_popup_obj_tv			Pacifica i detenuti con un po' di sana TV.
+buildtoolbar_popup_obj_largetv			Consente ai detenuti di condividere l'esperienza di bruciarsi il cervello con una bella TV.
+buildtoolbar_popup_obj_pooltable 		Cancella la monotonia della vita carceraria con una partita a biliardo. 
+buildtoolbar_popup_obj_dismantleobject	        Rimuovi oggetti dalla prigione.
+
+buildtoolbar_popup_staff_workman		Costruirà la prigione in base ai vostri piani.
+buildtoolbar_popup_staff_guard			Per mantenere i detenuti sotto controllo e fuori dai guai.
+buildtoolbar_popup_staff_armedguard             Armati con fucile, i detenuti ci penseranno due volte prima di attaccarli.\n\nNOTA: Ogni guardia armata ha bisogno di un'armadietto nell'armeria.
+buildtoolbar_popup_staff_doctor			Guardisce tutte le persone ferite, siano guardie o detenuti.
+buildtoolbar_popup_staff_cook			Alimenta i detenuti con i pasti che prepara.
+buildtoolbar_popup_staff_gardener		Mantiene le piante della prigione belle e ordinate.
+buildtoolbar_popup_staff_janitor		Mantiene l'interno della prigione bello e pulito. Inoltre aiuterà con la lavanderia.
+buildtoolbar_popup_staff_warden			Il grande sorvegliante della prigione. Richiesto prima di poter assumere personale avanzato.
+buildtoolbar_popup_staff_chief			Personale avanzato che da accesso alla distribuzione di cibo, alle telecamere CCTV, alle guardie anti-sommossa e alla ricerca avanzata.
+buildtoolbar_popup_staff_foreman		Personale avanzato che da accesso ai custodi e ai giardinieri.
+buildtoolbar_popup_staff_psychologist	        Personale avanzato che consente di ottenere una panoramica delle menti dei vostri detenuti. 
+buildtoolbar_popup_staff_accountant		Personale avanzato che dà accesso alle sovvenzioni.
+buildtoolbar_popup_staff_lawyer			Personale avanzato che consente di rimuovere punti di penalizzazione.
+
+buildtoolbar_popup_uts_powerstation		Genera elettricità da usare nella prigione.
+buildtoolbar_popup_uts_capacitor		Espandi la centrale elettrica con un condensatore per avere più potenza. Costruire accanto alla centrale.
+buildtoolbar_popup_uts_electricalcable	        Distribuisce l'elettricità nella prigione.
+buildtoolbar_popup_uts_powerswitch		Interruttore elettrico per dare o togliere l'elettricità.
+buildtoolbar_popup_uts_waterpumpstation	        Fornisce una sorgente d'acqua alla vostra prigione.
+buildtoolbar_popup_uts_pipevalve		Valvola per dare o togliere l'acqua.
+buildtoolbar_popup_uts_pipelarge 		Distribuisce una grande quantità di acqua nella prigione. Probabilmente abbastanza grande per qualcuno da strisciarci dentro verso la libertà, attraverso metri di merda.
+buildtoolbar_popup_uts_pipesmall		Distribuisce acqua nella prigione.
+buildtoolbar_popup_uts_cctv			Tiene un'occhio sulla prigione senza che le guardie siano ovunque. Ha bisogno di essere collegato al monitor CCTV.
+
+buildtoolbar_popup_uts_cctvmonitor		Da costruire nella stanza della sicurezza, deve essere gestita da una guardia. Controlla le telecamere a distanza.\n\nUsa lo strumento di collegamento per unire questo monitor alla telecamente CCTV.\n\nNote: Un massimo di 8 telecamere posso essere controllare contemporaneamente. Se connetti più di 8 telecamere il monitor cambiera inquadratura ciclicamente, offrendo una copertura parziale.
+
+buildtoolbar_popup_uts_DoorControlSystem        Da costruire nella stanza della sicurezza, deve essere gestito da una guardia. Può essere usato per aprire le porte a distanza.\n\nUsa lo strumento di collegamento per unire questo sistema al controllo porte. Il controllo porte va costruito sulle porte che desideri controllare a distanza.\n\nNote: Puoi connetere quanti controlli vuoi, la guardia potrà comunque aprire un massimo di due porte al secondo.
+
+buildtoolbar_popup_uts_Servo                    Posiziona un controllo sulla porta che vuoi aprire a distanza. Controllare che il sistema sia posizionato correttamente sulla porta.\n\nUna volta installato la porta si aprira quando il controllo verrà azionato, normalmente tramire un controllo porte o un sistema a tempo.\n\nI controlli posso essere uniti insieme, così alla prima attivazione seguiranno tutte quelle collegate.
+
+buildtoolbar_popup_uts_LogicCircuit            Struttura avanzata.\n\nUn semplice circuito che esegue operazioni.\n\nOperazioni possibili: And / Or / Not / Nand / Nor / Xor\n\nSeleziona il ciclo tramite le operazioni logiche.
+buildtoolbar_popup_uts_LogicBridge             Struttura avanzata.\n\nRiceve un segnale in entrata e lo esegue su un cavo elettrico sulla stessa casella. Questo cavo elettrico porterà il segnale su ogni altro circuito logico collegato.\n\nPuò essere usato per trasmettere un comune segnale in tutta la prigione, utile per aggigare un altro segnale.
+buildtoolbar_popup_uts_DoorTimer               Può essere usato per aprire le porte in determinati orari.\n\nUsa lo strumento di collegamento per collegare questo timer ai meccanismi delle porte.
+buildtoolbar_popup_uts_Wire                    Connette i sistemi a distanza insieme.
+buildtoolbar_popup_uts_remotedoor              Una grossa porta che non può essere aperta se non in remoto. Usala per evitare una fuga per mezzo delle chiavi delle celle.
+buildtoolbar_popup_uts_dismantleutility        Rimuovi oggetti di servizio dalla prigione.
+buildtoolbar_popup_uts_pressurepad             Manda un segnale agli oggetti connessi quando qualcosa li attiva.
+buildtoolbar_popup_uts_statuslight             Si accende di verde o rosso in base al segnale che riceve. 
+
+buildtoolbar_contraband_source          Mostra tutte le zone della prigione dove oggetti di contrabbando potrebbero essere stati rubati
+buildtoolbar_contraband_day             Mostra tutti gli oggetti di contrabbando confiscati nelle ultime 24 ore
+buildtoolbar_contraband_week            Mostra tutti gli oggetti di contrabbando confiscati negli ultimi 7 giorni
+buildtoolbar_contraband_alltime         Mostra tutti gli oggetti di contrabbando confiscati nella storia della prigione
+buildtoolbar_contraband_informants      Mostra le informazioni raccolte dagli informatori
+
+job_matsassigned                        Materiali assegnati
+job_matsavailable                       Materiali disponibili
+job_awaitingmaterials                   In attesa dei materiali
+job_inprogress                          Lavoro in corso
+job_blocked                             Lavoro (Bloccato)
+job_queued                              Lavoro (In coda)
+
+job_failed_noroute                      Nessuna strada
+job_failed_nomaterials                  Nessun materiale
+job_failed_toodangerous                 Troppo pericoloso
+job_failed_materialsbeingcarried        Materiale in viaggio
+
+job_rightclicktocancel                  Click destro per cancellare
+job_refundamount                        Rimborso: *X
+
+failuremessage_blocked                  Bloccato
+failuremessage_cantafford               Fondi insufficenti
+failuremessage_cantaffordupkeep         Supera il budget giornaliero
+failuremessage_maximumcountreached      Personale Massimo Raggiunto
+failuremessage_maxstaff                 Numero Massimo
+
+
+# =============================================================================
+# Status Toolbar
+# =============================================================================
+
+statustoolbar_deliveries                Consegne
+statustoolbar_finances                  Finanze
+statustoolbar_regime                    Programma
+statustoolbar_escapemap                 Sicurezza
+statustoolbar_electricity               Elettricità
+statustoolbar_stats                     Statistiche
+statustoolbar_danger                    Pericolo
+statustoolbar_jobs                      Lavori
+statustoolbar_gangs                     Bande
+statustoolbar_staff                     Personale
+statustoolbar_research                  Ricerca
+
+
+# =============================================================================
+# Sprite Bank Editor + other tools
+# =============================================================================
+
+spritebankeditor_title                  Editor conto in banca
+spritebankeditor_create                 Crea
+spritebankeditor_rotate                 Ruota
+spritebankeditor_sort                   Ordina
+spritebankeditor_markermodetitle        Modalità creazione
+
+
+# =============================================================================
+# Codex
+# =============================================================================
+
+codex_mainmenu                          Menù Principale
+codex_campaign                          Campagna
+codex_cutscenes                         Cutscenes
+codex_qualifications                    Qualifiche
+codex_load                              Carica prigione
+codex_save                              Salva prigione
+codex_performance			Test prestazioni
+codex_developer_load                    (Sviluppo) Carica mappa
+codex_developer_save                    (Sviluppo) Salva mappa
+codex_contacts                          Contatti
+codex_materials                         Materiali
+codex_play                              Gioca
+codex_polaroids                         Polaroids
+codex_introduction                      Introduzione
+codex_restartintroduction               Riavvia introduzione
+codex_help                              Aiuto (Wiki)
+codex_opensavefolder                    Apri cartella salvataggi
+codex_options				Opzioni
+codex_nitgs				Nome in gioco
+codex_workshop				Prigioni condivise
+codex_checkforupdates                   Controlla aggiornamenti
+codex_preorder                          Pre-Ordina ora
+codex_termsconditions                   Termini e condizioni
+codex_twitter                           Twitter
+codex_extras                            Extra
+codex_unlocked                          Sbloccato *X/*Y
+
+codex_new                               Crea nuova prigione
+codex_new_worldsize                     Dimensione terreno
+codex_new_small                         Piccolo
+codex_new_medium                        Medio
+codex_new_large                         Grande
+
+codex_options_graphics					Grafica
+codex_options_resolution				Risoluzione
+codex_options_resolutionauto			        Automatico
+codex_options_windowed					Finestra
+codex_options_highdpi					Alto DPI
+codex_options_filtering					Filtraggio
+codex_options_nofiltering				Spento
+codex_options_multisampled				Multicampionamento
+codex_options_supersampled				Supercampionamento
+
+codex_options_audio					Audio
+codex_options_volume					Volume principale
+codex_options_frequency					Mix frequenze
+codex_options_swapstero					Swap stereo
+codex_options_dspenabled				Abilita DSP
+codex_options_11khz						11025 Hz
+codex_options_22khz						22050 Hz
+codex_options_44khz						44100 Hz
+
+codex_options_clocktype                 Tipo di Orologio
+codex_options_clocktype_analogue        Analogico
+codex_options_clocktype_12h             12 Ore
+codex_options_clocktype_24h             24 Ore
+
+codex_options_gameplay					Gioco
+codex_options_autosave					Salvataggio automatico (minuti)
+codex_options_renderrooms				Requisiti stanza
+codex_options_apply					Applica
+
+codex_options_language					Lingua
+
+codex_enabled                           Attivo
+codex_disabled                          Disattivato
+
+codex_option_intake                     Arrivo continuo
+codex_tooltip_intake                    Se attivo arriveranno un numero casuale di detenuti ogni giorno, per sempre. Se disattivato potrai scegliere quando ricevere nuovi detenuti.
+codex_option_fogofwar                   Nebbia di guerra
+codex_tooltip_fogofwar                  Perderai la visibilità dentro la prigione tranne se avrai guardie di pattuglia o telecamere CCTV che coprono l'area.
+codex_option_lakes                      Genera Laghi
+codex_tooltip_lakes                     Laghi casuali bloccheranno parti di terreno della mappa. ATTENZIONE: Sperimentale.
+codex_option_forests                    Genera Foreste
+codex_tooltip_forests                   Gruppi di alberi appariranno sul terreno della mappa.
+codex_option_buildings                  Genera Edifici
+codex_tooltip_buildings                 Edifici abbandonati saranno creati sulla mappa in modo casuale. Starà a voi decidere se utilizzarli.
+codex_option_failure                    Condizioni Problematiche
+codex_tooltip_failure                   Sfida Extra! Sarai licenziato e perderai se le cose si metteranno troppo male (rivolte, bancarotta, troppe morti, troppe fughe, ecc..)
+codex_option_unlimitedfunds             Fondi Illimitati
+codex_tooltip_unlimitedfunds            Puro Sandbox! Puoi spendere quanto vuoi già dall'inizio, senza preoccuparti per cosa succederà dopo
+ 
+codex_option_funds                      Fondi
+codex_tooltip_funds                     Partirai con un po' di soldi in Banca.\n\nNOTA: Vendi le tue prigioni esistenti dalla schermata di valutazione per avere più fondi.
+
+codex_transfer				Trasferimento
+codex_transferring			In trasferimento
+codex_in_prison				Attualmente in prigione
+codex_useravatar                        Questo sono io
+codex_tooltip_useravatar                Contrassegna questo detenuto come te stesso. Se finitai tu stesso in prigione, questo detenuto ti rappresenterà.
+codex_tooltip_flagbio                   Segnala questa biografia come offensiva.
+
+codex_workshop_current Prigione Corrente
+codex_workshop_publish Pubblica questa Prigione
+codex_workshop_update Aggiorna
+codex_workshop_play Gioca
+codex_workshop_downloading Download in corso
+codex_workshop_download_failed Download fallito
+codex_workshop_publishing Pubblicazione in corso
+codex_workshop_new NUOVO
+codex_workshop_title                         Titolo
+codex_workshop_desc                          Descrizione
+codex_workshop_view_in_workshop              Guarda su Steam Workshop
+codex_workshop_heading_pubed                 Prigioni pubblicate
+codex_workshop_heading_subed                 Prigioni sottoscritte
+codex_workshop_published_by                  Pubblicato da *P
+codex_workshop_published_by_you              Pubblicato da te
+codex_workshop_published_good                Prigione pubblicata
+codex_workshop_published_good_msg            La tua prigione è stata pubblicata con successo.
+codex_workshop_published_bad                 Problema nel pubblicare la prigione
+codex_workshop_published_bad_msg             Problema nel pubblicare la tua prigione.
+codex_workshop_published_bad_msg_new         Problema nel pubblicare la tua nuova prigione. Per favore riprova.
+codex_workshop_busy                          Qualcosa di magico è già accaduto con Steam. Per favore attendi che finisca.
+codex_workshop_file_exists                   Hai già pubblicato una prigione con questo nome. Per favore cambia nome.
+codex_workshop_generic_fail                  Problema nel pubblicare la tua prigione. Per favore riprova.
+codex_workshop_download_bad                  Problema nello scaricare la prigione
+codex_workshop_pa_workshop                   Apri Prison Architect Workshop
+codex_workshop_agreement                     Inviando questo articolo, accetterai [url=http://steamcommunity.com/sharedfiles/workshoplegalagreement]workshop termini di servizio[/url].
+
+codex_options_timelapse 				Registra
+codex_timelapse_record					Riprendi
+codex_timelapse_stop					Ferma  Ripresa
+codex_timelapse_camera					Modalità Telecamera
+codex_timelapse_resolution 				Risoluzione
+codex_timelapse_customresw				Larghezza personalizzata
+codex_timelapse_customresh 				Altezza personalizzata
+codex_timelapse_resolution				Risoluzione
+codex_timelapse_fps				        Velocità di riproduzione
+codex_timelapse_interval				Intervallo ripresa
+codex_timelapse_quality					Qualita
+codex_timelapse_unsupported				Questa caratteristica non è disponibile con il tuo hardware.
+codex_timelapse_savesettings			        Salva impostazioni
+
+codex_timelapse_cam_zoom                Zoom Camera
+codex_timelapse_cam_fitmap              Adatta alla mappa
+codex_timelapse_cam_fitheight           Adatta all'altezza
+codex_timelapse_cam_fitwidth            Adatta alla larghezza
+codex_timelapse_fps_value               *X fps
+codex_timelapse_quality_high            Alto
+codex_timelapse_quality_med             Medio
+codex_timelapse_quality_low             Basso
+codex_timelapse_interval_value          *X Tempo in gioco
+
+codex_performance_running				Test delle Prestazioni
+codex_performance_time					Tempo Rimastro: *Ts
+codex_performance_current				Attuale: *Tms
+codex_performance_min					Minimo: *Tms
+codex_performance_avg					Medio: *Tms
+codex_performance_max					Massimo: *Tms
+
+codex_last_modified 						Ultima modifica: *T
+codex_sortbydesc						Ordina per data
+codex_sortname							Nome
+codex_sortdate							Data
+codex_apply							Applica
+codex_select                                                    Seleziona
+
+codex_mods						Mods
+codex_mod_activetitle					Mods attive
+codex_mod_inactivetitle					Mods disponibili
+codex_mod_deactivate					Disattiva Mod
+codex_mod_wiki						Cerca più Mods (Wiki)
+codex_mod_openmodsfolder				Apri directory Mods
+codex_mod_moresteammods					Cerca più Mods (Steam Workshop)
+codex_mod_findsteamtranslations         Cerca più Traduzioni (Steam Workshop)
+codex_authortitle                       Autore
+codex_versiontitle                      Versione
+codex_datetitle                         Data
+codex_urltitle                          Url
+codex_typetitle						Tipo
+codex_mod_graphicsandsound 				Grafica e Audio
+codex_mod_translation					Traduzione
+codex_mod_scenario					Scenario
+codex_mod_content					Contenuto
+codex_mod_load_scenario					Carica scenario
+codex_publishmod					Pubblica Mod
+
+codex_mod_update					Aggiorna Mod
+codex_mod_published_good				Mod Pubblicata
+codex_mod_published_good_msg			        La tua Mod è stato pubblicata con successo
+codex_mod_published_bad					Problemi nel pubblicare la tua Mod
+codex_mod_published_bad_msg				La tua Mod ha avuto problemi nell'essere pubblicata
+codex_mod_modsupdated					Mods aggiornate
+codex_mod_modsupdated_msg				Alcune delle Mods attive sono state aggiornate. Clicca OK per applicare i cambiamenti. Il tuo gioco sarà salvato.
+codex_mod_translationcaption                            Si tratta di una traduzione in un'altra lingua?
+
+codex_language                          Lingua
+codex_language_englishdefault           Inglese (Default)
+codex_language_default                  Lingua di default
+codex_language_download                 Scarica
+codex_language_failed_download          Impossibile scaricare traduzione
+codex_language_failed_download_msg      Problema nello scaricare la traduzione selezionata.
+codex_language_searching_workshop       Ricerca Steam Workshop
+codex_language_community                Questi pacchetti di traduzione sono creati e mantenuti dalla comunità - Grazie!
+
+# =============================================================================
+# Graphics Change Confirmation
+# =============================================================================
+
+graphicschange_message					Vuoi mantenere queste impostazioni grafiche? Queste modifiche saranno cancellate in
+graphicschange_time						secondi.
+graphicschange_accept					Accetta
+graphicschange_revert					Ritorna
+
+# =============================================================================
+# Script
+# =============================================================================
+
+scriptdebugger_title                    Script Debugger (F3)
+
+# =============================================================================
+# Biography
+# =============================================================================
+
+biography_search                        Stop e Ricerca
+biography_selected                      SELEZIONATO
+
+
+# =============================================================================
+# Rap Sheet
+# =============================================================================
+
+rapsheet_age							Età:
+rapsheet_category						Categoria:
+rapsheet_traits							Tratti Noti:
+rapsheet_conviction_text				        *C - *Y anni
+rapsheet_found_text						(Appello: *P)
+rapsheet_convictions					        Convinzioni
+rapsheet_misconductstitle			         	Cattiva condotta recente
+rapsheet_biography                                              Biografia
+rapsheet_guilty							Colpevole
+rapsheet_notguilty						Non Colpevole
+rapsheet_served							Scontati
+rapsheet_served_time					        Scontati *Y anni
+rapsheet_time							*Y anni
+rapsheet_bio							Condannato a *Y anni per *A.
+rapsheet_bio_med						Condannato a *Y anni per più reati, tra cui *A e *B.
+rapsheet_bio_long						Condannato a *Y anni per più reati, tra cui *A, *B e *C.
+rapsheet_category_minsec				Sicurezza minima
+rapsheet_category_normal				Sicurezza normale
+rapsheet_category_maxsec				Sicurezza massima
+rapsheet_tab_biography                  Biografia
+rapsheet_tab_experience                 Esperienza
+rapsheet_tab_grading                    Grado
+rapsheet_punish                         Punire
+rapsheet_recruit                        Recluta Informatore
+
+rapsheet_timeinside                     *X giorni nella prigione
+rapsheet_timeinside_hours               *X ore nella prigione
+rapsheet_mood                           Umore
+rapsheet_activity                       Attività
+rapsheet_condition                      Condizioni
+rapsheet_program                        Programma
+rapsheet_passchance                     Chance riuscita
+rapsheet_reformhistory                  Storia riformatorio
+
+rapsheet_reform_success                 Riuscita
+rapsheet_reform_successcount            Completato *X volte
+rapsheet_reform_failed                  Fallito
+rapsheet_reform_failcount               Fallito *X volte
+
+rapsheet_grading_punishment             Punizione
+rapsheet_grading_health                 Salute
+rapsheet_grading_security               Sicurezza
+rapsheet_grading_reform                 Riformatorio
+rapsheet_grading_points                 *X punti : 
+rapsheet_grading_penalties              *X sanzioni : 
+
+
+punish_lockdown_6                       Rinchiudi (6ore)
+punish_lockdown_12                      Rinchiudi (12ore)
+punish_lockdown_24                      Rinchiudi (24ore)
+punish_solitary_6                       Isolamento (6ore)
+punish_solitary_12                      Isolamento (12ore)
+punish_solitary_24                      Isolamento (24ore)
+punish_solitary                         Isolamento
+punish_lockdown                         Rinchiudi
+punish_none                             No
+punish_timer                            *Xore *Yminuti
+punish_timer_minutes                    *Xminuti
+punish_active                           ATTIVA
+
+
+# =============================================================================
+# Misconducts
+# =============================================================================
+
+misconduct_reporttype_none                  Nessuno
+misconduct_reporttype_complaint             Reclamo
+misconduct_reporttype_destruction           Distruzione
+misconduct_reporttype_escapeattempt         Tentativo di fuga
+misconduct_reporttype_injuredprisoner       Detenuto ferito
+misconduct_reporttype_injuredstaff          Personale ferito
+misconduct_reporttype_seriousinjury         Lesioni gravi
+misconduct_reporttype_murder                Omicidio
+misconduct_reporttype_contrabandweapons     Armi trovate
+misconduct_reporttype_contrabandtools       Strumenti trovati
+misconduct_reporttype_contrabandnarcotics   Droghe trovate
+misconduct_reporttype_contrabandluxuries    Lussi trovati
+misconduct_reporttype_intoxicated           Intossicazione
+misconduct_title                            =[cattiva condotta]=
+
+misconduct_report_addiction                 Dipendenza da *X
+misconduct_report_recoving                  Recupero da *X dipendenza
+misconduct_report_alcoholic                 Alcolico
+misconduct_report_recovingalcoholic         Recupero alcolismo
+
+
+# =============================================================================
+# Research Names + Captions
+# =============================================================================
+
+research_required                       Hai bisogno di uno *X per preparare questo rapporto.
+research_requireunlock                  Hai bisogno di ricercare '*X' per sbloccare questo rapporto
+research_approved                       APPROVATO
+research_cost                           Costo: *X
+research_costperitem                    + *X per articolo.
+research_timetounlock                   Timpo per sbloccarlo : *X ore
+research_movementpenalty                Penalità movimento: *X%
+research_protectionbonus                Protezione: *X%
+
+
+research_none                           No
+research_warden                         Direttore
+research_maintainance                   Manutenzione
+research_security                       Sicurezza
+research_legal                          Avvocato
+research_mentalhealth                   Salute Mentale
+research_finance                        Finanza
+research_landexpansion                  Espanzione terreno
+research_cctv                           CCTV
+research_riotguards                     Guardie anti-sommossa
+research_health                         Salute
+research_cleaning                       Pulizie
+research_groundskeeping                 Tuttofare
+research_clone                          Copia
+research_deployment                     Dislocamento
+research_patrols                        Pattuglie
+research_dogs                           Cani
+research_prisonlabour                   Manodopera
+research_education                      Educazione
+research_contraband                     Contrabbando
+research_policy                         Regolamento
+research_armoury                        Armeria
+research_bodyarmour                     Giubbotto antiproiettile
+research_tazers                         Taser
+research_tazersforeveryone              Taser per tutti
+research_Bankloans                      Prestiti bancari
+research_lowertaxes1                    Sgravi fiscali
+research_lowertaxes2                    Paradiso fiscale
+research_remoteaccess                   Accesso remoto
+research_extragrant                     Concessione extra
+research_advancedmanagement             Micromanagement
+
+researchtooltip_warden                  Sblocca il Direttore e l'intero Sistema Burocratico. Assumilo dal menù Personale, come tutti gli Amministratori ha bisogno di un ufficio per lavorare.
+researchtooltip_security                Sblocca il Capitano. Può essere assunto dal menù Personale. Ti consentirà di accedere alla schermata di Dislocamento e ti darà anche un rapporto in tempo reale del livello di pericolo nella prigione.
+researchtooltip_maintenance            Sblocca il Caposquadra. Assumilo tramite il menù Personale.
+researchtooltip_legal                   (ATTUALMENTE NON SERVE A NULLA)\nSblocca Avvocato.\nL'avvocato ridurrà i punti di penalizzazione assegnati, puoi assumerne quanti ne vuoi.\n\nOgni Avvocato avrà bisogno di un ufficio.
+researchtooltip_deployment              Ti permette di far stazionare le Guardie nei settori della prigione.
+researchtooltip_dogs                    Sblocca gli Addestratori e Pattuglie con Cani. Sono perfetti per trovare gli oggetti di contrabbando e le gallerie nella prigione.\n\nI Cani sono molto veloci, riesco a catturare i fuggitivi in un batter d'occhio. 
+researchtooltip_cctv                    Sblocca le CCTV e i monitor di sicurezza.  Usali per controllare tutta la prigione.\n\nSblocca anche le Intercettazioni Telefoniche, ti permettono di ascoltare le chiamate dei detenuti e acquisire importanti informazioni.
+researchtooltip_remoteaccess            Sblocca la tecnologia per il controllo remoto ed automatico delle porte. Le Porte possono essere aperte in automatico usando un Sistema di Controllo Remoto (operato da una Guardia), oppure da un Timer in specifici orari del giorno.
+researchtooltip_patrols                 Ti permette di assegnare delle guardie al pattugliamento di aree cruciali della prigione.
+researchtooltip_riotguards              (ATTUALMENTE NON SERVE A NULLA)\nSblocca Guardie Anti-sommossa. Questi ragazzi sono armati nel miglior modo possibile per affrontare tutte le situazioni violente che si possono presentare.
+researchtooltip_maintainance            Sblocca il Capo Squadra. Ti permette di sbloccare un sistema di lavoro per i detenuti e ulteriori membri del personale. \n\nCome tutti gli Amministratori ha bisogno di un ufficio per lavorare.
+researchtooltip_clone                   Sblocca lo strumento Copia nel menù. Usa questo strumento per duplicare un'area della pregione, come le celle. Seleziona la zona da copia trascinando il click destro quindi usa il click sinistro per copiare.
+researchtooltip_groundskeeping          Sblocca il Giardiniere. Terrà in ordine lo spazio esterno.
+researchtooltip_cleaning                Sblocca il Custode. Pulirà tutte le aree interne e aiuterà in lavanderia.
+researchtooltip_health                  Sblocca il Dottore, insieme all'Infermeria e all'Obitorio. I detenuti e il Personale malati saranno messi in infermeria e curari.
+researchtooltip_MentalHealth            Sblocca lo Psicologo, ti fornirà una preziona analisi dello stato psicologico interno della prigione in ogni momento.
+researchtooltip_finance                 Sblocca il Ragioniore, ti darà accesso al rapporto finanziario della tua prigione.\n\nInoltre ti permetterà di spendere più di quanto guadagni ogni giorno, a patto di avere dei fondi di riserva. 
+researchtooltip_landexpansion           Ti autorizza a poter comprare appezzamenti confinanti di terra e quindi espandere la tua prigione.
+researchtooltip_ReducePenalty1          (ATTUALMENTE NON SERVE A NULLA)\nRiduce il numero di Punti Penalità assegnati di 50.
+researchtooltip_ReducePenalty2          (ATTUALMENTE NON SERVE A NULLA)\nRiduce il numero di Punti Penalità assegnati di 50.
+researchtooltip_ReducePenalty3          (ATTUALMENTE NON SERVE A NULLA)\nRiduce il numero di Punti Penalità assegnati di 50.
+researchtooltip_ReducePenalty4          (ATTUALMENTE NON SERVE A NULLA)\nRiduce il numero di Punti Penalità assegnati di 50.
+researchtooltip_ReducePenalty5          (ATTUALMENTE NON SERVE A NULLA)\nRiduce il numero di Punti Penalità assegnati di 50.
+researchtooltip_prisonlabour            Ti consente di mettere i detenuti a lavorare nella prigione (cucinare, pulire, ecc..) risparmiando sul salario del personale, guadagnando soldi e insegnando ai detenuti nuove abilità allo stesso tempo.\n\nInoltre sblocca Officina e Lavanderia.
+researchtooltip_education               Sblocca la possibilità di avviare il programma educativo sui detenuti usando insegnati esterni.
+researchtooltip_contraband              Forma le tue guardie nel tracciamento e recupero di sostanze di contrabbando. Sblocca Rapporto Domanda e Offerta, il luogo di spaccio (mostra tutti i possibili luoghi dove avvengono i furti), tiene traccia di tutti gli effetti recuperati e dove sono stati rubati e contrabbandati.
+researchtooltip_policy                  Sblocca il Regolamento Prigione, ti permette di aumentare e diminuire le pene per la cattiva condotta e di perquisire automaticamente i detenuti sospetti e le loro celle.
+researchtooltip_armoury                 Sblocca l'Armeria e ti consente di distribuire le guardie armate per tutta la prigione.
+researchtooltip_bodyarmour              Equipaggia tutte le tue Guardie, le Guardie Armate e gli Addestratori di Cani con giubotto antiproiettile. Questo aiuterà ad assorbile il danno provocato duranti i combattimenti. Renderà le tue guardie più lente.\n\nLe Guardie dovranno visitare l'armeria per ottenere l'equipaggiamento nuovo, ogni giubotto acquistato avrà un costo.
+researchtooltip_tazers                  Consente alle Guardie Armate di portare il Taser, una potente arma da un colpo che rendera' la maggior parte dei vostri bersagli inconsapevoli all'istante. Il Taser potrà sparare solo una volta ed essere ricaricato in un'ora.\n\nLe Guardie Armate dovranno visitare l'armeria per ottenere l'equipaggiamento nuovo, ogni Taser acquistato avrà un costo.
+researchtooltip_tazersforeveryone       Estende l'equipaggiamento Taser alle Guardie e agli Addestratori di Cani.\n\nDovranno recarsi nell'Armeria per prenderlo. Ogni singolo oggetto avrà un costo.
+researchtooltip_bankloans               Consente di prendere grosse somme di denaro dalla Banca, in cambio bisognerà pagare l'interesse giornalmente. Pagare i debiti incrementerà la vostra quotazione e vi consentirà di prendere altre somme di denaro.
+researchtooltip_lowertaxes1             Usufruisci degli incentivi fiscali del governo che riducono le tasse del 15%.\n\nRismarmierai $1,500 di tasse per $10,000 di entrate al giornaliere.
+researchtooltip_lowertaxes2             Il tuo commercialista estende le regole fino al punto di rottura. Sposterà tutti i conti in un paese straniero con tasse molto basse. Le tue tasse scenderanno fino ad arrivare a circa l'1%.\n\nRisparmierai $3,000 di tasse per $10,000 di entrate giornaliere.
+researchtooltip_extragrant              Consente di accettare 3 sovvenzioni invece che 2.
+researchtooltip_advancedmanagement      Ti da gli strumenti per la micro gestione economica della tua prigione.\n\nSblocca la Logicastica Alimentare, ti permette di specificare quali cucine preparano pasti per le mense e per chi sono i pasti. Allo stesso modo la Logistica Lavanderia ti permetti di capire quali zone della prigione sono coperti da determinate lavanderie.\n\nSblocca anche gli Orari Dispiegamento, ti lasciano personalizzare le pattuglie per differenti orari della giornata.\n\nSblocca la Pianificazione Riformatorio, ti permetti di aggiustare manualmente il programma giornaliero.
+
+
+# =============================================================================
+# Room Requirements
+# =============================================================================
+
+roomrequirement_required                REQUISITI:
+roomrequirement_recommended             Raccomandato: 
+roomrequirement_minimumsize             Misure Minime *W x *H
+roomrequirement_indoor                  Interno
+roomrequirement_outdoor                 Esterno
+roomrequirement_solidground             Terra Ferma
+roomrequirement_secure                  Sicuro (dietro una porta)
+roomrequirement_enclosed                Chiuso (circondato da muri e porte)
+requirement_entrance                    Richiede un'entrata
+roomrequirement_title                   =[Requisiti Stanza]=
+roomrequirement_passed                  [PASSATO] 
+roomrequirement_failed                  [BOCCIATO] 
+
+# =============================================================================
+# Unlocks
+# =============================================================================
+
+unlock_title                            SBLOCCATO
+
+unlock_special_electricity              Sistemi Elettrici
+unlock_special_food                     Preparazione Viveri
+unlock_special_officersafety            Responsabile della Sicurezza
+unlock_special_misbehavior              Cattiva Condotta
+unlock_special_accounting               Contabilità
+unlock_special_gangs                    Bande
+
+unlock_electricity_caption              Permette la costruzione di centrali elettriche e cavi elettrici, fornitura di elettricità e tutti i dispositivi di cui hai bisogno.
+
+
+# =============================================================================
+# Advisers
+# =============================================================================
+
+click_to_continue                       Clicca per continuare...
+incoming_call                           Chiamata in arrivo...
+
+adviser_name_none                       No
+adviser_name_ceo                        Il CEO
+adviser_name_warden                     Il Direttore
+adviser_name_governer                   Il Governatore
+adviser_name_chief                      Il Cuoco
+adviser_name_doctor                     Il Dottore
+adviser_name_kingpin                    Il Super Cattivo
+adviser_name_edwardshooter              Edward
+adviser_name_edwardsinner               Edward
+adviser_name_edwardinmate               Edward
+adviser_name_edwardswife                Susan, la moglie di Edward
+adviser_name_priest                     Il Prete
+adviser_name_newsreader                 CDNC News
+
+# =============================================================================
+# Valuation, Reports etc
+# =============================================================================
+
+report_staff                            Personale
+report_prisoners                        Detenuti
+report_jobs                             Lavori
+report_needs                            Esigenze
+report_threats                          Minacce
+report_regime                           Regolamento
+report_policy                           Politica
+report_grants                           Sovvenzioni
+report_finance                          Finanza
+report_valuation                        Valutazione
+report_contraband                       Contrabbando
+report_programs                         Programmi
+
+report_grants_bankloan                 Prestiti Bancari
+report_grants_bankloan_text            Puoi avere un grosso prestito dalla Banca. In cambio, la banca, addebiterà gli interessi alla cassa giornaliera.\n\nSe effettuerai pagamenti regolari la tua valutazione creditizia salirà, e la Banca ti concederà altri prestiti. Tuttavia, se mancherai i pagamenti la tua valutazione creditizia calerà e la Banca ti rifiuterà ulteriori prestiti.\n\nNota: i prestiti non saranno mai ripagati dagli interessi maturati giornalmente.  
+report_grants_max1                      Non è possibile avere più di 1 sovvenzioni alla volta.\nUsa il Commercialista per alzare questo limite.
+report_grants_max2                      Non è possibile avere più di 2 sovvenzioni alla volta.\nUsa il Commercialista per alzare questo limite.
+report_grants_max3                      Non è possibile avere più di 3 sovvenzioni alla volta.
+report_grants_bankloan_amount           Prestiti Bancari Correnti  *X
+report_grants_bankloan_interest         Interessi *X per giorno
+report_grants_bankloan_max              Prestiti Massimi *X
+report_grants_creditrating              Valutazione Creditizia: *X
+report_grants_inprogress_tt             (IN CORSO)
+report_grants_completed_tt              (COMPLETATO)
+report_grants_locked_tt                 (BLOCCATO)
+report_grants_advancepayment            *X Fondi 
+report_grants_completionbonus           *X Bonus Completamento
+report_grants_objectives                [Obiettivi]
+report_grants_prereqs                   [Pre-Requisiti]
+report_grants_completed                 COMPLETATO
+report_grants_locked                    Bloccato
+report_grants_inprogress                In Corso
+report_grants_hidden                    (*X più nascosto)
+
+report_staff_title                      Personale *X
+report_prisoners_title                  Detenuti *X (Max *M)
+report_staff_group_builders             Lavoratori
+report_staff_group_guards               Guardie
+report_staff_group_staff                Personale
+report_staff_group_administrators       Amministratori
+report_staff_group_prisoners            Detenuti
+report_staff_group_prisoners_high       Rischio Alto
+report_staff_group_prisoners_normal     Rischio Normale
+report_staff_group_prisoners_low        Rischio Basso
+report_staff_group_prisoners_protected  Custidia Protettiva
+report_staff_group_prisoners_supermax   SuperMassimo
+
+report_staff_fire                       VIA
+
+valuation_categoryprison                Valutazione Prigione
+valuation_construction                  Mattoni e Malta
+valuation_objects                       Rifiniture di Pregio
+valuation_stock                         Archivio e Materiali
+valuation_staff                         Personale
+valuation_startupgrant                  Obbiettivi Iniziali
+valuation_capacity                      Capacità Prigione
+valuation_cash                          Denaro
+valuation_debt                          Prestiti Bancari
+valuation_categoryperformance           Sicurezza e Protezione
+valuation_bonustimewithoutincident      [Bonus] Tempo senza incidenti
+valuation_finedeath                     [Penalità] Morti nelle ultime 24h
+valuation_fineescape                    [Penalità] Evasioni nelle ultime 24h
+valuation_total                         TOTALE
+valuation_sell                          VENDI
+valuation_sellprison                    VENDI PRIGIONE
+valuation_sell_tooltip                  Vendere la tua prigione ti consentirà di trarne profitto e iniziare una costruire una nuova prigione con un bilancio iniziale maggiore.\n\nPotrai comunque continuare a gestire questa prigione, però puoi venderla una volta soltanto. Tutti i profitti della vendita verranno trasferiti nel tuo conto.
+valuation_sold                          Questa prigione è stata venduta per *X
+valuation_donotown                      Non puoi vendere questa prigione perchè non la possiedi
+valuation_sellsome                      Vendi Azioni
+valuation_buysome                       Compra Azioni
+valuation_shares                        Acquista e Vendi Azioni
+valuation_shares_tooltip                Puoi vendere fino al 50% della tua prigione come azioni ad investitori esterni. Sarai pagato subito in contanti. In cambio delle azioni, gli investitori prenderanno una frazione del prezzo totale quando la prigione sarà venduta.\n\nEsempio Se vendi il 30% delle azioni della prigione, riceverai solo il 70% del prezzo finale di vendita. Puoi ricomprare le azioni in qualsiasi momento solo che il costo sarà più alto di quanto le avevi vendute.
+valuation_ownership                     Possiedi il *X% di questa prigione
+valuation_saleprice                     Prezzo Vendita: *X
+valuation_title                         =[VALUTAZIONE]=
+valuation_totalprisonvalue              Valore Totale Detenuti : *X
+valuation_subcashreserves               Problemi recenti : *X
+valuation_tenpercentprice               Prezzo per 10% : *X
+valuation_profit                        Profitto : *X
+
+salecondition_title                     REQUISITI DI VENDITA
+salecondition_cannotsell                Non puoi vendere la prigione o scambiare azioni finchè le seguenti condizioni non saranno soddisfatte
+salecondition_minimumvalue              Valore minimo $50,000
+salecondition_cashflow                  Flusso di cassa positivo
+salecondition_accountant                Ragionere sul sito
+salecondition_minprisoners              Almeno 20 detenuti
+salecondition_recentdeaths              Nessun Morto di recente
+salecondition_recentescapes             Nessuna Evasione di recente
+salecondition_passed                    [PASSATO] 
+salecondition_failed                    [FALLITO] 
+
+policy_title                            INCIDENTI
+policy_search                           - RICERCA -
+policy_prisoner                         LUI
+policy_cell                             CELLA
+policy_punishment                       PUNIZIONE
+policy_quantity                         TEMPO
+policy_punishmenttime                   *X ore
+policy_mealcost                         $*X / giorno
+policy_totalmealcost                    (TOTALE $*X / giorno)
+
+job_construct                           Costruire *X
+job_installobject                       Installare *X
+job_installobjectinroom                 Installare *X in *Y
+job_moveobject                          Spostare *X
+job_moveobjecttoroom                    Spostare *X in *Y
+job_loadobjectinto                      Caricare *X In *Y
+job_storeobject                         Depositare *X in *Y
+job_dismantleobject                     Smantellare *X
+job_dumpobject                          Abbandonare *X
+job_repairobject                        Riparare *X
+job_operateequipment                    Azionare *X
+job_escortprisoner                      Scortare Detenuto in *X
+job_punishprisoner                      Processo Detenuto
+job_searchobject                        Cercare *X 
+job_searchentity                        Perquisire
+job_searchingentity			Cercare Detenuto
+job_searchcell                          Ispezionare Cella
+job_searchcellblock                     Ispezionare Blocco Cella
+job_improvecellindoor                   Area Pulizia Interna
+job_improvecelloutdoor                  Area Giardino Esterna
+job_opendoor                            Aprire porta chiusa
+job_failurecount                        Fallito *X volte
+       
+finances_title                          Finanza
+finances_income                         Entrate
+finances_expenses                       Uscite
+finances_total                          Totale
+finances_profit                         Netto
+finances_timewithoutincident            (*X giorni)
+finances_dailyincome                    *X / giorno
+
+finances_category_federalgrant          Sovvenzioni Federali
+finances_category_minsecprisoners       Sovvenzioni Detenuti Sicurezza Minima
+finances_category_medsecprisoners       Sovvenzioni Detenuti Sicurezza Normale
+finances_category_maxsecprisoners       Sovvenzioni Detenuti Sicurezza Massima
+finances_category_workmen               Salario Lavoratori
+finances_category_guards                Salario Guardie
+finances_category_admin                 Salario Amministratori
+finances_category_staff                 Salario Personale
+finances_category_food                  Vitto
+finances_category_electricity           Elettricità
+finances_category_workshops             Officine
+finances_category_loaninterest          Interessi Bancari
+finances_category_reformprogs           Riforme
+finances_category_noincident            Giorni senza incidenti
+finances_category_exports               Esportazioni (ieri)
+finances_category_corptax               Tasse
+
+reports_foodtitle                       Politica Nutrizionale
+meal_quantity                           Qualità Pasti
+meal_variety                            Varietà Pasti
+meal_cost                               Costo Per Detenuto
+
+victory_title                           CERTIFICAZIONE
+
+victory_PrisonValue                     Valore Detenuti
+victory_Income                          Profitti Giornalieri
+victory_Prisoners                       Capacità
+victory_PrisonersReleased               Detenuti rilasciati
+victory_prisonersdied                   Morti in custodia
+victory_prisonersescaped                Detenuti evasi
+victory_bankrupt                        Bancarotta
+victory_Riot                            Incontrollata\nrivolta
+victory_TooManyDeaths                   Criminale\nnegligente
+victory_TooManyEscapes                  Sicurezza\ndisastro
+victory_failure                         GUASTO
+victory_warning                         AVVISO
+victory_remaining                       Rimanente
+victory_death                           MORTI
+victory_escapes                         EVASIONI
+victory_counter                         (*X oggi)
+
+victory_warning_bankrupt               Hai 24 ore per evitare il disastro finanziario
+victory_warning_riot                    Poni fine presto a questa rivolta o il governatore sarà costretto a prendere il controllo della prigione
+victory_warning_toomanydeaths           Sarai perseguito se ci saranno altre morti oggi
+victory_warning_toomanyescapes          Sarai licenziato se si verificheranno altre evasioni oggi
+
+victory_prisoners_units                 Luoghi
+victory_prisonersreleased_units         Rilasciato
+victory_toomanydeaths_units             Morti
+victory_toomanyescapes_units            Evasioni
+
+victory_adviserwarning_toomanydeaths1   Ieri è stato un giorno molto buio nella storia di questa prigione. Troppe persone hanno perso la vita.
+victory_adviserwarning_toomanydeaths2   Assicurati che nessun'altro muoia oggi o dovrai affrontare un processo per negligenza verso i detenuti.
+victory_advisernotice_toomanydeaths1    Non dite che non vi abbiamo avvisato. Sei stato riconosciuto colpevolo di negligenza contro i detenuti a causa dei recenti eventi.
+victory_advisernotice_toomanydeaths2    Ora passerai i prossimi dieci anni in prigione come punizione dei tuoi crimini. Tua la prigione. Buona fortuna.
+victory_adviserwarning_riot1            La tua prigione p fuori controllo. Ferma la rivolta adesso o il governatore la riprenderà con la forza.
+victory_advisernotice_riot1             Hai fallito nel controllare la rivolta. Il governatore ha revocato il tuo contratto. Ora manderà la Guardia Nazionale a riprendersi la prigione.
+victory_adviserwarning_toomanyescapes1  Abbiamo qualche problema qui. Troppi detenuti sono scappati recentemente, ed p colpa tua.
+victory_adviserwarning_toomanyescapes2  Chiudi la prigione così da assicurarti che nessun'altro fugga, altrimenti la stampa servirà la tua testa su un piatto d'argento ai lettori.
+victory_advisernotice_toomanyescapes1   Hai fallito. Questa prigione è presa in giro dai media, vogliono qualcuno a cui dare la colpa.
+victory_advisernotice_toomanyescapes2   Quel qualcuno sei tu. Sei licenziato.
+victory_adviserwarning_bankrupt1       Sei in Bancarotta! La tua gestione disastrosa ci ha portato alla rovina finanziaria.
+victory_adviserwarning_bankrupt2       Trova un modo per risolvere il problema o sarai licenziato.
+victory_advisernotice_bankrupt1        Non abbiamo scelta che dichiarare Bancarotta e mettere la prigione in amministrazione controllata. Hai fallito.
+
+score_title                             CLASSIFICAZIONE PRIGIONE
+score_reoffendingrate                   TASSO DI REITERAZIONE DEI REATI
+score_prisonersreleased                 *X detenuti sono stati rilasciati
+score_minimumprisonersreleased          *X detenuti sono stati rilasciati prima che fosse redatto questo rapporto
+score_deaths                            *X detenuti morti in custodia
+score_escapes                           *X detenuti evasi
+score_reoffendingchance                 Stima reitificazione del reato
+
+score_tooltip_punishment                Misura quanto vengono puniti efficacemente i detenuti, in base a quello che viene visto dall'esterno. Essere riunchiusi in prigione è una punizione fondamentale, anche far marcire i detenuti in isolamento funziona.\n\nTieni in mente che troppo tempo libero influisce negativamente sull'efficacia della punizione.\n\nUn alto grado di efficacia farà si che il detenuto non commetta nuovamente lo stesso sbaglio.
+
+score_tooltip_reform                    Misura quanto hai cercando di riformare e riabilitare i detenuti, attaverso i programmi di riforma.\n\nMettere i detenuti a lavoro nella prigione è considerato.\n\n Un buon grado di riformazione consentirà ai detenuti maggiori probabilità di trovare un buon lavoro una volta usciti, inoltre ridurrà le possibilità di ulteriori crimini.
+
+score_tooltip_welfare                   Misura la salute e il benessere dei detenuti durante la permanenza in prigione. L'esercizio fisico e il buon cibo sono considerati. Ferite non guarite, uso di droga o alcol sono anch'essi considerati, negativamente.\n\nUn cattivo grado aumentara la recidività, in particolar modo se il detenuto lascia il carcere con dipendeze da alcol o droga non considerate.
+
+score_tooltip_security                  Misura quando la tua prigione è sicura. Tenere i prigionieri rinchiusi e sotto controllo di pattuglie amrmate è molto considerat. Sarai penalizzato scoppieranno risse, ci saranno omicidi o fughe.\n\nUn cattivo grado indica che il detenuto continua la sua vita criminale anche all'interno della prigione, la sua recidività sarà alta una volta uscito.
+
+score_tooltip_reoffendingchance         Misura la probabilità di ricommettere il crimine una volta fuori. È influenzata da molti fattori:\n\n- DIMINUISCE Punizione severa\n- DIMINUISCE Ri-formazione\n- AUMENTA Bassa sicurezza e benessere\n- AUMENTA Dipendenze non curate\n\n- L'età dei prigionieri è il fattore principale\n- Va tenuto conto dei preconcetti del detenuto\n- Un importante fattore è l'aiuto della famiglia
+
+experiencefactor_FractionalLockedUp     *X% sono rinchiusi
+experiencefactor_FractionalReform       *X% sono nel riformatorio
+experiencefactor_fractionalWorking      *X% stanno lavorando
+experiencefactor_fractionalsuppressed   *X% vengono soppressi
+experiencefactor_fractionalinjured      *X% non sono stati curati
+experiencefactor_fractionalintoxicated  *X% sono intossicati da alcol o droga
+experiencefactor_fractionalmisbehaving  *X% hanno un comportamento anomalo
+experiencefactor_fractionalarmedguard   *X% sono sotto guardia armata
+experiencefactor_fractionalwellfed      *X% sono ben nutriti
+experiencefactor_fractionalexercising   *X% stanno facendo esercizio
+experiencefactor_fractionalfreetime     *X% tempo libero
+
+experiencefactor_passedeasyprograms             Passato *X programmi facili
+experiencefactor_passedintermediateprograms     Passato *X programmi intermedi
+experiencefactor_passedadvancedprograms         Passato *X programmi avanzati
+experiencefactor_passedexpertprograms           Passato *X programmi esperti
+
+experiencefactor_YearsServed            *X anni serviti
+experiencefactor_fights                 Coinvolto in episodi di violenza
+experiencefactor_murders                Commesso omicidio per *X volte all'interno della prigione
+experiencefactor_escapeattempts         Cercato di evadere per *X volte
+experiencefactor_addictions             *X dipendenza attive
+
+legend_key                              Legenda:
+
+needs_graphscale_title                  Detenuti:
+needs_key_critical                      Critico
+needs_key_high                          Alto
+needs_key_med                           Medio
+needs_key_satisfied                     Soddisfatto
+needs_key_active                        Attivo
+
+contraband_supplyanddemand              Richiesta e Domanda
+contraband_narcotics                    Narcotici
+contraband_weapons                      Armi
+contraband_tools                        Utensili
+contraband_luxuries                     Lussi
+contraband_metal                        Metallo
+contraband_smelly                       Puzzolente
+contraband_rangedweapon                 Armi a distanza
+contraband_improvised                   Improvvisata
+
+contraband_key_supply                   Offerta
+contraband_key_demand                   Domanda
+contraband_log_stolen                   RUBATO
+contraband_log_position                 POSIZIONE
+contraband_log_smuggled                 CONTRABBANDO
+contraband_log_thrown                   GETTARE
+contraband_log_hidden                   NASCOSTO
+contraband_log_detected                 RILEVATO
+contraband_log_dog                      CANE
+contraband_log_found                    TROVATO
+contraband_log_owner                    PROPRIETARIO
+
+schedule_zone_shared                    Condivisa
+schedule_zone_minseconly                Minima Sic.
+schedule_zone_medseconly                Media Sic.
+schedule_zone_maxseconly                Massima Sic.
+schedule_zone_protectedonly             Custodia Protettiva
+schedule_zone_supermaxonly              SuperMassimo
+schedule_zone_staffonly                 Personale
+schedule_zone_unlocked                  Sbloccata
+
+
+# =============================================================================
+# Needs / Actions / Bio etc
+# =============================================================================
+
+action_poo                              Fare pupu
+action_wee                              Fare pipì
+action_wash                             Lavarsi
+action_relax                            Rilassarsi
+action_sleep                            Dormire
+action_nap                              Sonnecchiare
+action_getmeal                          Prendere cibo
+action_sit                              Sedersi
+action_exercise                         Fare esercizio fisico
+action_liftweights                      Fare pesi
+action_phonehome                        Chiamare la Famiglia
+action_watchtv                          Gaurdare la TV
+action_playpool                         Giocare a Biliardo
+action_stealknife                       Azioni Sospette
+action_stealspoon                       Azioni Sospette
+action_urinate                          Urinare
+action_soilsuit                         Sporcare la Tuta
+action_eat                              Mangiare
+action_complain                         Lamentarsi
+action_work                             Lavorare
+action_visitation                       Far Visita
+action_none                             Niente
+action_misbehaving                      Comportarsi male
+action_escaping                         Scappare
+action_destroying                       Distruggere
+action_spoiling                         Rubare
+action_fighting                         Combattere
+action_rioting                          Rivoltarsi
+action_hostagetaking                    Prendere Ostaggi
+action_reformprogram                    Cambiare Programma
+action_changeclothes                    Cambiare Abbigliamento
+
+status_effect_title 			=[Stato]=
+status_effect_none			Nessuno
+status_effect_suppressed		Soppresso
+status_effect_goodfood			Ben nutrito
+status_effect_drunk			Ubriaco
+status_effect_high                      Sballato
+status_effect_withdrawl			Arretra
+status_effect_tazed                     Scioccato
+status_effect_overdosed                 Overdose
+status_effect_surrendered               Arreso
+
+experience_totaltime                    Tempo Totale
+experience_misconduct                   Cattiva Condotta
+experience_lockeddown                   Rinchiuso
+experience_regime                       Programma
+experience_sleep                        Sonno
+experience_work                         Lavoro
+experience_class                        Classe
+experience_freetime                     Tempo Libero
+experience_moodbad                      Malumore
+experience_moodnormal                   Normale
+experience_moodgood                     Buonumore
+experience_nocondition                  Nessuno
+experience_kod                          K.O.
+experience_hurt                         Ferito
+experience_suppressed                   Soppresso
+experience_intoxicated                  Intossicato
+experience_wellfed                      Ben nutrito
+experience_exercise                     Esercizio
+
+need_name_nothing                       Niente
+need_name_bladder                       Vescica
+need_name_bowels                        Intestino
+need_name_sleep                         Dormire
+need_name_food                          Vitto
+need_name_safety                        Sicurezza
+need_name_hygiene                       Igiene
+need_name_exercise                      Esercizio
+need_name_family                        Famiglia
+need_name_recreation                    Distrazioni
+need_name_comfort                       Comfort
+need_name_environment                   Condizioni
+need_name_privacy                       Privacy
+need_name_freedom                       Libertà
+need_name_clothing                      Abbigliamento
+need_name_drugs                         Droghe
+need_name_alcohol                       Alcol
+needs_locked                            (??? Psicologia ???)
+needs_title                             =[Bisogni]=
+
+
+reputation_title                        Reputazione
+reputation_hidden                       (??? Reputazione ???)
+reputation_hidden_short                 ???
+
+reputation_legendary                    --LEGGENDARIO--
+reputation_strong                       Resistente
+reputation_tough                        Forte
+reputation_volatile                     Esplosivo
+reputation_snitch                       Ladro
+reputation_deadly                       Mortale
+reputation_stoical                      Impassibile
+reputation_fearless                     Impavido
+reputation_exlaw                        Ex Poliziotto
+reputation_copkiller                    Ammazza-Agenti
+reputation_quick                        Veloce
+reputation_instigator                   Istigatore
+reputation_fighter                      Picchiatore
+
+reputation_strong_high                  Estremamente Resistente
+reputation_tough_high                   Estremamente Forte
+reputation_volatile_high                Estremamente Esplosivo
+reputation_deadly_high                  Estremamente Mortale
+reputation_exlaw_high                   Ex Guardia Prigione
+reputation_quick_high                   Estremamente Veloce
+reputation_fighter_high                 Picchiatore Esperto
+
+reputation_legendary_high               --LEGGENDARIO--
+reputation_snitch_high                  Ladro
+reputation_stoical_high                 Impassibile
+reputation_fearless_high                Impavido
+reputation_copkiller_high               Ammazza-Agenti
+reputation_instigator_high              Istigatore
+
+reputationtooltip_legendary             Questo detenuto è una leggenda del mondo criminale, ha molte abilità e tecniche che lo rendono davvero pericoloso.
+reputationtooltip_strong                Questo detenuto colpisce più duramente a mani nude durante i combattimenti.
+reputationtooltip_tough                 Questo detenuto può resistere di più nei combattimenti. Può, in alcuni casi, resistere al colpo del Taser.
+reputationtooltip_volatile              Questo detenuto può far iniziare una rivolta senza preavviso e senza motivazione.
+reputationtooltip_stoical               Questo detenuto non diventerà soppresso se messo in Isolamento. Non gliele importa.
+reputationtooltip_snitch                Questo detenuto è conosciuto come informatore, la sua vita potrebbe essere in pericolo. Non lasciarlo solo con altri troppo a lungo.
+reputationtooltip_deadly                Questo detenuto è un maestro di tecniche mortali e a volte può uccidere con un singolo colpo.
+reputationtooltip_exlaw                 Questo detenuto è stato un poliziotto o qualcosa del genere. La sua vita potrebbe essere in pericolo.
+reputationtooltip_copkiller             Questo detenuto ha ucciso un poliziotto. Le tue Guardie potrebbero non essere in grado di controllarsi nel tenerlo sotto controllo.
+reputationtooltip_fearless              Questo detenuto non è intimidito dalle Guardie Armate, ha meno probabilità di arrendersi durante una zuffa.
+reputationtooltip_quick                 Questo detenuto corre incredibilmente veloce.
+reputationtooltip_instigator            Questo detenuto pianta semi di discordia nelle vicinanze. Quando causa qualche problema i detenuti attorno faranno lo stesso.
+reputationtooltip_fighter               Questo detenuto è abile nelle tecniche difensive. Può disarmare o rubare l'arma a chi ha di fronte durante un combattimento.
+
+
+# =============================================================================
+# Nameplate status
+# ============================================================================= 
+
+nameplate_working                       Lavora
+nameplate_stationed                     Stanzionato
+nameplate_patrolling                    Pattuglia
+nameplate_resting                       Riposa
+nameplate_tired                         Stanco
+nameplate_injured                       Ferito
+nameplate_unconscious                   Inconscio
+nameplate_dead                          MORTO
+nameplate_released                      RILASCIATO
+nameplate_researching                   Ricerca
+nameplate_overdose                      OVERDOSE
+
+
+# =============================================================================
+# Objectives, Grants
+# =============================================================================
+
+objective_feedallprisoners              Nutrire tutti i Detenuti
+objective_caption_prisoners             Detenuti
+objective_caption_meals                 Pasti
+objective_readceosletter                Leggi la lettera del CEO
+objective_actionrequired                Rapporto Incidenti
+
+objective_prisonerintake                Detenuti in arrivo
+objective_intake_arrivals               *X detenuti arrivano alle 8am
+objective_intake_closed                 Bloccati nuovi arrivi nella prigione
+objective_intake_closed2                (controlla Rapporto Detenuti)
+objective_intake_specials		Trasferimenti Speciali:
+objective_intake_categories             Categorie: 
+objective_intake_minsec                 Minima
+objective_intake_medsec                 Normale
+objective_intake_maxsec                 Massima
+
+objective_outgoing                      Detenuti che saranno rilasciati
+objective_outgoing_count                *X Detenuti che saranno rilasciati presto
+objective_outgoing_timer                (*X ore)
+
+objective_visitors                      Visitatori (8am - 8pm)
+objective_visitors_waiting              *X famiglie in attesa di visitare
+objective_visitors_onsite               *X visitatori in *Y gruppi
+
+objective_staffexhausted                Personale Esausto
+objective_reststaff_exhausted           *X membri del personale esausti.
+objective_reststaff_resting             (*X stanno riposando)
+objective_reststaff_needstaffroom       Costruisci una Stanza per il personale in modo che possa riposare.
+
+objective_punishment_solitary           *X in Isolamento
+objective_punishment_solitary_queue     *X in attesa di Isolamento
+objective_punishment_solitary_mix       *X in Isolamento (+*Y in attesa)
+objective_punishment_lockdown           *X rinchiusi
+objective_incident_medical              *X richiedono attenzione medica
+objective_incident_dead                 *X corpi morti
+
+objective_payment_receivedfull          Pagamento: *X ricevuto
+objective_payment_receivedpart          Pagamento: *X ricevuto di *Y totale
+
+objective_grant_bootstraps                  Centro di Detenzione di Base
+objective_grant_bootstraps_description      Trasforma un campo vuoto in una prigione funzionale. Questo costratto governativo ti darà i fondi necessari per costruire le strutture minime per accogliere il primo gruppo di detenuti.
+objective_grant_bootstraps_holdingcell      Costruisci una cella di detenzione primaria
+objective_grant_bootstraps_shower           Costruisci una doccia
+objective_grant_bootstraps_yard             Costruisci un cortile
+objective_grant_bootstraps_kitchen          Costruisci una cucina
+objective_grant_bootstraps_canteen          Costruisci una mensa
+objective_grant_bootstraps_guard            Assumi almeno due guardie
+objective_grant_bootstraps_chef             Assumi almeno due cuochi
+
+objective_grant_administration                          Centro Amministrativo
+objective_grant_administration_description              Ogni prigione ha bisogno di un ufficio amministrativo per funzionare al meglio e per far contento il Direttore. Questo contratto paga per un Direttore e un Ragioniere e i loro uffici, inoltre vi darà accesso a tutti i fondi federali.
+objective_grant_administration_offices                  Costruisci due uffici
+objective_grant_administration_warden                   Assumi un Direttore
+objective_grant_administration_accountant_research      Sblocca le Finanze attraverso la Burocrazia
+objective_grant_administration_accountant               Assumi un Ragioniere
+
+objective_grant_firstcellblock                  Cella Blocco A
+objective_grant_firstcellblock_description      Le basi sono poste. È tempo di costruire il primo blocco di celle e trasferire gli attuali detenuti nelle loro celle.
+objective_grant_firstcellblock_cells            Alza la capacità detentiva a 15
+
+objective_grant_health                      Salute e Benessere
+objective_grant_health_description          Il benessere fisico e mentale degli ospiti è molto importante per noi. Questo sussidio è per facilitare la costruzione di un'infermeria e per l'assunzioni di alcuni medici e psicologi per i bisogni dei detenuti.
+objective_grant_health_ward                 Costruisci una infermeria
+objective_grant_health_doctors              Assumi almeno due dottori
+objective_grant_health_psychologist         Assumi uno psicologo (richiedi un ufficio)
+
+objective_grant_bailout                     Piano di salvataggio del governo
+objective_grant_bailout_description         Il governo è scontento del tuo comportamento, però ha deciso di non abbandonare la tua prigione, date le sue dimensioni. Le tasse dei contribuenti verrano usate per salvarti dalla bancarotta. Dovrai comunque rendere il tuo bilancio positivo (entrate maggiori delle spese) e saldare i tuoi debiti con la banca.
+objective_grant_bailout_cashflow            Entrate superiori alle spese
+objective_grant_bailout_debt                Cancellare i debiti
+
+
+objective_grant_maintenance                         Manutenzione Prigione
+objective_grant_maintenance_description             La manutenzione generale della prigione e dei suoi giardini sono importanti sia per la sicurezza del personale che dei detenuti. Assumi il personale necessario a tenere la prigione pulita e ordinata.
+objective_grant_maintenance_research_root           Sblocca Manutenzione tramite Burocrazia
+objective_grant_maintenance_research_cleaning       Sblocca Pulizia tramite Burocrazia
+objective_grant_maintenance_research_groundskeeping Sblocca Tuttofare tramite Burocrazia
+objective_grant_maintenance_foreman                 Assumi un Caposquadra (richiedi un ufficio)
+objective_grant_maintenance_janitor                 Assumi almeno due custodi
+objective_grant_maintenance_gardener                Assumi un giardiniere
+
+objective_grant_visitation                          Diritto di Visita
+objective_grant_visitation_description              Un certo numero di strutture nazionali stanno subendo azioni legali perchè hanno negato il diritto di visita hai loro detenuti. Gli investitori non vogliono uno scandalo e stanno cercando di garantire questo diritto.
+objective_grant_visitation_room                     Costruisci una stanza Colloqui
+objective_grant_visitation_tables                   Aggiungi almeno tre tavoli visitatori
+objective_grant_visitation_commonroom               Costruisci una Socialità
+objective_grant_visitation_pooltable                Aggiungi un tavolo da biliardo
+objective_grant_visitation_tv                       Aggiungi almeno due TV
+objective_grant_visitation_phones                   Aggiungi almeno cinque cabine del telefono
+
+objective_grant_basicsecurity                       Certificazione Procedure di Sicurezza
+objective_grant_basicsecurity_description           Un'errore comune nelle nuove strutture detentive è quello di tralasciare la sicurezza. Assicurati di rientrare negli standard così da non danneggiare il tuo record di evasioni, aumentando il livello di sicurezza.
+objective_grant_basicsecurity_chief                 Assumi Responsabile Sicurezza (richiedi un ufficio)
+objective_grant_basicsecurity_guards                Assumi dieci guardie
+objective_grant_basicsecurity_patrols               Assumi tre pattuglie
+objective_grant_basicsecurity_research              Sblocca Pattuglie tramite Burocrazia
+
+objective_grant_enhancedsecurity                    Classifica Sicurezza Governativa
+objective_grant_enhancedsecurity_description        Il Governo ha determinati requisiti di sicurezza per le carceri di una certa grandezza ed applica multe salate a chi non le rispetta. Assicurati che non ci siano problemi e che non diventi un problema.
+objective_grant_enhancedsecurity_armoury            Costruisci un'Armeria
+objective_grant_enhancedsecurity_kennel             Costruisci un Canile
+objective_grant_enhancedsecurity_guards             Assumi due guardie armate
+objective_grant_enhancedsecurity_dogs               Assumi due addestratori cani
+objective_grant_enhancedsecurity_patroldogs         Assegna due addestratori cani al pattugliamento
+objective_grant_enhancedsecurity_patrolarmed        Assegna due guardie armate al pattugliamento
+
+objective_grant_advancedsecurity                    Implementazione Infrastrutture Massima Sicurezza
+objective_grant_advancedsecurity_description        Mantenere la sicurezza in una prigione con tanti detenuti può essere problematico ma i costi di una violazioni sono di gran lunga superiori alle contromisure. Installa le attrezzature necessarie per tutta la prigione.
+objective_grant_advancedsecurity_guards             Incrementa le dimensioni delle forze di sicurezza
+objective_grant_advancedsecurity_researchcctv       Sblocca CCTV tramite Burocrazia
+objective_grant_advancedsecurity_researchbodyarmour Sblocca Giubbotti antiproiettile tramite Burocrazia
+objective_grant_advancedsecurity_researchtazers     Sblocca Taser tramite Burocrazia
+objective_grant_advancedsecurity_office             Costruisci un ufficio per la sicurezza
+objective_grant_advancedsecurity_cctvmonitor        Costruisci un monitor CCTV
+objective_grant_advancedsecurity_cctvcameras        Piazza le telecamere CCTV in tutta la prigione
+
+objective_grant_prisonerworkforce                   Impiego per i detenuti
+objective_grant_prisonerworkforce_description       Mettere a lavorare i detenuti è un buon modo per farli integrare e tagliare i costi. Completa i corsi necessari e costruisci gli impianti adatti.
+objective_grant_prisonerworkforce_research          Sblocca Manodopera tramite Burocrazia
+objective_grant_prisonerworkforce_cleaning          Costruisci una Stanza Pulizie
+objective_grant_prisonerworkforce_laundry           Costruisci una Lavanderia
+objective_grant_prisonerworkforce_kitchenclass      Avere tre detenuti che abbiano completato il corso di Igiene e Sicurezza in Cucina
+objective_grant_prisonerworkforce_laundryassigned   Assegna tre detenuti al lavoro in Lavanderia
+objective_grant_prisonerworkforce_kitchenassigned   Assegna tre detenuti al lavoro in Cucina
+objective_grant_prisonerworkforce_cleaningassigned  Assegna tre detenuti al lavoro nelle Pulizie
+
+objective_grant_educationreformprogram              Riforma del programma educativo
+objective_grant_educationreformprogram_description  Un certo numero di gruppi di sensibilizzazione stanno guadagnando peso nella loro spinta per far instaurare i programmi di formazione nella prigione. Impostata qualche aula di istruzione per tenerli tranquilli.
+objective_grant_educationreformprogram_research     Sblocca Educazione tramite Burocrazia
+objective_grant_educationreformprogram_classroom    Costruisci un'aula scolastica
+objective_grant_educationreformprogram_desks        Costruisci 20 banchi di scuola
+objective_grant_educationreformprogram_foundationed Avere 15 detenuti che passino il Corso di Educazione Primaria
+objective_grant_educationreformprogram_generaled    Avere 5 detenuti che passino il Corso di Educazione Generale
+
+objective_grant_prisonlabour                        Lavoro nella Prigione
+objective_grant_prisonlabour_description            Gli investitori voglio che aumenti la reddività della prigione e per questo sono disposti ad investire fondi per costruire officine pee trasformare i detenuti in forza lavoro.
+objective_grant_prisonlabour_workshop               Costruisci un'Officina
+objective_grant_prisonlabour_saw                    Costruisci due Officina - Sega
+objective_grant_prisonlabour_press                  Costruisci due Officina - Stampa
+objective_grant_prisonlabour_reform                 Avere 5 detenuti che abbiano passato il corso Sicurezza sul lavoro
+objective_grant_prisonlabour_plates                 Produci 30 targhe
+
+objective_grant_furnituremanufacturing              Programma Apprendistato Carpenteria
+objective_grant_furnituremanufacturing_description  Offrendo un corso di carpenteria ai detenuti potrai insegnare loro un mestiere da fare una volta usciti, produrranno diversi oggetti nell'Officina che saranno venduti per aumentare le entrate.
+objective_grant_furnituremanufacturing_forestry     Costruisci una Selvicolura
+objective_grant_furnituremanufacturing_table        Costruisci 2 tavoli da carpentiere
+objective_grant_furnituremanufacturing_reform       Avere 2 detenuti che abbiano passato il corso di Carpenteria
+objective_grant_furnituremanufacturing_bed          Produci 10 Letti comodi
+
+objective_grant_reducestaffstress                   Iniziative per il Benessere del Personale
+objective_grant_reducestaffstress_description       I sindacati dei lavoratori del carcere hanno ricevuto segnalazioni riguardo la stanchezza e il troppo lavoro per il personale. Evita che situazioni del genere accadano.
+objective_grant_reducestaffstress_staffroom         Costruisci la Stanza del Personale
+objective_grant_reducestaffstress_freeguards        Avere almeno 5 guardie che non abbiano compiti
+objective_grant_reducestaffstress_restedstaff       Assicurarsi che nessuno del personale non sia esausto
+
+objective_grant_shortterminvestment                 Investimento a breve termine
+objective_grant_shortterminvestment_description     Investi i tuoi soldi, frutteranno un buon ritorno nel conto.
+objective_grant_shortterminvestment_wait            Aspetta fondi...
+
+objective_grant_longterminvestment                  Investimento a lungo termine
+objective_grant_longterminvestment_description      Investi i tuoi soldi, frutteranno un buon ritorno nel conto.
+objective_grant_longterminvestment_wait             Aspetta fondi...
+
+objective_grant_cellblock50                         Cella Blocco B
+objective_grant_cellblock50_description             È il tempo di espandere ulteriormente la prigione al di là di una semplice struttura di detenzione. 
+objective_grant_cellblock50_cells                   Alza la capacità detentiva a 50
+
+objective_grant_cellblock100                        Cella Blocco C
+objective_grant_cellblock100_description            Fai un buon uso dei tuoi terreni per espandere ancora la tua prigione.
+objective_grant_cellblock100_cells                  Alza la capacità detentiva a 100
+
+objective_grant_cellblock200                        Cella Blocco D
+objective_grant_cellblock200_description            Più detenuti vogliono dire più fondi governativi. Incrementa la capacità della prigione per guadagnare di più.
+objective_grant_cellblock200_cells                  Alza la capacità detentiva a 200
+
+objective_grant_cellblock500                        Cella Blocco E
+objective_grant_cellblock500_description            Il governo offre forti incentivi finanziari alle prigioni più grandi. È tempo di lavorare per raggiungere quest'obbiettivo.
+objective_grant_cellblock500_cells                  Alza la capacità detentiva a 500
+
+objective_grant_nutritionresearch                   Ricerca Nutrizionale sui Detenuti
+objective_grant_nutritionresearch_description       Un gruppo di ricercatori indipendenti offre fondi per partecipare a una sperimentazione sugli effetti di diversi tipi di alimentazione sui detenuti. 
+objective_grant_nutritionresearch_poor              Servi un unico pasto di qualità e varietà bassa per 2 giorni
+objective_grant_nutritionresearch_good              Servi 3 pasti di qualità e varietà alta per 2 giorni
+
+objective_grant_drugsearch                          Blocca le Droghe
+objective_grant_drugsearch_description              Le preoccupazioni riguardo l'uso di droga nelle grandi prigioni cresce. Prendi dei provvedimenti e mostra di interessarti al problema.
+objective_grant_drugsearch_find                     Trova 10 narcotici illegali
+
+objective_grant_contrabandsupply                    Strumenti di Contrabbando
+objective_grant_contrabandsupply_description        Dopo un crescente numero di incidenti con oggetti di contrabbando nelle altre prigioni, si stanno facendo studi riguardo la distribuzione di oggetti fra i detenuti. Dovrai sequestrare ogni oggetto di contrabbando presente fra i detenuti.
+objective_grant_contrabandsupply_tools              Trova tutti gli attrezzi rubati
+objective_grant_contrabandsupply_weapons            Trova tutte le armi rubate
+
+grant_category_completed                            Completato:
+grant_category_unlocked                             Sbloccato:
+grant_category_cash                                 Contanti:
+grant_category_cashflow                             Flusso di cassa:
+grant_category_debt                                 Debito:
+grant_category_prisoners                            Detenuti:
+
+grant_property_atleast                              Almeno *X
+grant_property_atmost                               Non più di *X
+
+
+# =============================================================================
+# Materials
+# =============================================================================
+                                              
+                                                                                                       
+object_none                              Nessuno
+object_box                               Cassa
+object_stack                             Pila
+object_bed                               Branda
+object_toilet                            Toilet
+object_table                             Tavolo
+object_chair                             Sedia
+object_bench                             Panca
+object_electricchair                     Sedia Elettrica
+object_jaildoor                          Blindo
+object_jaildoorlarge                     Cancello
+object_door                              Porta
+object_solitarydoor                      Porta Isolamento
+object_staffdoor                         Porta Personale
+object_remotedoor                        Porta Remota
+object_roadgate                          Cancellata
+object_jailbars                          Sbarre
+object_window                            Finestra
+object_windowlarge                       Finestra Grande
+object_tree                              Albero
+object_light                             Luce
+object_cooker                            Fornello
+object_fridge                            Frigorifero
+object_bin                               Bidone
+object_sink                              Lavello
+object_servingtable                      Distribuzione
+object_showerhead                        Soffione Doccia
+object_brick                             Mattoni
+object_concrete                          Calcestruzzo
+object_steel                             Acciaio
+object_ingredients                       Ingredienti
+object_ingredientscooking                Ingredienti (in lavorazione)
+object_ingredientscooked                 Ingredienti (cucinati)
+object_ingredientsspoiled                Ingredienti (rovinati)
+object_meal                              Pasto
+object_foodtray                          Vassoio
+object_foodtraydirty                     Vassoio (sporco)
+object_grassturf                         Zolla d'erba
+object_prisoneruniform                   Uniforme Detenuto
+object_dirtyprisoneruniform              Uniforme Detenuto (sporca)
+object_crumpledprisoneruniform           Uniforme Detenuto (sgualcita)
+object_bleach                            Candeggina
+object_sheetmetal                        Lamiera
+object_licenseplateblank                 Targa (vuota)
+object_licenseplate                      Targa
+object_log                               Tronco
+object_wood                              Legno
+object_workman                           Operaio
+object_guard                             Guardia
+object_riotguard                         Guardia Anti-sommossa
+object_armedguard                        Guardia Armata
+object_prisoner                          Detenuto
+object_doctor                            Dottore
+object_paramedic                         Paramedico
+object_cook                              Cuoco
+object_gardener                          Giardiniere
+object_janitor                           Custode
+object_fireman                           Pompiere
+object_avatar                            Avatar
+object_actor                             Attore
+object_visitor                           Visitatore
+object_doghandler                        Addestratore
+object_dog                               Cane da Guardia
+object_dogcrate                          Gabbia per Cani
+object_teacher                           Insegnante
+object_soldier                           Soldato
+object_warden                            Direttore
+object_chief                             Capitano
+object_foreman                           Caposquadra
+object_psychologist                      Psicologo
+object_accountant                        Ragioniere
+object_lawyer                            Avvocato
+object_supplytruck                       Camion Rifornimenti
+object_fireengine                        Autopompa Antincendio
+object_riotvan                           Furgone Anti-sommossa
+object_ambulance                         Ambulanza
+object_hearse                            Carro Funebre
+object_trooptruck                        Camion Truppe
+object_fire                              Fuoco
+object_garbage                           Rifiuti
+object_rubble                            Detriti
+object_bookshelf                         Libreria
+object_officedesk                        Scrivania
+object_filingcabinet                     Armadio Documenti
+object_medicalbed                        Lettino Medico
+object_morgueslab                        Lettino Obitorio
+object_equipment                         Equipaggiamento
+object_prop                              Sostegno
+object_dummy                             Manichino
+object_powerstation                      Centrale Elettrica
+object_capacitor                         Condensatore
+object_electricalcable                   Cavo Elettrico
+object_powerswitch                       Interruttore
+object_logiccircuit                      Circuito Logico
+object_logicbridge                       Ponte Logico
+object_waterpumpstation                  Centrale Idrica
+object_pipevalve                         Valvola
+object_pipelarge                         Tubo Grande
+object_pipesmall                         Tubo Piccolo
+object_drain                             Grata
+object_sprinkler                         Spruzzatore
+object_metaldetector                     Metal Detector
+object_weightsbench                      Panca
+object_phonebooth                        Cabina Telefonica
+object_tv                                TV
+object_largetv                           TV Grande
+object_pooltable                         Tavolo da Biliardo
+object_polaroid                          Polaroid
+object_cctv                              CCTV
+object_cctvmonitor                       Monitor CCTV
+object_laundrymachine                    Lavatrice
+object_laundrybasket                     Portabiancheria
+object_ironingboard                      Asse da Stiro
+object_visitortable                      Tavolo Visitatori
+object_workshopsaw                       Sega Circolare per Legno
+object_workshoppress                     Officina - Stampa
+object_carpentertable                    Tavolo Falegnameria
+object_boombox                           Stereo Portatile
+object_guardlocker                       Armadietto Guardie
+object_sofachairsingle                   Divano
+object_sofachairdouble                   Divano Ampio
+object_drinkmachine                      Distributore Bibite
+object_arcadecabinet                     Cabinato Giochi
+object_radio                             Radio
+object_bookshelflarge                    Libreria
+object_weaponrack                        Armadio Armi
+object_treestump                         Ceppo d'Albero
+object_schooldesk                        Banco di Scuola
+object_superiorbed                       Letto Migiliore
+object_doorcontrolsystem                 Controllo Remoto Porte
+object_servo                             Sistema Remoto Porta
+object_doortimer                         Timer Porta
+object_pressurepad                       Piastra a Pressione
+object_statuslight                       Stato Luce
+object_wire                              Connetti
+object_dismantleobject                   Smonta Oggetti
+object_dismantleutility                  Smonta Servizi
+object_sellobject                        Vendi Oggetti
+object_showallwires                      Mostra Collegamenti
+object_cutscenepolaroid                  Cutscenes Polaroid
+object_cutscenecamera                    Cutscenes Telecamera
+object_cutscenecue                       Cutscenes Cue
+object_foodwaste                         Cibo Sprecato
+
+material_none                            Nessuno
+material_building                        Edificio (mattoni)
+material_buildingconcrete                Edificio (cemento)
+material_demolish                        Demolisci
+material_clearindoorarea                 Sgombra Area Interna
+material_demolishwalls                   Demolisci Muri
+material_removetunnels                   Rimuovi Gallerie
+material_dirt                            Terra
+material_sand                            Sabbia
+material_pavingstone                     Pavimento in Pietra
+material_grass                           Erba
+material_gravel                          Ghiaia
+material_road                            Strada
+material_roadmarkings                    Segnaletica
+material_roadmarkingsleft                Segnaletica (a sinistra)
+material_roadmarkingsright               Segnaletica (a destra)
+material_stone                           Pietra
+material_fence                           Recinto
+material_concretetiles                   Piastrelle in Calcestruzzo
+material_concretefloor                   Pavimento in Cemento
+material_woodenfloor                     Pavimento in Legno
+material_ceramicfloor                    Pavimento in Ceramica
+material_mosaicfloor                     Mosaico Pavimentale
+material_metalfloor                      Pavimento in Metallo
+material_marbletiles                     Piastrelle in Marmo
+material_whitetiles                      Piastrelle Bianche
+material_fancytiles                      Piastrelle Fantasia
+material_concretewall                    Muro di Cemento
+material_brickwall                       Muro di Mattoni
+material_perimeterwall                   Muro Perimetrale
+material_burntfloor                      Pavimento Bruciato
+material_burntwall                       Muro Bruciato
+material_buildingframe                   Costruzione Armatura
+material_roof                            Tetto
+
+room_none                                Nessuno
+room_cell                                Cella
+room_holdingcell                         Nuovi Giunti
+room_solitary                            Isolamento
+room_superiorcell                        Cella Sicura
+room_canteen                             Mensa
+room_kitchen                             Cucina
+room_shower                              Doccia
+room_yard                                Aria
+room_storage                             Magazzino
+room_deliveries                          Consegne
+room_garbage                             Rifiuti
+room_execution                           Esecuzione
+room_workshop                            Officina
+room_security                            Sicurezza
+room_office                              Ufficio
+room_medicalward                         Infermeria
+room_morgue                              Obitorio
+room_commonroom                          Socialità
+room_laundry                             Lavanderia
+room_visitation                          Colloqui
+room_cleaningcupboard                    Ripostiglio
+room_kennel                              Canile
+room_armoury                             Armeria
+room_staffroom                           Stanza Personale
+room_library                             Biblioteca
+room_forestry                            Selvicoltura
+room_classroom                           Aula Scolastica
+room_exports                             Esportazioni
+room_clearrooms                          Stanza Pulizie
+
+equipment_none                           Nessuno
+equipment_fists                          Pugni
+equipment_baton                          Manganello
+equipment_shank                          Pugnale
+equipment_knife                          Coltello
+equipment_fork                           Forchetta
+equipment_gun                            Pistola
+equipment_spoon                          Cucchiaio
+equipment_needle                         Ago
+equipment_booze                          Liquore
+equipment_poison                         Veleno
+equipment_cigs                           Sigarette
+equipment_saw                            Sega
+equipment_jailkeys                       Chiavi prigione
+equipment_mobilephone                    Cellulare
+equipment_lighter                        Accendino
+equipment_screwdriver                    Cacciavite
+equipment_drugs                          Droghe
+equipment_sheers                         Cesoie
+equipment_mop                            Scopa
+equipment_rake                           Rastrello
+equipment_hose                           Tubo
+equipment_spatula                        Spatola
+equipment_woodenspoon                    Cucchiaio di legno
+equipment_cleaningbrush                  Spazzolino
+equipment_hammer                         Martello
+equipment_clipboard                      Tavola
+equipment_drill                          Trapano
+equipment_pianowire                      Corda di Pianoforte
+equipment_scissors                       Forbici
+equipment_medicine                       Medicine
+equipment_shotgun                       Fucile
+equipment_moneybag                      Portamonete
+equipment_tazer                         Taser
+equipment_guarduniform                  Uniforme
+equipment_stabvest                      Giubbotto Antiproiettile
+equipment_rifle                         Carabina
+equipment_dogleash                      Guinzaglio
+equipment_assaultrifle                  Fucile d'assalto
+equipment_woodenpickaxe                 Piccone di Legno
+
+research_requires_short                 Richiede *X
+
+reformprogram_workshopinduction         Corso di Sicurezza in Officina
+reformprogram_foundationeducation       Corso di Educazione Primaria
+reformprogram_generaleducation          Corso di Educazione Generale
+reformprogram_carpentry                 Apprendistato Carpenteria
+reformprogram_kitcheninduction          Igiene e Sicurezza in Cucina
+reformprogram_therapy                   Terapia Comportamentale
+reformprogram_methadone                 Trattamento Farmacologico per Tossicodipendenti
+reformprogram_alcoholicsmeeting         Terapia di Gruppo per Alcolisti
+reformprogram_tazertraining             Certificazione Taser per le Guardie
+
+reformprogram_tazertrained              Certificato : Taser
+
+reformprogram_workshopinduction_text    La sicurezza prima di tutto! I detenuti devono passare questo corso prima di poter lavorare in officina.
+reformprogram_foundationeducation_text  Molti detenuti non hanno nemmeno le basi fondamentali per leggere e scrivere, figuriamoci di matematica. Questo corso darà loro le basi.
+reformprogram_carpentry_text            Un'opera complessa richieste buone abilità pratiche. Detenuti qualificati potranno usare le loro abilità per creare oggetti pregiati di legno.
+reformprogram_kitcheninduction_text     Le norme alimentari sono importanti prima di poter servire centinaia di persone alla volta. I detenuti devono completare questo corso per lavorare in cucina.
+reformprogram_therapy_text              I detenuti spesso hanno difficoltà nel controllare la loro natura violenta. Queste sedute uno a uno tra detenuto e psicologo li aiuterà a disinnescare qualsiasi situazione in cui si trovino, prima che diventi pericoloso.
+reformprogram_methadone_text            Un corso riguardo 5 farmaci sostitutivi, per combattere l'uso di droga. Ogni trattamento aiuta i detenuti con la propria dipendenza, alla fine del corso c'è probabilità di eliminare la dipendeza.
+reformprogram_alcoholicsmeeting_text    Un gruppo di terapia per alcolisti. Aiuta a diminiure la voglia d'alcol. Non toglie mai completamente il bisogno.
+
+reformerror_unscheduled                 NON PROGRAMMATO
+reformerror_noroom                      NESSUNA STANZA ADEGUATA
+reformerror_nofreetimeslot              TUTTE LE STANZE OCCUPATE
+reformerror_staffonly                   TUTTE LE STANZE DEL PERSONALE
+reformerror_noobjects                   NESSUN EQUIPAGGIAMENTO
+reformerror_noregimetime                NO FASCIA ORARIA
+reformerror_noteachers                  NESSUN INSEGNANTE
+
+reform_interested                       *X interessati 
+reform_interested_qualified             *X interessati/qualificati 
+reform_queued                           *X in coda 
+reform_completion                       . *X finito . *Y passato (*P%)
+reform_locked                           CHIUSO
+reform_start                            INIZIA
+reform_costpersession                   *X ogni sessione
+reform_placespersession                 *X posti / *Y sessione
+reform_program_starting                 Inizia
+reform_program_active                   ATTIVO
+reform_program_paused                   In Pausa
+reform_program_stop                     Ferma
+reform_program_ledby                    - Guidato da *P in *Z
+reform_program_length                   - La sessione dura *X ora/e
+reform_program_requirements             - Ogni detenuto richiede *X
+reform_program_requirements_alt         - Ogni detenuto richiede *X o *Y
+reform_program_prereqs                  I detenuti devono aver completato:
+reform_program_research_required        Richiesto: *X
+
+reform_program_intake_none                      No
+reform_program_intake_mandatory                 Obbligatorio
+reform_program_intake_voluntary                 Volontari
+reform_program_intake_referralviolence          Motivo: Violenza
+reform_program_intake_referraldrugaddiction     Motivo: Droga
+reform_program_intake_referralalcoholism        Motivo: Alcolismo
+reform_program_intake_guards                    Solo per le Guardie
+
+reform_program_properties_canhireexternally     Possibile assunzione esterna
+reform_program_properties_studentssit           Posti Studenti
+reform_program_properties_academic              Accademico
+reform_program_properties_practical             Practico
+reform_program_properties_repeatable            Ripetibile
+reform_program_properties_passive               Passivo
+reform_program_properties_staffonly             Solo Personale
+
+reform_program_difficulty_easy          - Facile
+reform_program_difficulty_intermediate  - Intermedio
+reform_program_difficulty_advanced      - Avanzato
+reform_program_difficulty_expert        - Esperto
+
+regime_nothing                          Niente
+regime_sleep                            Dormire
+regime_eat                              Mangiare
+regime_shower                           Lavarsi
+regime_yard                             Aria
+regime_work                             Lavorare
+regime_lockdown                         In Cella
+regime_freetime                         Tempo Libero
+regime_currenttime                      Ora
+regime_unspecified                      Non Specificato
+
+regimetooltip_nothing                   I detenuti sono chiusi nelle loro celle. Non hanno niente da fare se non riflettere sulle scelte che hanno fatto.\n\nStare a lungo rinchiusi può essere una buona punizione anche per i prigionieri più duri.
+regimetooltip_sleep                     I detenuti sono chiusi nelle loro celle e le luci sono spente. Tutti vanno a dormire.\n\nNb eccetto quelli che stanno scavando una galleria.
+regimetooltip_eat                       I detenuti vanno alla mensa più vicina e si siedono per mangiare.\n\nAi detenuti è concesso stare dove vogliono però non possono uscire fino ad un orario prestabilito.
+regimetooltip_shower                    I detenuti si tolgono i vestiti per entrare in doccia. Le doccie giornaliere sono essenziali per l'igiene dei prigionieri - molti non se ne preoccuperebbero se non fossero costretti.
+regimetooltip_yard                      I detenuti possono andare nel cortile, per fare esercizio, prendere il sole e un po' di aria fresca.\n\nI detenuti faranno uso di ogni oggetto vicino al cortile - come le panche pese, le cabine telefoniche, le docce, ecc.
+regimetooltip_work                      I detenuti sono messi a lavoro per la prigione. Ogni posto vacante verrà occupato da un detenuto che si presenterà autonomamente. (Puoi seleziore i posti dalla schermata Sviluppo.)\n\nTutte i programmi di riformazione prendono atto durante l'orario lavorativo. I detenuti senza un lavoro o non assegnati al riformatorio saranno liberi di girare per la pregione nel Tempo Libero.
+regimetooltip_freetime                  I detenuti potranno uscire dalle loro celle e girare per ogni luogo accessibile della prigione. I detenuti adorano questo momento della giornata, socializzano e si prendono cura di loro stessi al meglio.\n\nUn ampio Tempo Libero può ridurre lo stess e la tensione all'interno della prigione, però molti credono che non conti come pena.
+
+regime_clear                            Annulla il regime particolare per questa categoria di prigionieri e usa quello normale
+
+schedule_editor_students                Studenti: *X/*Y
+schedule_editor_error_staffonly         La stanza bersaglio è riservata al personale
+schedule_editor_error_noregimetime      Il programma va oltre un orario valido
+schedule_editor_error_noteachers        Nessun insegnante disponibile
+schedule_editor_error_noobjects         L'oggetto necessario al programma non c'è nella stanza
+schedule_editor_pin                     Appunta questo programma
+schedule_editor_unpin                   Disappunta questo programma
+
+# =============================================================================
+# DoorTimer stuff
+# =============================================================================
+
+doortimer_title                         Controllo Timer Porte
+doortimer_connected_servos              *X Controlli connessi
+doortimer_state_open                    Aperta
+doortimer_state_closed                  Chiusa
+
+doortimer_security_none                 Qualsiasi
+doortimer_security_minsec               Sicurezza Minima
+doortimer_security_normal               Sicurezza Normale
+doortimer_security_maxsec               Sicurezza Massima
+doortimer_security_Protected            Custodia Protettiva
+doortimer_security_SuperMax             SuperMassimo
+
+# =============================================================================
+# Misc
+# =============================================================================
+
+box_contents                             Contiene: *X
+stack_contents                           Contiene: *X x *Y
+
+object_dump                             Rifiuti
+object_todo                             Da Fare: *X
+object_sale_price                       Prezzo di vendita *X
+
+object_door_cyclepermissions            Clicca per cambiare i permessi di accesso
+object_door_cyclepermissions_1          (Aperto, Personale, Chiuso)
+
+object_firemen_hosehelp                 Tieni premuto H per mirare al tubo
+
+object_inactive                         INATTIVO
+object_cctv_moremonitors                Collega questa telecamera ad un monitor CCTV
+object_cctvmonitor_needsguards          Guardie richieste nella stanza della sicurezza
+
+administrator_requiresoffice            Richiede uffici
+office_ownership                        *X Uffici
+
+teacher_teaching                        Insegnamento
+teacher_preparing                       Preparazione
+
+prisoner_assignedto                     Requisiti: *X
+prisoner_attendance                     Partecipazione
+prisoner_concentration                  Concentrazione
+prisoner_understanding                  Comprensione
+prisoner_concentration_0                Terribile
+prisoner_concentration_1                Cattiva
+prisoner_concentration_2                Adeguata
+prisoner_concentration_3                Buona
+prisoner_concentration_4                Eccellente
+prisoner_passchance                     Chance di Successo: *X%
+prisoner_informant                      Informazione Confidenziale
+informant_suspicion                     Sospetto
+informant_title                         INFORMAZIONI CONFIDENZIALI
+informant_none                          Non hai infiltrati
+informant_hint                          (Recluta i prigionieri soppressi - es in Isolamento)
+informant_recruitable                   (Potenziale Informatore)
+informant_target                        Obbiettivo
+
+contraband_owner                        Proprietario: *X
+contraband_ownerunknown                 Proprietario sconosciuto
+contraband_stolenfrom                   Rubato da *X, *Y ore fa
+contraband_smuggledthrough              Contrabbandato attraverso *X, *Y ore fa
+contraband_smuggledin                   Contrabbando in questa prigione, *Y ore fa
+contraband_type                         Tipo: *X
+
+staff_exhausted                         Esausto
+staff_tired                             Stanco
+staff_needsrest                         Il personale preferisce riposarsi nella propria stanza
+
+dog_needskennel                         I cani necessitano di una cuccia per vivere
+
+doctor_requireinfirmary                 Necessita di un'infermeria
+
+entity_carryingequipment                Trasporta *X
+entity_carryingkeys                     Trasporta chiavi prigione
+entity_carryingstaffkeys                Trasporta chiavi del Personale
+entity_wearingarmour                    Indossa *X
+
+reports_schedule                        Riorganizza il calendario
+reports_bankloan                       Banca prestiti
+reports_increaseloan                    Aumenta
+reports_decreaseloan                    Diminuisci
+reports_unlockbankloans                Sbloccato dal ragioniere
+
+drugs_heroin                            Eroina
+drugs_cocaine                           Cocaina
+
+#                                       Eg "La madre di Bob"
+visitor_relationship                    *X' *Y
+visitor_age                             Età : *X
+
+family_wife                             Moglie
+family_exwife                           Ex-Moglie
+family_girlfriend                       Fidanzata
+family_son                              Figlio
+family_daughter                         Figlia
+family_mother                           Madre
+family_father                           Padre
+family_brother                          Fratello
+family_sister                           Sorella
+family_lawyer                           Avvocato
+family_caption                          Famiglia: 
+family_none                             Nessuno
+
+damage_dead                             Morto
+damage_unconscious                      Inconscio
+damage_serious                          Seriamente ferito
+damage_injured                          Ferito
+damage_amount                           *X% Danno
+
+message_autosaving                      auto-salvataggio...
+
+buildtoolbar_entersearchterm            cerca oggetto...
+
+deploymentscheduler_title               PIANIFICAZIONE PATTUGLIA
+supplyanddemand_supplyheader            OFFERTA
+supplyanddemand_demandheader            DOMANDA
+
+
+# =============================================================================
+# Campaign info
+# =============================================================================
+
+campaignchapter_chapternumber			Capitolo *C
+
+
+# =============================================================================
+# Death Row
+# =============================================================================
+
+campaignchapter_deathrow                Braccio della morte
+
+campaignchapter_deathrow_description    Siamo stati incaricati di costruire una stanza delle esecuzioni per la condanna a morte di un detenuto.
+
+campaigncutscene_deathrowmurder         Duplice omicidio
+campaigncutscene_deathrowconfession     Confessione
+
+adviser_deathrow_murder1                Sapevo che potevo trovarvi qui.
+adviser_deathrow_murder2                Edward! Io..
+adviser_deathrow_murder25               Silenzio! Non dire nulla.
+adviser_deathrow_murder3                Cos'hai intenzione di fare!?
+
+adviser_deathrow_church1                Posso aiutarti?
+adviser_deathrow_church15               ...
+adviser_deathrow_church2                Sei alla ricerca del perdono?
+adviser_deathrow_church3                Non lo so. Devo fare qualcosa. Non posso vivere con ciò che ho fatto.
+adviser_deathrow_church4                Devi accettarlo. Qualsiasi cosa tu abbia fatto, non puoi sottrarti alle conseguenze. 
+adviser_deathrow_church5                Non potrai mai essere in pace con te stesso se continui a far finta che non sia successo niente.
+adviser_deathrow_church6                Vorrei tornare indietro. Vorrei perdonarla. Vorrei che lei perdonasse me.
+adviser_deathrow_church7                Non importa cos'hai fatto, Dio ti perdonerà se glielo chiedi.
+adviser_deathrow_church8                Dovrai comunque rispondere per i tuoi crimini di fronte alla legge. Non c'è altra strada.
+
+adviser_deathrowintro_1                 Questa è la parte peggiore del nostro lavoro.
+adviser_deathrowintro_2                 C'è un detenuto colpevole di duplice omicidio ed è stato condannato alla sedia elettrica.
+adviser_deathrowintro_3                 Qui arriviamo noi. Siamo stati incaricati di costruire una stanza delle esecuzioni entro il grande giorno.
+adviser_deathrowintrob_1                Qui è dove voglio che il nuovo edificio venga realizzato.
+adviser_deathrowintrob_2                Il primo passo è costruire le fondamenta, con abbastanza spazio per una cella e una stanza delle esecuzioni.
+adviser_deathrowintrob_3                Allora, iniziamo. Costruisci il nuovo edificio qui.
+
+adviser_deathrow_explain1               Gli operai sono responsabili della costruzione degli edifici.
+adviser_deathrow_explain2               Prenderanno acciaio e cemento dal magazzino e li porteranno nel cantiere.
+adviser_deathrow_explain3               Useranno queste materie prime per costruire armatura ed edifici.
+adviser_deathrow_explain4               Questa è la parte più importante della costruzione, fa comodo sapere da prima come disporre i nuovi edifici.
+adviser_deathrow_explain5               Mentre aspettiamo guardati intorno. Usa WASD o le frecce direzionali per muoverti, la rotella del mouse per aumentare o diminuire lo zoom.
+
+objective_deathrow_building             Costruisci un edificio per ospitare l'esecuzione
+
+adviser_deathrow_buildinside1           Abbiamo anche bisogno di un ingresso per il nuovo edificio.
+adviser_deathrow_buildinside2           Costruisci un cancello nella parte sud dell'edificio.
+
+objective_deathrow_buildouterdoor       Costruisci un cancello
+
+adviser_deathrow_internalwalls1          Dentro l'edificio voglio una cella e una stanza delle esecuzioni.
+adviser_deathrow_internalwalls2          Dividi lo spazio con qualche muro.
+
+objective_deathrow_buildinternalwalls   Costruisci i muri interni
+
+adviser_deathrow_internaldoors1          Adesso aggiungi un cancello nello spazio tra i muri.
+adviser_deathrow_internaldoors2          Puoi ruotare un oggetto prima di posizionarlo premendo il tasto centrale del mouse (o il tasto R).
+
+objective_deathrow_buildinternaldoors   Costruisci le porte interne (tasto centrale del mouse o R per ruotare gli oggetti)
+
+adviser_deathrow_designation1           Non male. Costruisci le stanze entro questo spazio.
+adviser_deathrow_designation2           Posiziona una cella nella parte in basso a sinistra, qui il detenuta aspetterà l'esecuzione.
+adviser_deathrow_designation3           Adesso posiziona la stanza delle esecuzione nello spazio più grande.
+
+objective_deathrow_designatecell        Scegli una cella
+objective_deathrow_designateexecution   Scegli una stanza delle esecuzioni
+
+adviser_deathrow_roomrequirements1      Queste nuove stanze hanno dei requisiti per poter essere usate.  
+adviser_deathrow_roomrequirements2      La cella ha bisogna di una branda e una toilet.
+adviser_deathrow_roomrequirements3      La stanza delle esecuzioni ha bisogno di una sedia elettrica.
+
+objective_deathrow_cellobjects1         Compra una branda
+objective_deathrow_cellobjects2         Compra una toilet
+objective_deathrow_executionobjects     Compra una sedia elettrica
+
+adviser_deathrow_optional1              Questo è l'essenziale, però ci sono altri miglioramenti che potresti fare.
+adviser_deathrow_optional2              Sta a te decidere, non sono oggetti fondamentali. Dipenda da quanto ti importa dei prigionieri e dell'ambiente intorno a loro.
+adviser_deathrow_optional3              La cella può essere migliorata con una finestra e una libreria.
+adviser_deathrow_optional4              E l'edificio avrebbe un aspetto migliore con un pavimento di qualità, ad esempio di legno oppure a mosaico.
+adviser_deathrow_optional5              All'esterno puoi aggiungere qualche luce e una strada di collegamento, se vuoi.
+
+adviser_deathrow_transfer05             Questo è l'uomo in questione, Edward Romsey. Una volta era un insegnante, non ci crederesti.
+adviser_deathrow_transfer06             Non sta a noi decidere se questa è la giusta punizione. La legge vuole così. Stiamo facendo soltato il nostro lavoro.
+adviser_deathrow_transfer1              Quando sei soddisfatto del risultato possiamo iniziare il trasferimento del detenuto.
+adviser_deathrow_transfer2              Clicca su di lui per selezionarlo, quindi fai click destro all'esterno della sua cella per iniziare il trasferimento.
+
+objective_deathrow_path                 (OPZIONALE) Costruisci una strada fino al nuovo edificio
+objective_deathrow_window               (OPZIONALE) Costruisci una finestra nella cella
+objective_deathrow_bookshelf            (OPZIONALE) Costruisci una libreria nella cella
+objective_deathrow_flooring             (OPZIONALE) Rivesti il pavimento con delle piastrelle migliori
+objective_deathrow_outerlights          (OPZIONALE) Posizione qualche luce all'esterno dell'edificio
+objective_deathrow_transferinmate       Quando hai finito inizia il trasferimento del prigioniero. Clicca per selezionarlo, quindi fai click destro nella zona al di fuori della sua cella.
+
+adviser_deathrow_setupmurder1           Non versare una lacrima per quest'uomo.  È un gelido assassino ed è colpevole. 
+adviser_deathrow_setupmurder2           Ha anche confessato, vuoi sentire la versione che ha dato!?
+adviser_deathrow_setupmurder3           È roba interessante. "Erano circa le 23. Le luci erano accese e sapevo che lei era a casa..."
+adviser_deathrow_postmurder1            Come ho appena detto, un gelido assassino.
+adviser_deathrow_postmurder2            È chiaro come il sole che sia colpevole. Si merita ogni Volt che riceverà.
+adviser_deathrow_postmurder3            Tutti gli uomini meritano il perdono, anche lui. Ma credere così tanto in se stessi da poter giudicare gli altri!?
+adviser_deathrow_postmurder4            Trovare la sua donna con un altro non è una buona scusa per quello che ha fatto. 
+adviser_deathrow_postmurder5            Avere una pistola carica con sè sapendo di trovarli insieme.. duplice omidicio premeditato.
+adviser_deathrow_postmurder6            Non fa niente tranne cooperare con le autorità. Lo Stato lo sta facendo diventare un esempio. 
+adviser_deathrow_postmurder7            Se avesse commesso lo stesso crimine 100 miglia a nord resterebbe in carcere a vita. Che giustizia è questa?
+adviser_deathrow_postmurder8            Vorresti vedere uno come questo libero? Dormirei meglio la notte sapendo che se n'è andato all'altro mondo.
+           
+
+adviser_deathrowelectricity_1           Ottimo lavoro.
+adviser_deathrowelectricity_2           Però c'è un problema. La stanza delle esecuzioni non funziona ancora, non ha corrente.
+adviser_deathrowelectricity_3           Dobbiamo connetterla al generatore elettrico.
+
+adviser_deathrowelectricityb_1          Adesso stiamo vedendo la prigione in modalità Servizi, che mostra tutti i collegamenti elettrici e idrici della prigione.
+adviser_deathrowelectricityb_2          Ogni stanza della prigione è connessa alla rete elettrica tramite questi cavi sotterranei.
+adviser_deathrowelectricityb_3          L'elettricità è fornita da questo generatore, che prende la corrente dalla rete elettrica nazionale.
+adviser_deathrowelectricityb_4          Come puoi vedere, questa intera ala delle prigione è senza corrente. Tutte le luci sono spente.
+adviser_deathrowelectricityb_4b         Per sistemare questo problema dobbiamo, per primo, passare in modalità Servizi e capire qual è il problema.
+adviser_deathrowelectricityb_5          I cavi elettrici più vicini sono troppo lontani, i nostri addetti non posso completare il cablaggio in quest'area.
+adviser_deathrowelectricityb_6          Continua la costruzione dei cavi elettrici per coprire tutta l'ala della prigione.
+
+objective_deathrow_cellpower            Connetti la stanza alla rete elettrica
+
+adviser_deathrow_connectchair_1         Le luci non sono le uniche cose che richiedono corrente. Anche la sedia elettrica ne ha bisogno.
+adviser_deathrow_connectchair_2         Usa i cavi per connettere la sedia elettrica alla rete elettrica.
+adviser_deathrow_connectchair_3         La sedia elettrica è uno speciale oggetto che richiede un collegamento elettrico dedicato. Dovrai connetterla direttamente al cavo principale.
+
+objective_deathrow_chairpower           Connetti la sedia elettrica alla rete elettrica
+objective_deathrow_condemnedcellpower   Connetti la cella alla rete elettrica
+
+adviser_deathrow_testchair_1            Abbiamo quasi finito. Dobbiamo eseguire un test prima di usare la sedia elettrica in una vera esecuzione.
+adviser_deathrow_testchair_2            Sto per accenderla, solo per qualche secondo, per vedere se tutto funziona.
+adviser_deathrow_testchair_3            Male, non ha funzionato! Sembra consumare troppa corrente e ha bloccato il generatore della prigione. Siamo tutti al buio.
+adviser_deathrow_testchair_4            Abbiamo bisogno di più corrente se vogliamo far funzionare correttamente la sedia eletrica.
+adviser_deathrow_testchair_5            Per prima cosa dobbiamo riattaccare la luce. Questo è un proceso in due fasi:
+adviser_deathrow_testchair_5b           Primo, riaccendi ogni condensatore dalla modalità servizi. Secondo, riaccendi il generatore elettrico.
+adviser_deathrow_testchair_6            Ora costruisci altri 3 condensatori per avere abbastanza corrente da gestire la sedia elettrica.
+adviser_deathrow_testchair_7            Una volta finito, controlla la sedia un'altra volta accendendola.
+
+objective_deathrow_poweron              Accendi il generatore elettrico. (In modalità Servizi, clicca sul generatore e riavvialo)
+objective_deathrow_expandpower          Espandi il generatore con 3 nuovi condensatori
+objective_deathrow_chairworking         Prova la sedia elettrica ancora una volta (selezionala in modalità Servizi e accendila)
+
+adviser_deathrow_execution_1            Bel lavoro. Con questo abbiamo finito.
+adviser_deathrow_execution_2            Quello che succede adesso non ci riguarda. Abbiamo svolto un lavoro professionale, ed è ciò che conta per i nostri affari.
+adviser_deathrow_execution_3            Cerca di non preoccuparti per ciò che accadrà.
+
+adviser_deathrow_setupexecution1        L'ora è giusta, Edward. 
+adviser_deathrow_setupexecution2        Tu hai fatto una scelta, questo mondo non ti perdonerà mai per questo.
+adviser_deathrow_setupexecution3        Raggiungerai il figlio di Dio, lui ti giudicherà per quello che sei.
+
+adviser_deathrow_setupexecution4        Edward Romsey. Sei stato giudicato colpevole di duplice omicidio in primo grado.
+adviser_deathrow_setupexecution5        La pena è la morte.
+adviser_deathrow_setupexecution6        Hai qualcosa da dire prima che la sentenza venga eseguita?
+adviser_deathrow_setupexecution7        Susan..
+adviser_deathrow_setupexecution8        Mi dispiace.
+
+# =============================================================================
+# Expense popups
+# =============================================================================
+
+finance_cost_prisonsale                 Prezzo della precedente Prigione
+finance_cost_equiptazer                 Equipaggiato: Taser
+finance_cost_equipbodyarmour            Equipaggiato: Armatura
+finance_cost_exports                    Esportazioni
+finance_cost_foundations                Fondamenta
+finance_cost_cashflow                   Entrate
+finance_cost_bankloan                   Prestiti
+finance_cost_bankloan_repayment         Ripaga Debiti
+finance_cost_sharesale                  Condividi vendita
+finance_cost_sharepurchase              Condividi acquisto
+finance_cost_grantadvance               Avanzamento Obbiettivo
+finance_cost_grantcompletion            Pagamento Completamento 
+finance_cost_reformprogram              Riformatorio
+finance_cost_repair                     Ripara
+finance_cost_sellobject                 Vendi oggetto
+finance_cost_landpurchase               Acquista terreno
+
+
+
+# =============================================================================
+# Clock
+# =============================================================================
+
+clock_speed_0                           ||
+clock_speed_1                           >
+clock_speed_2                           >>
+clock_speed_5                           >>>
+clock_speed_half                        ...
+clock_add_hour                          +
