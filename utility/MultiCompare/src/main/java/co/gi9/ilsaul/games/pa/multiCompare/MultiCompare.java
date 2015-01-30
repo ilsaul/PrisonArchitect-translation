@@ -30,6 +30,8 @@ import org.kohsuke.args4j.CmdLineParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.sun.xml.internal.messaging.saaj.util.TeeInputStream;
+
 /**
  * It can work in many way:<ol>
  * <li>Compare multiple transtation files</li>
@@ -158,14 +160,17 @@ public class MultiCompare implements Runnable {
 			while ((s = br.readLine()) != null) {
 				logger.trace("Line {}", iLine);
 				Row e = new Row(s);
+				logger.trace("Row [Key: {} Value: {}]", e.getKey(), e.getValue());
 
 				if (!e.isComment()) {
 					Translate t = new Translate(e.getValue());
 					t.setMaker(name);
+					logger.trace("Translate [Value: {}]", t.getValue());
 
 					List<Translate> list = translateKeys.get(e.getKey());
 					if (list != null) {
 						list.add(t);
+						logger.trace("Translate [Key: {} size: {}]", e.getKey(), list.size());
 					} else {
 						// normally lines removed
 						logger.warn("unknown line: {}", s);
