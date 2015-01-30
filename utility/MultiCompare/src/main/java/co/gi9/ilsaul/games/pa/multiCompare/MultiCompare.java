@@ -231,6 +231,7 @@ public class MultiCompare implements Runnable {
 					if (qtaTraslations.size() == 0) {
 						// It lacks the translation so I add the original line
 						bw.write(String.format("%-" + columnsSize.get(0).intValue() + "s  %-" + columnsSize.get(1).intValue() + "s\r\n", r.getKey(), r.getValue()));
+						oldComment = null;
 
 					} else if (qtaTraslations.size() == 1) {
 
@@ -239,6 +240,7 @@ public class MultiCompare implements Runnable {
 							// I am interested only if the value is changed
 							if (!r.getValue().equals(translations.get(0).getValue())) {
 								bw.write(String.format("%-" + columnsSize.get(0).intValue() + "s  %s -> %s%s", r.getKey(), translations.get(0).getValue(), r.getValue(), CRLF));
+								oldComment = null;
 							}
 						}
 
@@ -261,6 +263,7 @@ public class MultiCompare implements Runnable {
 
 						pLine.append(CRLF);
 						bw.write(pLine.toString());
+						oldComment = null;
 					}
 				}
 
@@ -305,10 +308,10 @@ public class MultiCompare implements Runnable {
 		File srcEng = new File("../../../PrisonArchitect-traslate-3/English/base-language-28.txt");
 
 		List<File> src = new ArrayList<File>();
-		src.add(new File("../../../PrisonArchitect-traslate-3/English/base-language-27.txt"));
-		//src.add(new File("../../Italian/mecripper/data/language/base-language.txt"));
-		//src.add(new File("../../Italian/MetalCross/data/language/base-language.txt"));
-		//src.add(new File("../../Italian/PaulGhost/data/language/base-language.txt"));
+		//src.add(new File("../../../PrisonArchitect-traslate-3/English/base-language-27.txt"));
+		src.add(new File("../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/base-language.txt"));
+		src.add(new File("../../../PrisonArchitect-traslate-3/Italian/mecripper/data/language/base-language.txt"));
+		src.add(new File("../../../PrisonArchitect-traslate-3/Italian/MetalCross/data/language/base-language.txt"));
 
 		File dstFile = new File("../../Italian/new_future.txt");
 
