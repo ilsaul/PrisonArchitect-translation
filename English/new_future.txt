@@ -1,0 +1,43 @@
+﻿# =============================================================================
+# Interface Mode
+# =============================================================================
+
+interfacemode_contraband                             Intelligence -> Contraband
+interfacedeployment_jobs                             Jobs                           
+interfacetopbar_todo                                 Todo -> Todo list
+
+# =============================================================================
+# Build Toolbar
+# =============================================================================
+
+buildtoolbar_popup_clone                             Copy and paste your existing structures. -> Laziness is the mother of all invention.
+buildtoolbar_popup_contraband                        Show the sources of Contraband, and all recently recovered contraband in your prison. Also shows your Confidential Informants and their information. -> Show the sources of Contraband, and all recently recovered contraband in your prison.
+
+# =============================================================================
+# Codex
+# =============================================================================
+
+codex_mod_deactivate                                 Deactivate all mods -> Deactivate Mods
+
+# =============================================================================
+# Research Names + Captions
+# =============================================================================
+
+researchtooltip_ReducePenalty1                       (CURRENTLY SERVES NO PURPOSE)\nReduces the number of Penalty Points awarded by 50.
+researchtooltip_ReducePenalty2                       (CURRENTLY SERVES NO PURPOSE)\nReduces the number of Penalty Points awarded by 50.
+researchtooltip_ReducePenalty3                       (CURRENTLY SERVES NO PURPOSE)\nReduces the number of Penalty Points awarded by 50.
+researchtooltip_ReducePenalty4                       (CURRENTLY SERVES NO PURPOSE)\nReduces the number of Penalty Points awarded by 50.
+researchtooltip_ReducePenalty5                       (CURRENTLY SERVES NO PURPOSE)\n Reduces the number of Penalty Points awarded by 50.
+
+# =============================================================================
+# Needs / Actions / Bio etc
+# =============================================================================
+
+reputation_hidden                                    (Unknown Reputation) -> (Unknown Reputation Traits)
+
+# =============================================================================
+# Misc
+# =============================================================================
+
+deploymentscheduler_add                              Add a new deployment schedule. You can customise this new schedule to deploy specific numbers of guards at specific times of day.
+deploymentscheduler_remove                           Delete this deployment schedule.

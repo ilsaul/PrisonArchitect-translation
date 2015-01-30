@@ -1,0 +1,11 @@
+
+Name                 "Traduzione in Italiano"  
+Author               PaulGhost  
+Description          "Traduzione Alpha 28, il gioco adesso suporta i caratteri speciali.
+Se trovare delle imperfezione nella traduzione o parti non tradotte non esitate a contattarmi!
+Attiva la Mod nella sezione Extra > Mods in gioco."  
+Version              v1.0  
+Date                 19/09/2014  
+IsTranslation        true  
+FileID               F315808585  
+SteamAuthor          A76561198006927065  
