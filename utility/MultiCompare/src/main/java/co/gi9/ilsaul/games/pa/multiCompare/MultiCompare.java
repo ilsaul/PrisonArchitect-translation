@@ -24,6 +24,8 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.stream.Stream;
 
+import javax.management.RuntimeErrorException;
+
 import org.apache.commons.lang.mutable.MutableInt;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
@@ -40,6 +42,7 @@ import com.sun.xml.internal.messaging.saaj.util.TeeInputStream;
  * If you specified 2 file the procedure think you are compare english versions, else compare several translations.<br><br>
  *
  * @author ilSaul <ilsaul2@gmail.com>
+ * @version 1.2 (02-02-2015)
  */
 public class MultiCompare implements Runnable {
 	private static final Logger logger = LoggerFactory.getLogger(MultiCompare.class);
@@ -69,6 +72,8 @@ public class MultiCompare implements Runnable {
 		columnsSize.add(new MutableInt(0)); // italian traslation
 	}
 
+
+
 	@Override
 	public void run() {
 		makeBase(srcEng);
@@ -76,12 +81,42 @@ public class MultiCompare implements Runnable {
 		for (Iterator<File> iter = src.iterator(); iter.hasNext();) {
 			File file = (File) iter.next();
 
-			loadTraslate(file);
+			loadTraslates(file);
 		}
 
 		writeReport(dstFile);
 
 		logger.info("THE END");
+	}
+
+	public void runCompareTraslation() {
+		if (src.size() <= 1) {
+			logger.error("in comparison of the translations you must have multiple arguments");
+			throw new RuntimeErrorException(null, "in comparison of the translations you must have multiple arguments");
+		}
+		run();
+	}
+
+	public void runMakeTranslationFile() {
+		makeBase(srcEng);
+
+		for (Iterator<File> iter = src.iterator(); iter.hasNext();) {
+			File file = (File) iter.next();
+
+			loadSingleTraslate(file);
+		}
+
+		writeGameFile(dstFile);
+
+		logger.info("THE END");
+	}
+
+	public void runCompareEnglish() {
+		if (src.size() > 1) {
+			logger.error("In comparing English versions can only have an argument");
+			throw new RuntimeErrorException(null, "In comparing English versions can only have an argument");
+		}
+		run();
 	}
 
 	private void makeBase(File src) {
@@ -141,7 +176,11 @@ public class MultiCompare implements Runnable {
 		}
 	}
 
-	private void loadTraslate(File file) {
+	/**
+	 * Load several traslates and mantain any of that separate
+	 * @param file
+	 */
+	private void loadTraslates(File file) {
 		String name = file.getParentFile().getParentFile().getParent();
 		name = name.substring(name.lastIndexOf('/') +1);
 
@@ -203,6 +242,77 @@ public class MultiCompare implements Runnable {
 		}
 	}
 
+	/**
+	 * Load traslate. If find a key replace the traslation
+	 * @param file
+	 */
+	private void loadSingleTraslate(File file) {
+		String name = file.getParentFile().getParentFile().getParent();
+		name = name.substring(name.lastIndexOf('/') +1);
+
+		InputStream ins = null; // raw byte-stream
+		Reader r = null; // cooked reader
+		BufferedReader br = null; // buffered for readLine()
+
+		try {
+			String s;
+			logger.info("Load traslation {}", file.getAbsolutePath());
+			ins = new FileInputStream(file);
+			r = new InputStreamReader(ins, "UTF-8"); // leave charset out for default
+			br = new BufferedReader(r);
+
+			int iLine = 0;
+			while ((s = br.readLine()) != null) {
+				logger.trace("Line {}", iLine);
+				Row e = new Row(s);
+				logger.trace("Row [Key: {} Value: {}]", e.getKey(), e.getValue());
+
+				if (!e.isComment()) {
+					Translate t = new Translate(e.getValue());
+					t.setMaker(name);
+					logger.trace("Translate [Value: {}]", t.getValue());
+
+					List<Translate> list = translateKeys.get(e.getKey());
+					if (list != null) {
+						list.clear(); // Only last traslate
+						list.add(t);
+						logger.trace("Replace Translate [Key: {} size: {}]", e.getKey(), list.size());
+					} else {
+						// normally lines removed
+						logger.warn("unknown line: {}", s);
+					}
+				}
+
+				iLine++;
+			}
+		} catch (Exception e) {
+			logger.error("Errore", e); // handle exception
+		} finally {
+			if (br != null) {
+				try {
+					br.close();
+				} catch (Throwable t) { /* ensure close happens */
+				}
+			}
+			if (r != null) {
+				try {
+					r.close();
+				} catch (Throwable t) { /* ensure close happens */
+				}
+			}
+			if (ins != null) {
+				try {
+					ins.close();
+				} catch (Throwable t) { /* ensure close happens */
+				}
+			}
+		}
+	}
+
+	/**
+	 * Print to a file the difference of traslation
+	 * @param dstFile2
+	 */
 	private void writeReport(File dstFile2) {
 		OutputStream out = null;
 		Writer w = null;
@@ -310,6 +420,72 @@ public class MultiCompare implements Runnable {
 		}
 	}
 
+	/**
+	 * Create the file for the mod translate
+	 * @param dstFile2
+	 */
+	private void writeGameFile(File dstFile2) {
+		OutputStream out = null;
+		Writer w = null;
+		BufferedWriter bw = null;
+		try {
+			out = new FileOutputStream(dstFile);
+			w = new OutputStreamWriter(out, "UTF-8");
+			bw = new BufferedWriter(w);
+			int iLine = 0;
+
+			//String oldComment = null;
+
+			// runs all lines of the English version
+			while (iLine < translateSequence.size()) {
+				logger.trace("Line {}", iLine);
+				Row r = translateSequence.get(iLine);
+
+				if (r.isComment()) {
+					logger.trace("Comment {}", r.getLine());
+					bw.write(r.getLine() + CRLF);
+				} else {
+					List<Translate> translations = translateKeys.get(r.getKey());
+
+					// I create the structure to understand how many values there are
+					//Map<String, List<Translate>> qtaTraslations = new HashMap<String, List<Translate>>();
+					for (int i = 0; i < translations.size(); i++) {
+						Translate translate = translations.get(i); // MUST 1 only
+
+						String s = r.getLineWithNewValue(translate.getValue());
+
+						logger.trace("original   {}", r.getLine());
+						logger.trace("Traslation {}", s);
+						bw.write(s + CRLF);
+					}
+				}
+
+				iLine++;
+			}
+		} catch (Exception e) {
+			logger.error("Errore", e); // handle exception
+		} finally {
+			if (bw != null) {
+				try {
+					bw.close();
+				} catch (Throwable t) { /* ensure close happens */
+				}
+			}
+			if (w != null) {
+				try {
+					w.close();
+				} catch (Throwable t) { /* ensure close happens */
+				}
+			}
+			if (out != null) {
+				try {
+					out.close();
+				} catch (Throwable t) { /* ensure close happens */
+				}
+			}
+		}
+	}
+
 	private static Map<String, List<Translate>> sortByValue(Map<String, List<Translate>> map) {
 		Map<String, List<Translate>> result = new LinkedHashMap<>();
 		Stream <Entry<String, List<Translate>>> st = map.entrySet().stream();
@@ -324,18 +500,21 @@ public class MultiCompare implements Runnable {
 		File srcEng = null;
 		File src[] = null;
 
-		if (args.length == 0) {
-			dstFile = new File("../../Italian/new_future.txt");
-
-			// always the latest in English
-			srcEng = new File("../../../PrisonArchitect-traslate-3/English/base-language-28.txt");
-
-			src = new File[3];
-			//src[0] = new File("../../../PrisonArchitect-traslate-3/English/base-language-27.txt");
-			src[0] = new File("../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/base-language.txt");
-			src[1] = new File("../../../PrisonArchitect-traslate-3/Italian/mecripper/data/language/base-language.txt");
-			src[2] = new File("../../../PrisonArchitect-traslate-3/Italian/MetalCross/data/language/base-language.txt");
-		} else {
+// -c -e ../../../PrisonArchitect-traslate-3/English/base-language-29.txt -o ../../temp.txt ../../../PrisonArchitect-traslate-3/English/base-language-28.txt
+// -t
+// -m -e ../../../PrisonArchitect-traslate-3/English/base-language-29.txt -o ../../gamefile.txt ../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/base-language.txt ../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/New_tr.txt
+//			//For test only
+//			dstFile = new File("../../Italian/new_future.txt");
+//
+//			// always the latest in English
+//			srcEng = new File("../../../PrisonArchitect-traslate-3/English/base-language-28.txt");
+//
+//			src = new File[3];
+//			//src[0] = new File("../../../PrisonArchitect-traslate-3/English/base-language-27.txt");
+//			src[0] = new File("../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/base-language.txt");
+//			src[1] = new File("../../../PrisonArchitect-traslate-3/Italian/mecripper/data/language/base-language.txt");
+//			src[2] = new File("../../../PrisonArchitect-traslate-3/Italian/MetalCross/data/language/base-language.txt");
+//		} else {
 			final Parameters params = new Parameters();
 			CmdLineParser parser = new CmdLineParser(params);
 
@@ -346,7 +525,7 @@ public class MultiCompare implements Runnable {
 			}
 
 			// print usage
-			if (params.help || !(params.compEnglish || params.compTranslate)) {
+			if (params.help) {
 				//parser.setUsageWidth(Integer.MAX_VALUE);
 				parser.printUsage(System.err);
 				return;
@@ -355,9 +534,20 @@ public class MultiCompare implements Runnable {
 			dstFile = params.dstFile;
 			srcEng = params.srcEng;
 			src = params.src;
-		}
+//		}
 
 		MultiCompare convert = new MultiCompare(dstFile, srcEng, src);
-		convert.run();
+
+		if (params.compTranslate) {
+			convert.runCompareTraslation();
+		} else if (params.compEnglish) {
+			convert.runCompareEnglish();
+		} else if (params.makeTranslationFile) {
+			convert.runMakeTranslationFile();
+		} else {
+			parser.printUsage(System.err);
+			return;
+		}
+		//convert.run();
 	}
 }

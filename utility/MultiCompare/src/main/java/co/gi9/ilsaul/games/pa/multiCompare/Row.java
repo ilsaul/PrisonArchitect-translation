@@ -7,6 +7,8 @@ public class Row {
 
 	private String key;
 	private String value;
+	private int startValue;
+	private int endValue;
 
 	public Row(String line) {
 		this.line = line;
@@ -63,7 +65,7 @@ public class Row {
 		return word;
 	}
 
-	private static String getAllFromPos(String line, MutableInt pos) {
+	private String getAllFromPos(String line, MutableInt pos) {
 		String word = "";
 		boolean start = false;
 		char ch;
@@ -75,14 +77,25 @@ public class Row {
 				start |=  ((ch != ' ') && (ch != '\t'));
 
 				if (start || (ch != ' ' && ch != '\t')) {
+					if (startValue == 0) startValue = pos.intValue();
 					word += ch;
 				}
 
 				pos.increment();
 			} while (pos.intValue() < line.length());
+
+			endValue = pos.intValue();
 		}
 
 		if (word.length() == 0) word = null;
 		return word;
+	}
+
+	public String getLineWithNewValue(String value) {
+		if (value == null || value.isEmpty()) return line;
+
+		String s = line.substring(0, startValue) + value + line.substring(endValue, line.length());
+
+		return s;
 	}
 }
