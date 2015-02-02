@@ -1,4 +1,5 @@
-﻿# =============================================================================
+﻿
+# =============================================================================
 # Basic dialog strings
 # =============================================================================
 
@@ -13,7 +14,7 @@ dialog_name                             Nome
 dialog_type                             Tipo
 dialog_x                                X
 dialog_y                                Y
-dialog_z				Z
+dialog_z								Z
 dialog_w                                L
 dialog_h                                A
 dialog_exit                             Esci
@@ -48,8 +49,8 @@ dialogeditor_window                     Finestra
 dialogeditor_grid                       Griglia
 dialogeditor_caption                    Didascalia
 dialogeditor_component                  Componenti
-dialogeditor_select			Seleziona
-dialogeditor_create			Crea
+dialogeditor_select						Seleziona
+dialogeditor_create						Crea
 dialogeditor_background                 Sfondo
 dialogeditor_panel                      Pannello
 
@@ -67,7 +68,7 @@ dialogcomponent_selectionlistitem       Oggetti dell'elenco
 dialogcomponent_scrollbar               Barra di scorrimento
 dialogcomponent_progressbar             Barra di progressione
 dialogcomponent_canvas                  Tela
-dialogcomponent_iconbox			Casella icone
+dialogcomponent_iconbox					Casella icone
 
 dialogposition_absolute                 Assoluto
 dialogposition_relative                 Relativo
@@ -92,15 +93,15 @@ profiler_reset                          Azzera
 
 soundchannelviewer_title                Canali Audio
 soundeditor_title                       Editor Audio
-soundinstanceeditor_title		Editor Istanza Suono
+soundinstanceeditor_title				Editor Istanza Suono
 
-soundeditor_positiontitle		Tipo Posizione
-soundeditor_instancetitle		Tipo Istanza
-soundeditor_looptitle			Tipo Loop
-soundeditor_sourcetypetitle		Tipo Suono
-soundeditor_soundnametitle		Nome Suono
+soundeditor_positiontitle		        Tipo Posizione
+soundeditor_instancetitle		        Tipo Istanza
+soundeditor_looptitle			        Tipo Loop
+soundeditor_sourcetypetitle		        Tipo Suono
+soundeditor_soundnametitle		        Nome Suono
 
-soundeditor_volumetitle			Volume
+soundeditor_volumetitle			        Volume
 soundeditor_frequencytitle              Frequenza
 soundeditor_mindistancetitle            Min Distanza
 soundeditor_attacktitle                 Attacco
@@ -124,7 +125,7 @@ soundeditor_newdsp                      Aggiungi DSP
 sounddspeditor_title                    Editor DSP
 samplebankeditor_title                  Editor Banca Campioni
 samplebankeditor_addsample              Aggiungi Suono
-samplebank                             (Banca Campioni)
+samplebank                              (Banca Campioni)
 
 
 # =============================================================================
@@ -133,7 +134,7 @@ samplebank                             (Banca Campioni)
 
 interfacemode_done                            Fatto
 interfacemode_destroy                         Distruggi
-interfacemode_foundations		      Fondamenta
+interfacemode_foundations				      Fondamenta
 interfacemode_construction                    Materiali
 interfacemode_planning                        Progetto
 interfacemode_objects                         Oggetti
@@ -141,18 +142,18 @@ interfacemode_designation                     Stanze
 interfacemode_utilities                       Servizi
 interfacemode_staff                           Personale
 interfacemode_deployment                      Organizza
-interfacemode_logistics                       Logistica
+interfacemode_logistics                       Logistica                      
 interfacemode_prisoners                       Detenuti
 interfacemode_needs                           Esigenze
 interfacemode_threats                         Minacce
 interfacemode_overlays                        Rivestimento
 interfacemode_research                        Burocrazia
 interfacemode_emergencies                     Emergenze
-interfacemode_spawn                           (Produzione)
 interfacemode_clone                           Copia
-interfacemode_properties                      (Proprietà)
-interfacemode_contraband                      Contrabbando
+interfacemode_contraband                      Intelligence
 interfacemode_grading                         Statistiche
+interfacemode_spawn                           (Produzione)
+interfacemode_properties                      (Proprietà)
 interfacemode_cutscenes                       Cutscenes
 
 interfaceoverlay_security                       Sicurezza
@@ -175,7 +176,6 @@ interfacedeployment_armedpatrols                Pattuglia armata
 interfacedeployment_targetting                  Logistica
 interfacedeployment_targettingfood              Logistica Vitto
 interfacedeployment_targettinglaundry           Logistica Lavanderia
-interfacedeployment_jobs                        Lavoro
 interfacedeployment_securearea                  Area Sicura
 interfacedeployment_sharedzone                  Area Condivisa
 interfacedeployment_staffonlyzone               Solo Personale
@@ -190,15 +190,14 @@ interfacedeployment_zonegreen                   Ala verde
 interfacedeployment_zoneblue                    Ala blu
 interfacedeployment_zoneyellow                  Ala gialla
 
+interfacelogistics_jobs                         Lavoro Detenuti              
+interfacelogistics_targettingfood               Distribuzione Vitto             
+interfacelogistics_targettinglaundry            Distribuzione Indumenti        
 
-interfacelogistics_jobs                         Lavoto Detenuti
-interfacelogistics_targettingfood               Distribuzione Vitto
-interfacelogistics_targettinglaundry            Distribuzione Indumenti
-
-interfaceplanning_wall				Muri
-interfaceplanning_object			Oggetti
-interfaceplanning_route				Strade
-interfaceplanning_clear				Niente
+interfaceplanning_wall							Muri
+interfaceplanning_object						Oggetti
+interfaceplanning_route							Strade
+interfaceplanning_clear							Niente
 
 interfacecontraband_source                      Pericoli
 interfacecontraband_day                         -24 Ore
@@ -206,35 +205,33 @@ interfacecontraband_week                        -7 Giorni
 interfacecontraband_alltime                     In assoluto
 interfacecontraband_informants                  Informatori
 
-
 interfaceclone_copy                             Copia
 interfaceclone_paste                            Incolla
 
+interfacetopbar_todo							Incarichi
+interfacetopbar_balance							Bilancio *B
+interfacetopbar_budget							Contanti *C
+interfacetopbar_income							Entrate *I
+interfacetopbar_expenses						Uscite *C
+interfacetopbar_day								Al Giorno *D
 
-interfacetopbar_todo				Incarichi
-interfacetopbar_balance				Bilancio *B
-interfacetopbar_budget				Contanti *C
-interfacetopbar_income				Entrate *I
-interfacetopbar_expenses			Uscite *C
-interfacetopbar_day				Al Giorno *D
-
-interfacetopbar_title_balance			Saldo
-interfacetopbar_title_budget			Entrate
-interfacetopbar_title_cctv			CCTV
-interfacetopbar_title_day 			Giornaliero
-interfacetopbar_title_prisoners			Detenuti
-interfacetopbar_title_guards			Guardie
+interfacetopbar_title_balance					Saldo
+interfacetopbar_title_budget					Entrate
+interfacetopbar_title_cctv						CCTV
+interfacetopbar_title_day						Giornaliero
+interfacetopbar_title_prisoners					Detenuti
+interfacetopbar_title_guards					Guardie
 interfacetopbar_title_tension                   Minaccia
 
-interfacetopbar_tooltip_balance			Soldi in banca.\n\nPuoi raccogliere fondi tramite sovvenzioni.
-interfacetopbar_tooltip_budget			Denaro che ricevi ogni giorno, basato su entrate e uscite.\n\nAccedi al dettaglio finanziario.
-interfacetopbar_tooltip_cctv			Telecamere CCTV e monitor che possiedi.
-interfacetopbar_tooltip_day			Tempo passato da quando sei stato assunto per gestire la prigione.
-interfacetopbar_tooltip_prisoners		Numero di detenuti che hai attualmente e quanti ne puoi ospitare.
-interfacetopbar_tooltip_guards			Quante guardie ci sono al lavoro.
+interfacetopbar_tooltip_balance					Soldi in banca.\n\nPuoi raccogliere fondi tramite sovvenzioni.
+interfacetopbar_tooltip_budget					Denaro che ricevi ogni giorno, basato su entrate e uscite.\n\nAccedi al dettaglio finanziario.
+interfacetopbar_tooltip_cctv					Telecamere CCTV e monitor che possiedi.
+interfacetopbar_tooltip_day						Tempo passato da quando sei stato assunto per gestire la prigione.
+interfacetopbar_tooltip_prisoners				Numero di detenuti che hai attualmente e quanti ne puoi ospitare.
+interfacetopbar_tooltip_guards					Quante guardie ci sono al lavoro.
 interfacetopbar_tooltip_tension                 Livello di pericolo nella prigione, secondo il capo della sicurezza.
 
-interfacetopbar_tooltip_recenttransactions      operazioni recenti
+interfacetopbar_tooltip_recenttransactions      Operazioni recenti        
 
 interfacetopbar_tooltip_gametime                Tempo totale giocato : *X ore, *Y minuti, *Z secondi
 
@@ -252,11 +249,11 @@ interfacetopbar_tooltip_dogs                    + *X Addestratori cani
 
 interfacetopbar_unlimitedfunds                  FONDI ILLIMITATI
 
-interfacetopbar_budget_moneyin			Entrate: $*M /giorno
-interfacetopbar_budget_moneyout			Uscite: $*M /giorno
+interfacetopbar_budget_moneyin					Entrate: $*M /giorno
+interfacetopbar_budget_moneyout					Uscite: $*M /giorno
 interfacetopbar_budget_cantgonegative           Non puoi avere un conto negativo (spendi più di quanto incassi) prima di aver assunto un commercialista.
 
-interfacetopbar_prisoners_types			Attualmente ci sono *X detenuti:
+interfacetopbar_prisoners_types					Attualmente ci sono *X detenuti:
 interfacetopbar_prisoners_capacity              Capacità massima: *X
 interfacetopbar_prisonercells_shared            Capacità Nuovi Giunti: *X
 interfacetopbar_prisonercells_unlocked          Capacità sbloccata: *X
@@ -267,8 +264,8 @@ interfacetopbar_prisonercells_protectedonly     Capacità detenuti protetti: *X
 interfacetopbar_prisonercells_supermaxonly      Capacità SuperMassima: *X
 interfacetopbar_prisonercells_staffonly         Non disponibile: *X
 
-interfacetopbar_cctv_current			Attualmente ci sono *C videocamere
-interfacetopbar_cctv_cap			Spazio per *C videocamere
+interfacetopbar_cctv_current					Attualmente ci sono *C videocamere
+interfacetopbar_cctv_cap						Spazio per *C videocamere
 
 interfacetopbar_tension_currentlevel            Il livello di minaccia è *X
 interfacetopbar_tension_increasing              ed è in aumento
@@ -286,12 +283,12 @@ interfacetopbar_tension_recentdeaths            + *X persone uccise di recente
 interfacetopbar_tension_recentsearches          + *X detenuti sono stati perquisiti di recente senza motivo
 interfacetopbar_tension_angrygangmembers        + *X MEMBRI DELLA BANDA SONO FURIOSI (il capo sta subendo una punizione)
 interfacetopbar_tension_recentpunishments       = (DETERRENTE) *X punizioni eseguite di recente
-
+interfacetopbar_tension_recentcalmed            - *X sono stati placati recentemente
 
 interfacecontrol_mainmenu                       Menù (Esc)
 interfacecontrol_mainmenu_tooltip               Apri il Menù (Nuovo/Carica/Salva/Esci)
 interfacecontrol_todo                           Cose da Fare
-interfacecontrol_todo_tooltip                   Apri le Cose da Fare
+interfacecontrol_todo_tooltip                   Apri le  Cose da Fare
 interfacecontrol_research                       Burocrazia
 interfacecontrol_research_tooltip               Apri la schermata burocrazia dove puoi far sbloccare ai tuoi amministratori nuovi oggetti, tipi di personale e strutture.
 interfacecontrol_grading                        Classificazione Prigione
@@ -365,22 +362,22 @@ buildtoolbar_lockdown                   Blocca porte
 buildtoolbar_shakedown                  Perquisizione
 buildtoolbar_weaponsfree                Armi Letali
 
-buildtoolbar_tooltip_reports		Apri la finestra dei rapporti per vedere le informazioi su detenuti, personale, reddito, prestiti e altro.
-buildtoolbar_tooltip_bangup		Manda tutti i (volenterosi) detenuti alle loro celle. Tenere i detenuti richiusi per troppo tempo li farà arrabbiare.
-buildtoolbar_tooltip_lockdown		Blocca immediatamente tutte le porte della prigione.
+buildtoolbar_tooltip_reports			Apri la finestra dei rapporti per vedere le informazioi su detenuti, personale, reddito, prestiti e altro.
+buildtoolbar_tooltip_bangup				Manda tutti i (volenterosi) detenuti alle loro celle. Tenere i detenuti richiusi per troppo tempo li farà arrabbiare.
+buildtoolbar_tooltip_lockdown			Blocca immediatamente tutte le porte della prigione.
 buildtoolbar_tooltip_shakedown          Ordina un'immediata ricerca in tutta la prigione. Questo richiederà del tempo e infastidirà i detenuti.
 buildtoolbar_tooltip_weaponsfree        Autorizza le guardie armate ad utilizzare armi letali
 
-buildtoolbar_cost					Costo: $*C
+buildtoolbar_cost						Costo: $*C
 buildtoolbar_cost_sqrft					Costo: $*C /mq
-buildtoolbar_wages					Salario : $*W al giorno
+buildtoolbar_wages						Salario : $*W al giorno
 buildtoolbar_outdoor					Solo esterno
-buildtoolbar_indoor					Solo interno
+buildtoolbar_indoor						Solo interno
 buildtoolbar_walk_speed					Passo: *S
 buildtoolbar_walk_speed_slow			Lento
 buildtoolbar_walk_speed_norm			Normale
 buildtoolbar_walk_speed_fast			Veloce
-buildtoolbar_locked				BLOCCATO (Richiede *B)
+buildtoolbar_locked						BLOCCATO (Richiede *B)
 buildtoolbar_room						Stanza
 
 buildtoolbar_electrical                 - Elettrico
@@ -391,28 +388,28 @@ buildtoolbar_modcontent                 - Contenuto Mod
 
 buildtoolbar_popup_foundations			Costruisci/Demolisci gli edifici per modellare la prigione.
 buildtoolbar_popup_construction			Differenti tipi di pavimenti e muri.
-buildtoolbar_popup_planning			Pianifica la tua prigione senza la paura che i lavorati non facciano nulla.
+buildtoolbar_popup_planning				Pianifica la tua prigione senza la paura che i lavorati non facciano nulla.
 buildtoolbar_popup_designation			Disegna le aree della tua prigione con funzioni specifiche.
-buildtoolbar_popup_objects			Metti oggetti utili nella tua prigione.
-buildtoolbar_popup_overlays			Identifica visivamente i punti deboli della tua prigione.
+buildtoolbar_popup_objects				Metti oggetti utili nella tua prigione.
+buildtoolbar_popup_overlays				Identifica visivamente i punti deboli della tua prigione.
 buildtoolbar_popup_utilities			Impianti idraulici ed elettrici.
-buildtoolbar_popup_staff			Assumi le persone necessarie per mandare avanti la tua prigione.
+buildtoolbar_popup_staff				Assumi le persone necessarie per mandare avanti la tua prigione.
 buildtoolbar_popup_deployment			Assegna il personale in un'area della prigione.
-buildtoolbar_popup_logistics                    Assagna i detenuti in varie mansioni nella prigione. Controlla manualmente lavoranti e cucinieri.
-buildtoolbar_popup_research			Sblocca nuove possibilità per la tua prigione.
+buildtoolbar_popup_logistics            Assagna i detenuti in varie mansioni nella prigione. Controlla manualmente lavoranti e cucinieri.
+buildtoolbar_popup_research				Sblocca nuove possibilità per la tua prigione.
 buildtoolbar_popup_emergencies			Chiama i servizi di emergenza se le cose prendono una brutta piega.
-buildtoolbar_popup_spawn			Genera? Cosa fa questo?
-buildtoolbar_popup_clone			La pigrizia è la madre di tutte le invenzioni.
+buildtoolbar_popup_spawn				Genera? Cosa fa questo?
+buildtoolbar_popup_clone				Copia e incolla le tue strutture.
 buildtoolbar_popup_properties			Guarda altra roba.
-buildtoolbar_popup_contraband                   Scopri le fonti di contrabbando e tutti gli oggetti rinvenuti nella prigione
-buildtoolbar_popup_grading                      Esamina le statistiche della tua prigione - punizioni, riforme, sicurezza, salute. Mostra anche la recidività.
+buildtoolbar_popup_contraband           Scopri le fonti di contrabbando e tutti gli oggetti rinvenuti nella prigione. Mostra anche te informazione dei tuoi informatori.
+buildtoolbar_popup_grading              Esamina le statistiche della tua prigione - punizioni, riforme, sicurezza, salute. Mostra anche la recidività.
 buildtoolbar_popup_room_cell			Dove vivono i detenuti.
 buildtoolbar_popup_room_holdingcell		Dove vengono messi i nuovi arrivi in attesa di una cella libera.
 buildtoolbar_popup_room_solitary		Stanza di isolamento per il peggio del peggio.
 buildtoolbar_popup_room_canteen			Dove i vostri detenuti prenderanno il loro tè del pomeriggio.
 buildtoolbar_popup_room_kitchen			Area per i cuochi, per preparare il cibo per i vostri detenuti.
 buildtoolbar_popup_room_shower			Per tenere i vostri detenuti puliti e senza pidocchi.
-buildtoolbar_popup_room_yard 			Lasciate che i vostri detenuti vedano il sole per alcune ore al giorno sotto l'occhio vigile dei cecchini.
+buildtoolbar_popup_room_yard			Lasciate che i vostri detenuti vedano il sole per alcune ore al giorno sotto l'occhio vigile dei cecchini.
 buildtoolbar_popup_room_storage			Area designata a contenere ogni materiale di cui ha bisogno il personale.
 buildtoolbar_popup_room_deliveries		Area dove vengono lascati merci, materiali e detenuti.
 buildtoolbar_popup_room_garbage			Dove i rifiuti vengono raccolti.
@@ -423,47 +420,53 @@ buildtoolbar_popup_room_office			Area lavorativa per il personale amministrativo
 buildtoolbar_popup_room_medicalward		Area lavorativa per il personale medico.
 buildtoolbar_popup_room_morgue			Dove mandare i detenuti morti (e anche il personale).
 buildtoolbar_popup_room_commonroom		Consenti ai detenuti di avere un po' di tempo libero, per rilassarsi.
-buildtoolbar_popup_room_kennel                  Dove vivono i cani.
+buildtoolbar_popup_room_kennel          Dove vivono i cani.
+buildtoolbar_popup_room_chapel          Che succede quando una commissione burocratica si riunisce per trovare una soluzione alle necessità religiose dei detenuti? Una "Stanza di preghiera multi confessionale", ecco cosa! La chiamiamo comunemente Cappella.
+buildtoolbar_popup_room_paroleroom      I detenuti sono qualificati per la Liberazione condizionale dopo aver scontato il 50% e 75% della loro pena. Il loro destino verrà deciso in questa stanza con il Direttore e il Capitano.\n\nNB Sicurezza Extra consigliata. I Detenuti potrebbero scaldarsi se la loro libertà vigilata viene rifiutata.
+buildtoolbar_popup_room_library         La tua Prigione riceve scatole di libri usati da tutta la Nazione. I detenuti dovranno ordinarli nella libreria.
 
-buildtoolbar_popup_obj_bed 			Non troppo duro, non troppo soffice, il giusto. Bhe', in realtà è davvero scomodo e piccolo.
+buildtoolbar_popup_obj_bed				Non troppo duro, non troppo soffice, il giusto. Bhe', in realtà è davvero scomodo e piccolo.
 buildtoolbar_popup_obj_toilet			Un diritto umano fondamentale.
 buildtoolbar_popup_obj_table			Si abbina molto bene con una sedia.
 buildtoolbar_popup_obj_chair			Si abbina molto bene con un tavolo.
-buildtoolbar_popup_obj_bench                    Panca per sedersi.
-buildtoolbar_popup_obj_electricchair	        Offre 2000V di giustizia.
+buildtoolbar_popup_obj_bench			Panca per sedersi.
+buildtoolbar_popup_obj_electricchair	Offre 2000V di giustizia.
 buildtoolbar_popup_obj_jaildoor			Tiene i detenuti dove dovrebbero stare.
-buildtoolbar_popup_obj_jaildoorlarge	        Tiene molti detenuti dove dovrebbero stare.
-buildtoolbar_popup_obj_door			Una porta semplice.
+buildtoolbar_popup_obj_jaildoorlarge	Tiene molti detenuti dove dovrebbero stare.
+buildtoolbar_popup_obj_door				Una porta semplice.
 buildtoolbar_popup_obj_solitarydoor		Una porta rinforzata per frenare ogni idea di fuga.
 buildtoolbar_popup_obj_staffdoor		Porta chiusa che può essere aperta dal personale, non solo dalle guardie.
 buildtoolbar_popup_obj_window			Per intravedere il sole.
 buildtoolbar_popup_obj_windowlarge		Per intravedere ancor più sole.
-buildtoolbar_popup_obj_tree			L'adozione di misure contro il riscaldamento globale è una nostra responsabilità.
-buildtoolbar_popup_obj_light 			Assicura ai detenuti di poter vedere in ogni momento della giornata.
+buildtoolbar_popup_obj_tree				L'adozione di misure contro il riscaldamento globale è una nostra responsabilità.
+buildtoolbar_popup_obj_light			Assicura ai detenuti di poter vedere in ogni momento della giornata.
 buildtoolbar_popup_obj_cooker			Fai star bene i tuoi detenuti dandogli del buon cibo.
 buildtoolbar_popup_obj_fridge			Conserva le tue riserve di cibo e non le fa marcire.
-buildtoolbar_popup_obj_bin			L'ordine è importante quando si tratta di contrabbando.
-buildtoolbar_popup_obj_sink			Tutti i dipendenti sono tenuti a lavarsi le mani.
+buildtoolbar_popup_obj_bin				L'ordine è importante quando si tratta di contrabbando.
+buildtoolbar_popup_obj_sink				Tutti i dipendenti sono tenuti a lavarsi le mani.
 buildtoolbar_popup_obj_servingtable		Tavolo dei pasti per i vostri detenuti.
 buildtoolbar_popup_obj_showerhead		Soffione doccia. Per lavarsi.
 buildtoolbar_popup_obj_bookshelf		Scaffale pieno di libri.
 buildtoolbar_popup_obj_officedesk		Il personale deve scrivere molto, dagli una scrivania lucida per poter lavorare.
-buildtoolbar_popup_obj_filingcabinet	        Il personale ha bisogno di tenere in ordine.
+buildtoolbar_popup_obj_filingcabinet	Il personale ha bisogno di tenere in ordine.
 buildtoolbar_popup_obj_medicalbed		Un posto per conservare i narcotici finchè i detenuti non li rubano.
 buildtoolbar_popup_obj_morgueslab		Assicurati che i morti abbiano un posto per riposare prima di essere spostati.
 buildtoolbar_popup_obj_drain			Rimuove l'acqua dal pavimento.
 buildtoolbar_popup_obj_sprinkler		Spruzza acqua automaticamente in caso di incendio.
-buildtoolbar_popup_obj_metaldetector	        Trova materiale di contrabbando. Ha bisogno di una guardia vicino.
+buildtoolbar_popup_obj_metaldetector	Trova materiale di contrabbando. Ha bisogno di una guardia vicino.
 buildtoolbar_popup_obj_weightsbench		Permette ai vostri detenuti di fare esercizio fisico, questo li rende felici.
 buildtoolbar_popup_obj_phonebooth		I detenuti vorranno parlare con le loro famiglie, questa cabina del telefono gli sarà d'aiuto.
-buildtoolbar_popup_obj_tv			Pacifica i detenuti con un po' di sana TV.
+buildtoolbar_popup_obj_tv				Pacifica i detenuti con un po' di sana TV.
 buildtoolbar_popup_obj_largetv			Consente ai detenuti di condividere l'esperienza di bruciarsi il cervello con una bella TV.
-buildtoolbar_popup_obj_pooltable 		Cancella la monotonia della vita carceraria con una partita a biliardo. 
-buildtoolbar_popup_obj_dismantleobject	        Rimuovi oggetti dalla prigione.
+buildtoolbar_popup_obj_pooltable		Cancella la monotonia della vita carceraria con una partita a biliardo. 
+buildtoolbar_popup_obj_dismantleobject	Rimuovi oggetti dalla prigione.
+buildtoolbar_popup_obj_altar            Manda le tue preghiere alla divinità che ritieni più opportuna.
+buildtoolbar_popup_obj_pews             Panche per i fedeli. Fatte di duro legno, la maggior parte senza imbottitura.
+buildtoolbar_popup_obj_prayermat        Proteggi i tuoi detenuti dal pavimento sporco mentre pregano.
 
 buildtoolbar_popup_staff_workman		Costruirà la prigione in base ai vostri piani.
 buildtoolbar_popup_staff_guard			Per mantenere i detenuti sotto controllo e fuori dai guai.
-buildtoolbar_popup_staff_armedguard             Armati con fucile, i detenuti ci penseranno due volte prima di attaccarli.\n\nNOTA: Ogni guardia armata ha bisogno di un'armadietto nell'armeria.
+buildtoolbar_popup_staff_armedguard     Armati con fucile, i detenuti ci penseranno due volte prima di attaccarli.\n\nNOTA: Ogni guardia armata ha bisogno di un'armadietto nell'armeria.
 buildtoolbar_popup_staff_doctor			Guardisce tutte le persone ferite, siano guardie o detenuti.
 buildtoolbar_popup_staff_cook			Alimenta i detenuti con i pasti che prepara.
 buildtoolbar_popup_staff_gardener		Mantiene le piante della prigione belle e ordinate.
@@ -471,34 +474,30 @@ buildtoolbar_popup_staff_janitor		Mantiene l'interno della prigione bello e puli
 buildtoolbar_popup_staff_warden			Il grande sorvegliante della prigione. Richiesto prima di poter assumere personale avanzato.
 buildtoolbar_popup_staff_chief			Personale avanzato che da accesso alla distribuzione di cibo, alle telecamere CCTV, alle guardie anti-sommossa e alla ricerca avanzata.
 buildtoolbar_popup_staff_foreman		Personale avanzato che da accesso ai custodi e ai giardinieri.
-buildtoolbar_popup_staff_psychologist	        Personale avanzato che consente di ottenere una panoramica delle menti dei vostri detenuti. 
+buildtoolbar_popup_staff_psychologist	Personale avanzato che consente di ottenere una panoramica delle menti dei vostri detenuti. 
 buildtoolbar_popup_staff_accountant		Personale avanzato che dà accesso alle sovvenzioni.
 buildtoolbar_popup_staff_lawyer			Personale avanzato che consente di rimuovere punti di penalizzazione.
 
 buildtoolbar_popup_uts_powerstation		Genera elettricità da usare nella prigione.
 buildtoolbar_popup_uts_capacitor		Espandi la centrale elettrica con un condensatore per avere più potenza. Costruire accanto alla centrale.
-buildtoolbar_popup_uts_electricalcable	        Distribuisce l'elettricità nella prigione.
+buildtoolbar_popup_uts_electricalcable	Distribuisce l'elettricità nella prigione.
 buildtoolbar_popup_uts_powerswitch		Interruttore elettrico per dare o togliere l'elettricità.
-buildtoolbar_popup_uts_waterpumpstation	        Fornisce una sorgente d'acqua alla vostra prigione.
+buildtoolbar_popup_uts_waterpumpstation	Fornisce una sorgente d'acqua alla vostra prigione.
 buildtoolbar_popup_uts_pipevalve		Valvola per dare o togliere l'acqua.
-buildtoolbar_popup_uts_pipelarge 		Distribuisce una grande quantità di acqua nella prigione. Probabilmente abbastanza grande per qualcuno da strisciarci dentro verso la libertà, attraverso metri di merda.
+buildtoolbar_popup_uts_pipelarge		Distribuisce una grande quantità di acqua nella prigione. Probabilmente abbastanza grande per qualcuno da strisciarci dentro verso la libertà, attraverso metri di merda.
 buildtoolbar_popup_uts_pipesmall		Distribuisce acqua nella prigione.
-buildtoolbar_popup_uts_cctv			Tiene un'occhio sulla prigione senza che le guardie siano ovunque. Ha bisogno di essere collegato al monitor CCTV.
-
+buildtoolbar_popup_uts_cctv				Tiene un'occhio sulla prigione senza che le guardie siano ovunque. Ha bisogno di essere collegato al monitor CCTV.
 buildtoolbar_popup_uts_cctvmonitor		Da costruire nella stanza della sicurezza, deve essere gestita da una guardia. Controlla le telecamere a distanza.\n\nUsa lo strumento di collegamento per unire questo monitor alla telecamente CCTV.\n\nNote: Un massimo di 8 telecamere posso essere controllare contemporaneamente. Se connetti più di 8 telecamere il monitor cambiera inquadratura ciclicamente, offrendo una copertura parziale.
-
-buildtoolbar_popup_uts_DoorControlSystem        Da costruire nella stanza della sicurezza, deve essere gestito da una guardia. Può essere usato per aprire le porte a distanza.\n\nUsa lo strumento di collegamento per unire questo sistema al controllo porte. Il controllo porte va costruito sulle porte che desideri controllare a distanza.\n\nNote: Puoi connetere quanti controlli vuoi, la guardia potrà comunque aprire un massimo di due porte al secondo.
-
-buildtoolbar_popup_uts_Servo                    Posiziona un controllo sulla porta che vuoi aprire a distanza. Controllare che il sistema sia posizionato correttamente sulla porta.\n\nUna volta installato la porta si aprira quando il controllo verrà azionato, normalmente tramire un controllo porte o un sistema a tempo.\n\nI controlli posso essere uniti insieme, così alla prima attivazione seguiranno tutte quelle collegate.
-
-buildtoolbar_popup_uts_LogicCircuit            Struttura avanzata.\n\nUn semplice circuito che esegue operazioni.\n\nOperazioni possibili: And / Or / Not / Nand / Nor / Xor\n\nSeleziona il ciclo tramite le operazioni logiche.
-buildtoolbar_popup_uts_LogicBridge             Struttura avanzata.\n\nRiceve un segnale in entrata e lo esegue su un cavo elettrico sulla stessa casella. Questo cavo elettrico porterà il segnale su ogni altro circuito logico collegato.\n\nPuò essere usato per trasmettere un comune segnale in tutta la prigione, utile per aggigare un altro segnale.
-buildtoolbar_popup_uts_DoorTimer               Può essere usato per aprire le porte in determinati orari.\n\nUsa lo strumento di collegamento per collegare questo timer ai meccanismi delle porte.
-buildtoolbar_popup_uts_Wire                    Connette i sistemi a distanza insieme.
-buildtoolbar_popup_uts_remotedoor              Una grossa porta che non può essere aperta se non in remoto. Usala per evitare una fuga per mezzo delle chiavi delle celle.
-buildtoolbar_popup_uts_dismantleutility        Rimuovi oggetti di servizio dalla prigione.
-buildtoolbar_popup_uts_pressurepad             Manda un segnale agli oggetti connessi quando qualcosa li attiva.
-buildtoolbar_popup_uts_statuslight             Si accende di verde o rosso in base al segnale che riceve. 
+buildtoolbar_popup_uts_DoorControlSystem  Da costruire nella stanza della sicurezza, deve essere gestito da una guardia. Può essere usato per aprire le porte a distanza.\n\nUsa lo strumento di collegamento per unire questo sistema al controllo porte. Il controllo porte va costruito sulle porte che desideri controllare a distanza.\n\nNote: Puoi connetere quanti controlli vuoi, la guardia potrà comunque aprire un massimo di due porte al secondo.
+buildtoolbar_popup_uts_Servo            Posiziona un controllo sulla porta che vuoi aprire a distanza. Controllare che il sistema sia posizionato correttamente sulla porta.\n\nUna volta installato la porta si aprira quando il controllo verrà azionato, normalmente tramire un controllo porte o un sistema a tempo.\n\nI controlli posso essere uniti insieme, così alla prima attivazione seguiranno tutte quelle collegate.
+buildtoolbar_popup_uts_LogicCircuit     Struttura avanzata.\n\nUn semplice circuito che esegue operazioni.\n\nOperazioni possibili: And / Or / Not / Nand / Nor / Xor\n\nSeleziona il ciclo tramite le operazioni logiche.
+buildtoolbar_popup_uts_LogicBridge      Struttura avanzata.\n\nRiceve un segnale in entrata e lo esegue su un cavo elettrico sulla stessa casella. Questo cavo elettrico porterà il segnale su ogni altro circuito logico collegato.\n\nPuò essere usato per trasmettere un comune segnale in tutta la prigione, utile per aggigare un altro segnale.
+buildtoolbar_popup_uts_DoorTimer        Può essere usato per aprire le porte in determinati orari.\n\nUsa lo strumento di collegamento per collegare questo timer ai meccanismi delle porte.
+buildtoolbar_popup_uts_Wire             Connette i sistemi a distanza insieme.
+buildtoolbar_popup_uts_remotedoor       Una grossa porta che non può essere aperta se non in remoto. Usala per evitare una fuga per mezzo delle chiavi delle celle.
+buildtoolbar_popup_uts_dismantleutility	Rimuovi oggetti di servizio dalla prigione.
+buildtoolbar_popup_uts_pressurepad      Manda un segnale agli oggetti connessi quando qualcosa li attiva.
+buildtoolbar_popup_uts_statuslight      Si accende di verde o rosso in base al segnale che riceve. 
 
 buildtoolbar_contraband_source          Mostra tutte le zone della prigione dove oggetti di contrabbando potrebbero essere stati rubati
 buildtoolbar_contraband_day             Mostra tutti gli oggetti di contrabbando confiscati nelle ultime 24 ore
@@ -566,7 +565,7 @@ codex_cutscenes                         Cutscenes
 codex_qualifications                    Qualifiche
 codex_load                              Carica prigione
 codex_save                              Salva prigione
-codex_performance			Test prestazioni
+codex_performance						Test prestazioni
 codex_developer_load                    (Sviluppo) Carica mappa
 codex_developer_save                    (Sviluppo) Salva mappa
 codex_contacts                          Contatti
@@ -577,9 +576,9 @@ codex_introduction                      Introduzione
 codex_restartintroduction               Riavvia introduzione
 codex_help                              Aiuto (Wiki)
 codex_opensavefolder                    Apri cartella salvataggi
-codex_options				Opzioni
-codex_nitgs				Nome in gioco
-codex_workshop				Prigioni condivise
+codex_options							Opzioni
+codex_nitgs								Nome in gioco
+codex_workshop							Prigioni condivise
 codex_checkforupdates                   Controlla aggiornamenti
 codex_preorder                          Pre-Ordina ora
 codex_termsconditions                   Termini e condizioni
@@ -595,7 +594,7 @@ codex_new_large                         Grande
 
 codex_options_graphics					Grafica
 codex_options_resolution				Risoluzione
-codex_options_resolutionauto			        Automatico
+codex_options_resolutionauto			Automatico
 codex_options_windowed					Finestra
 codex_options_highdpi					Alto DPI
 codex_options_filtering					Filtraggio
@@ -603,7 +602,7 @@ codex_options_nofiltering				Spento
 codex_options_multisampled				Multicampionamento
 codex_options_supersampled				Supercampionamento
 
-codex_options_audio					Audio
+codex_options_audio						Audio
 codex_options_volume					Volume principale
 codex_options_frequency					Mix frequenze
 codex_options_swapstero					Swap stereo
@@ -620,7 +619,7 @@ codex_options_clocktype_24h             24 Ore
 codex_options_gameplay					Gioco
 codex_options_autosave					Salvataggio automatico (minuti)
 codex_options_renderrooms				Requisiti stanza
-codex_options_apply					Applica
+codex_options_apply						Applica
 
 codex_options_language					Lingua
 
@@ -641,57 +640,57 @@ codex_option_failure                    Condizioni Problematiche
 codex_tooltip_failure                   Sfida Extra! Sarai licenziato e perderai se le cose si metteranno troppo male (rivolte, bancarotta, troppe morti, troppe fughe, ecc..)
 codex_option_unlimitedfunds             Fondi Illimitati
 codex_tooltip_unlimitedfunds            Puro Sandbox! Puoi spendere quanto vuoi già dall'inizio, senza preoccuparti per cosa succederà dopo
- 
+
 codex_option_funds                      Fondi
 codex_tooltip_funds                     Partirai con un po' di soldi in Banca.\n\nNOTA: Vendi le tue prigioni esistenti dalla schermata di valutazione per avere più fondi.
 
-codex_transfer				Trasferimento
-codex_transferring			In trasferimento
-codex_in_prison				Attualmente in prigione
+codex_transfer							Trasferimento
+codex_transferring						In trasferimento
+codex_in_prison							Attualmente in prigione
 codex_useravatar                        Questo sono io
 codex_tooltip_useravatar                Contrassegna questo detenuto come te stesso. Se finitai tu stesso in prigione, questo detenuto ti rappresenterà.
 codex_tooltip_flagbio                   Segnala questa biografia come offensiva.
 
-codex_workshop_current Prigione Corrente
-codex_workshop_publish Pubblica questa Prigione
-codex_workshop_update Aggiorna
-codex_workshop_play Gioca
-codex_workshop_downloading Download in corso
-codex_workshop_download_failed Download fallito
-codex_workshop_publishing Pubblicazione in corso
-codex_workshop_new NUOVO
-codex_workshop_title                         Titolo
-codex_workshop_desc                          Descrizione
-codex_workshop_view_in_workshop              Guarda su Steam Workshop
-codex_workshop_heading_pubed                 Prigioni pubblicate
-codex_workshop_heading_subed                 Prigioni sottoscritte
-codex_workshop_published_by                  Pubblicato da *P
-codex_workshop_published_by_you              Pubblicato da te
-codex_workshop_published_good                Prigione pubblicata
-codex_workshop_published_good_msg            La tua prigione è stata pubblicata con successo.
-codex_workshop_published_bad                 Problema nel pubblicare la prigione
-codex_workshop_published_bad_msg             Problema nel pubblicare la tua prigione.
-codex_workshop_published_bad_msg_new         Problema nel pubblicare la tua nuova prigione. Per favore riprova.
-codex_workshop_busy                          Qualcosa di magico è già accaduto con Steam. Per favore attendi che finisca.
-codex_workshop_file_exists                   Hai già pubblicato una prigione con questo nome. Per favore cambia nome.
-codex_workshop_generic_fail                  Problema nel pubblicare la tua prigione. Per favore riprova.
-codex_workshop_download_bad                  Problema nello scaricare la prigione
-codex_workshop_pa_workshop                   Apri Prison Architect Workshop
-codex_workshop_agreement                     Inviando questo articolo, accetterai [url=http://steamcommunity.com/sharedfiles/workshoplegalagreement]workshop termini di servizio[/url].
+codex_workshop_current					Prigione Corrente
+codex_workshop_publish					Pubblica questa Prigione
+codex_workshop_update					Aggiorna
+codex_workshop_play						Gioca
+codex_workshop_downloading				Download in corso
+codex_workshop_download_failed			Download fallito
+codex_workshop_publishing				Pubblicazione in corso
+codex_workshop_new						NUOVO
+codex_workshop_title					Titolo
+codex_workshop_desc						Descrizione
+codex_workshop_view_in_workshop			Guarda su Steam Workshop
+codex_workshop_heading_pubed			Prigioni pubblicate
+codex_workshop_heading_subed			Prigioni sottoscritte
+codex_workshop_published_by				Pubblicato da *P
+codex_workshop_published_by_you			Pubblicato da te
+codex_workshop_published_good			Prigione pubblicata
+codex_workshop_published_good_msg		La tua prigione è stata pubblicata con successo.
+codex_workshop_published_bad			Problema nel pubblicare la prigione
+codex_workshop_published_bad_msg		Problema nel pubblicare la tua prigione.
+codex_workshop_published_bad_msg_new	Problema nel pubblicare la tua nuova prigione. Per favore riprova.
+codex_workshop_busy						Qualcosa di magico è già accaduto con Steam. Per favore attendi che finisca.
+codex_workshop_file_exists				Hai già pubblicato una prigione con questo nome. Per favore cambia nome.
+codex_workshop_generic_fail				Problema nel pubblicare la tua prigione. Per favore riprova.
+codex_workshop_download_bad				Problema nello scaricare la prigione
+codex_workshop_pa_workshop				Apri Prison Architect Workshop
+codex_workshop_agreement				Inviando questo articolo, accetterai [url=http://steamcommunity.com/sharedfiles/workshoplegalagreement]workshop termini di servizio[/url].
 
-codex_options_timelapse 				Registra
+codex_options_timelapse					Registra
 codex_timelapse_record					Riprendi
 codex_timelapse_stop					Ferma  Ripresa
 codex_timelapse_camera					Modalità Telecamera
-codex_timelapse_resolution 				Risoluzione
-codex_timelapse_customresw				Larghezza personalizzata
-codex_timelapse_customresh 				Altezza personalizzata
 codex_timelapse_resolution				Risoluzione
-codex_timelapse_fps				        Velocità di riproduzione
+codex_timelapse_customresw				Larghezza personalizzata
+codex_timelapse_customresh				Altezza personalizzata
+codex_timelapse_resolution				Risoluzione
+codex_timelapse_fps						Velocità di riproduzione
 codex_timelapse_interval				Intervallo ripresa
 codex_timelapse_quality					Qualita
 codex_timelapse_unsupported				Questa caratteristica non è disponibile con il tuo hardware.
-codex_timelapse_savesettings			        Salva impostazioni
+codex_timelapse_savesettings			Salva impostazioni
 
 codex_timelapse_cam_zoom                Zoom Camera
 codex_timelapse_cam_fitmap              Adatta alla mappa
@@ -710,18 +709,18 @@ codex_performance_min					Minimo: *Tms
 codex_performance_avg					Medio: *Tms
 codex_performance_max					Massimo: *Tms
 
-codex_last_modified 						Ultima modifica: *T
+codex_last_modified						Ultima modifica: *T
 codex_sortbydesc						Ordina per data
 codex_sortname							Nome
 codex_sortdate							Data
-codex_apply							Applica
-codex_select                                                    Seleziona
+codex_apply								Applica
+codex_select                            Seleziona
 
-codex_mods						Mods
+codex_mods								Mods
 codex_mod_activetitle					Mods attive
 codex_mod_inactivetitle					Mods disponibili
-codex_mod_deactivate					Disattiva Mod
-codex_mod_wiki						Cerca più Mods (Wiki)
+codex_mod_deactivate					Disattiva tutte le Mods
+codex_mod_wiki							Cerca più Mods (Wiki)
 codex_mod_openmodsfolder				Apri directory Mods
 codex_mod_moresteammods					Cerca più Mods (Steam Workshop)
 codex_mod_findsteamtranslations         Cerca più Traduzioni (Steam Workshop)
@@ -729,22 +728,22 @@ codex_authortitle                       Autore
 codex_versiontitle                      Versione
 codex_datetitle                         Data
 codex_urltitle                          Url
-codex_typetitle						Tipo
-codex_mod_graphicsandsound 				Grafica e Audio
+codex_typetitle							Tipo
+codex_mod_graphicsandsound				Grafica e Audio
 codex_mod_translation					Traduzione
-codex_mod_scenario					Scenario
-codex_mod_content					Contenuto
+codex_mod_scenario						Scenario
+codex_mod_content						Contenuto
 codex_mod_load_scenario					Carica scenario
-codex_publishmod					Pubblica Mod
+codex_publishmod						Pubblica Mod
 
-codex_mod_update					Aggiorna Mod
+codex_mod_update						Aggiorna Mod
 codex_mod_published_good				Mod Pubblicata
-codex_mod_published_good_msg			        La tua Mod è stato pubblicata con successo
+codex_mod_published_good_msg			La tua Mod è stato pubblicata con successo
 codex_mod_published_bad					Problemi nel pubblicare la tua Mod
 codex_mod_published_bad_msg				La tua Mod ha avuto problemi nell'essere pubblicata
 codex_mod_modsupdated					Mods aggiornate
 codex_mod_modsupdated_msg				Alcune delle Mods attive sono state aggiornate. Clicca OK per applicare i cambiamenti. Il tuo gioco sarà salvato.
-codex_mod_translationcaption                            Si tratta di una traduzione in un'altra lingua?
+codex_mod_translationcaption            Si tratta di una traduzione in un'altra lingua?
 
 codex_language                          Lingua
 codex_language_englishdefault           Inglese (Default)
@@ -754,6 +753,7 @@ codex_language_failed_download          Impossibile scaricare traduzione
 codex_language_failed_download_msg      Problema nello scaricare la traduzione selezionata.
 codex_language_searching_workshop       Ricerca Steam Workshop
 codex_language_community                Questi pacchetti di traduzione sono creati e mantenuti dalla comunità - Grazie!
+
 
 # =============================================================================
 # Graphics Change Confirmation
@@ -768,7 +768,21 @@ graphicschange_revert					Ritorna
 # Script
 # =============================================================================
 
-scriptdebugger_title                    Script Debugger (F3)
+scriptdebugger_title                    Script Debugger (F3)       
+
+# =============================================================================
+# Mod Confirmation
+# =============================================================================
+
+modnotification_title                   Trovate differenze tra le Mods
+modnotification_info                    Questo Mods erano attive quando la Prigione è stata salvata. Raccomandiamo di scaricarle ed attivarle prima di giocare questa Prigione.
+modnotification_playnow                 Gioca                  
+modnotification_active                  Attiva                     
+modnotification_inactive                Inattiva                      
+modnotification_new                     Nuovo                           
+modnotification_unknown                 Sconosciuto                       
+modnotification_popup_title             Differenze Mods            
+modnotification_popup_active            Questa Mod è attiva. Clicca per disattivarla.modnotification_popup_inactive                       Questa Mod è inattiva. Clicca per attivarla.modnotification_popup_new_url                        Questa è una nuova Mod. Clicca per aprire il link nel browser.modnotification_popup_new_steam                      Questa è una nuova Mod su Steam. Clicca per sottoscrivere e scaricare la Mod.modnotification_popup_unknown                        Non siamo in grado di determinare da dove provenga questa mod. Per favore trova e installa questa Mod da solo.
 
 # =============================================================================
 # Biography
@@ -776,6 +790,15 @@ scriptdebugger_title                    Script Debugger (F3)
 
 biography_search                        Stop e Ricerca
 biography_selected                      SELEZIONATO
+biography_prisoner_name                 *S, *F                         
+biography_prisoner_number               Detenuti #*X                   
+biography_prisoner_age                  Età : *X                       
+biography_prisoner_traits               Tratti  :                      
+biography_prisoner_convicted            Condannato per *C (Riconosciuto *P)   
+biography_prisoner_sentenced            Condannato a *X anni in galera
+biography_parole_now                    Qualificato per Liberazione condizionale
+biography_parole_later                  Qualificato per Liberazione condizionale dopo *X annibiography_prisoner_served                            Scontati *X anni             
+biography_prisoner_priors               Precedenti:                        
 
 
 # =============================================================================
@@ -785,15 +808,15 @@ biography_selected                      SELEZIONATO
 rapsheet_age							Età:
 rapsheet_category						Categoria:
 rapsheet_traits							Tratti Noti:
-rapsheet_conviction_text				        *C - *Y anni
+rapsheet_conviction_text				*C - *Y anni
 rapsheet_found_text						(Appello: *P)
-rapsheet_convictions					        Convinzioni
-rapsheet_misconductstitle			         	Cattiva condotta recente
-rapsheet_biography                                              Biografia
+rapsheet_convictions					Convinzioni
+rapsheet_misconductstitle				Cattiva condotta recente
+rapsheet_biography                      Biografia
 rapsheet_guilty							Colpevole
 rapsheet_notguilty						Non Colpevole
 rapsheet_served							Scontati
-rapsheet_served_time					        Scontati *Y anni
+rapsheet_served_time					Scontati *Y anni
 rapsheet_time							*Y anni
 rapsheet_bio							Condannato a *Y anni per *A.
 rapsheet_bio_med						Condannato a *Y anni per più reati, tra cui *A e *B.
@@ -841,7 +864,6 @@ punish_none                             No
 punish_timer                            *Xore *Yminuti
 punish_timer_minutes                    *Xminuti
 punish_active                           ATTIVA
-
 
 # =============================================================================
 # Misconducts
@@ -907,22 +929,21 @@ research_armoury                        Armeria
 research_bodyarmour                     Giubbotto antiproiettile
 research_tazers                         Taser
 research_tazersforeveryone              Taser per tutti
-research_Bankloans                      Prestiti bancari
 research_lowertaxes1                    Sgravi fiscali
 research_lowertaxes2                    Paradiso fiscale
 research_remoteaccess                   Accesso remoto
 research_extragrant                     Concessione extra
-research_advancedmanagement             Micromanagement
+research_advancedmanagement             Micromanagement                
 
 researchtooltip_warden                  Sblocca il Direttore e l'intero Sistema Burocratico. Assumilo dal menù Personale, come tutti gli Amministratori ha bisogno di un ufficio per lavorare.
 researchtooltip_security                Sblocca il Capitano. Può essere assunto dal menù Personale. Ti consentirà di accedere alla schermata di Dislocamento e ti darà anche un rapporto in tempo reale del livello di pericolo nella prigione.
-researchtooltip_maintenance            Sblocca il Caposquadra. Assumilo tramite il menù Personale.
+researchtooltip_maintenance             Sblocca il Caposquadra. Assumilo tramite il menù Personale.
 researchtooltip_legal                   (ATTUALMENTE NON SERVE A NULLA)\nSblocca Avvocato.\nL'avvocato ridurrà i punti di penalizzazione assegnati, puoi assumerne quanti ne vuoi.\n\nOgni Avvocato avrà bisogno di un ufficio.
 researchtooltip_deployment              Ti permette di far stazionare le Guardie nei settori della prigione.
+researchtooltip_patrols                 Ti permette di assegnare delle guardie al pattugliamento di aree cruciali della prigione.
 researchtooltip_dogs                    Sblocca gli Addestratori e Pattuglie con Cani. Sono perfetti per trovare gli oggetti di contrabbando e le gallerie nella prigione.\n\nI Cani sono molto veloci, riesco a catturare i fuggitivi in un batter d'occhio. 
 researchtooltip_cctv                    Sblocca le CCTV e i monitor di sicurezza.  Usali per controllare tutta la prigione.\n\nSblocca anche le Intercettazioni Telefoniche, ti permettono di ascoltare le chiamate dei detenuti e acquisire importanti informazioni.
 researchtooltip_remoteaccess            Sblocca la tecnologia per il controllo remoto ed automatico delle porte. Le Porte possono essere aperte in automatico usando un Sistema di Controllo Remoto (operato da una Guardia), oppure da un Timer in specifici orari del giorno.
-researchtooltip_patrols                 Ti permette di assegnare delle guardie al pattugliamento di aree cruciali della prigione.
 researchtooltip_riotguards              (ATTUALMENTE NON SERVE A NULLA)\nSblocca Guardie Anti-sommossa. Questi ragazzi sono armati nel miglior modo possibile per affrontare tutte le situazioni violente che si possono presentare.
 researchtooltip_maintainance            Sblocca il Capo Squadra. Ti permette di sbloccare un sistema di lavoro per i detenuti e ulteriori membri del personale. \n\nCome tutti gli Amministratori ha bisogno di un ufficio per lavorare.
 researchtooltip_clone                   Sblocca lo strumento Copia nel menù. Usa questo strumento per duplicare un'area della pregione, come le celle. Seleziona la zona da copia trascinando il click destro quindi usa il click sinistro per copiare.
@@ -932,11 +953,6 @@ researchtooltip_health                  Sblocca il Dottore, insieme all'Infermer
 researchtooltip_MentalHealth            Sblocca lo Psicologo, ti fornirà una preziona analisi dello stato psicologico interno della prigione in ogni momento.
 researchtooltip_finance                 Sblocca il Ragioniore, ti darà accesso al rapporto finanziario della tua prigione.\n\nInoltre ti permetterà di spendere più di quanto guadagni ogni giorno, a patto di avere dei fondi di riserva. 
 researchtooltip_landexpansion           Ti autorizza a poter comprare appezzamenti confinanti di terra e quindi espandere la tua prigione.
-researchtooltip_ReducePenalty1          (ATTUALMENTE NON SERVE A NULLA)\nRiduce il numero di Punti Penalità assegnati di 50.
-researchtooltip_ReducePenalty2          (ATTUALMENTE NON SERVE A NULLA)\nRiduce il numero di Punti Penalità assegnati di 50.
-researchtooltip_ReducePenalty3          (ATTUALMENTE NON SERVE A NULLA)\nRiduce il numero di Punti Penalità assegnati di 50.
-researchtooltip_ReducePenalty4          (ATTUALMENTE NON SERVE A NULLA)\nRiduce il numero di Punti Penalità assegnati di 50.
-researchtooltip_ReducePenalty5          (ATTUALMENTE NON SERVE A NULLA)\nRiduce il numero di Punti Penalità assegnati di 50.
 researchtooltip_prisonlabour            Ti consente di mettere i detenuti a lavorare nella prigione (cucinare, pulire, ecc..) risparmiando sul salario del personale, guadagnando soldi e insegnando ai detenuti nuove abilità allo stesso tempo.\n\nInoltre sblocca Officina e Lavanderia.
 researchtooltip_education               Sblocca la possibilità di avviare il programma educativo sui detenuti usando insegnati esterni.
 researchtooltip_contraband              Forma le tue guardie nel tracciamento e recupero di sostanze di contrabbando. Sblocca Rapporto Domanda e Offerta, il luogo di spaccio (mostra tutti i possibili luoghi dove avvengono i furti), tiene traccia di tutti gli effetti recuperati e dove sono stati rubati e contrabbandati.
@@ -950,7 +966,6 @@ researchtooltip_lowertaxes1             Usufruisci degli incentivi fiscali del g
 researchtooltip_lowertaxes2             Il tuo commercialista estende le regole fino al punto di rottura. Sposterà tutti i conti in un paese straniero con tasse molto basse. Le tue tasse scenderanno fino ad arrivare a circa l'1%.\n\nRisparmierai $3,000 di tasse per $10,000 di entrate giornaliere.
 researchtooltip_extragrant              Consente di accettare 3 sovvenzioni invece che 2.
 researchtooltip_advancedmanagement      Ti da gli strumenti per la micro gestione economica della tua prigione.\n\nSblocca la Logicastica Alimentare, ti permette di specificare quali cucine preparano pasti per le mense e per chi sono i pasti. Allo stesso modo la Logistica Lavanderia ti permetti di capire quali zone della prigione sono coperti da determinate lavanderie.\n\nSblocca anche gli Orari Dispiegamento, ti lasciano personalizzare le pattuglie per differenti orari della giornata.\n\nSblocca la Pianificazione Riformatorio, ti permetti di aggiustare manualmente il programma giornaliero.
-
 
 # =============================================================================
 # Room Requirements
@@ -1006,6 +1021,7 @@ adviser_name_edwardswife                Susan, la moglie di Edward
 adviser_name_priest                     Il Prete
 adviser_name_newsreader                 CDNC News
 
+
 # =============================================================================
 # Valuation, Reports etc
 # =============================================================================
@@ -1023,8 +1039,8 @@ report_valuation                        Valutazione
 report_contraband                       Contrabbando
 report_programs                         Programmi
 
-report_grants_bankloan                 Prestiti Bancari
-report_grants_bankloan_text            Puoi avere un grosso prestito dalla Banca. In cambio, la banca, addebiterà gli interessi alla cassa giornaliera.\n\nSe effettuerai pagamenti regolari la tua valutazione creditizia salirà, e la Banca ti concederà altri prestiti. Tuttavia, se mancherai i pagamenti la tua valutazione creditizia calerà e la Banca ti rifiuterà ulteriori prestiti.\n\nNota: i prestiti non saranno mai ripagati dagli interessi maturati giornalmente.  
+report_grants_bankloan                  Prestiti Bancari
+report_grants_bankloan_text             Puoi avere un grosso prestito dalla Banca. In cambio, la banca, addebiterà gli interessi alla cassa giornaliera.\n\nSe effettuerai pagamenti regolari la tua valutazione creditizia salirà, e la Banca ti concederà altri prestiti. Tuttavia, se mancherai i pagamenti la tua valutazione creditizia calerà e la Banca ti rifiuterà ulteriori prestiti.\n\nNota: i prestiti non saranno mai ripagati dagli interessi maturati giornalmente.  
 report_grants_max1                      Non è possibile avere più di 1 sovvenzioni alla volta.\nUsa il Commercialista per alzare questo limite.
 report_grants_max2                      Non è possibile avere più di 2 sovvenzioni alla volta.\nUsa il Commercialista per alzare questo limite.
 report_grants_max3                      Non è possibile avere più di 3 sovvenzioni alla volta.
@@ -1126,7 +1142,7 @@ job_escortprisoner                      Scortare Detenuto in *X
 job_punishprisoner                      Processo Detenuto
 job_searchobject                        Cercare *X 
 job_searchentity                        Perquisire
-job_searchingentity			Cercare Detenuto
+job_searchingentity						Cercare Detenuto
 job_searchcell                          Ispezionare Cella
 job_searchcellblock                     Ispezionare Blocco Cella
 job_improvecellindoor                   Area Pulizia Interna
@@ -1164,6 +1180,13 @@ meal_quantity                           Qualità Pasti
 meal_variety                            Varietà Pasti
 meal_cost                               Costo Per Detenuto
 
+reports_paroletitle                     Politica libertà vigilata              
+parole_title                            Rilasciati in libertà vigilata         
+parole_info                             Trasgressione libertà vigilata: *P%             
+parole_desc                             Se un detenuto ha una probabilità di reiterazione minore di questo valore, verrà rilasciato alla fine della sua udienza.
+parole_fine                             Pena reiterazione del reato     
+parole_reward                           Ricompensa per il rilascio anticipato 
+
 victory_title                           CERTIFICAZIONE
 
 victory_PrisonValue                     Valore Detenuti
@@ -1172,7 +1195,6 @@ victory_Prisoners                       Capacità
 victory_PrisonersReleased               Detenuti rilasciati
 victory_prisonersdied                   Morti in custodia
 victory_prisonersescaped                Detenuti evasi
-victory_bankrupt                        Bancarotta
 victory_Riot                            Incontrollata\nrivolta
 victory_TooManyDeaths                   Criminale\nnegligente
 victory_TooManyEscapes                  Sicurezza\ndisastro
@@ -1183,7 +1205,7 @@ victory_death                           MORTI
 victory_escapes                         EVASIONI
 victory_counter                         (*X oggi)
 
-victory_warning_bankrupt               Hai 24 ore per evitare il disastro finanziario
+victory_warning_bankrupt                Hai 24 ore per evitare il disastro finanziario
 victory_warning_riot                    Poni fine presto a questa rivolta o il governatore sarà costretto a prendere il controllo della prigione
 victory_warning_toomanydeaths           Sarai perseguito se ci saranno altre morti oggi
 victory_warning_toomanyescapes          Sarai licenziato se si verificheranno altre evasioni oggi
@@ -1192,6 +1214,7 @@ victory_prisoners_units                 Luoghi
 victory_prisonersreleased_units         Rilasciato
 victory_toomanydeaths_units             Morti
 victory_toomanyescapes_units            Evasioni
+victory_prisonersparoled                Detenuti richiedenti libertà 
 
 victory_adviserwarning_toomanydeaths1   Ieri è stato un giorno molto buio nella storia di questa prigione. Troppe persone hanno perso la vita.
 victory_adviserwarning_toomanydeaths2   Assicurati che nessun'altro muoia oggi o dovrai affrontare un processo per negligenza verso i detenuti.
@@ -1203,9 +1226,16 @@ victory_adviserwarning_toomanyescapes1  Abbiamo qualche problema qui. Troppi det
 victory_adviserwarning_toomanyescapes2  Chiudi la prigione così da assicurarti che nessun'altro fugga, altrimenti la stampa servirà la tua testa su un piatto d'argento ai lettori.
 victory_advisernotice_toomanyescapes1   Hai fallito. Questa prigione è presa in giro dai media, vogliono qualcuno a cui dare la colpa.
 victory_advisernotice_toomanyescapes2   Quel qualcuno sei tu. Sei licenziato.
-victory_adviserwarning_bankrupt1       Sei in Bancarotta! La tua gestione disastrosa ci ha portato alla rovina finanziaria.
-victory_adviserwarning_bankrupt2       Trova un modo per risolvere il problema o sarai licenziato.
-victory_advisernotice_bankrupt1        Non abbiamo scelta che dichiarare Bancarotta e mettere la prigione in amministrazione controllata. Hai fallito.
+victory_adviserwarning_bankrupt1        Sei in Bancarotta! La tua gestione disastrosa ci ha portato alla rovina finanziaria.
+victory_adviserwarning_bankrupt2        Trova un modo per risolvere il problema o sarai licenziato.
+victory_advisernotice_bankrupt1         Non abbiamo scelta che dichiarare Bancarotta e mettere la prigione in amministrazione controllata. Hai fallito.
+victory_adviserwarning_wardendeaths1    Lavorare per voi è diventato troppo pericoloso. Fatichiamo a trovare personale che voglia lavorare nella prigione.
+victory_adviserwarning_wardendeaths2    Se lasci morire un altro dipendente non potremo fare altro che licenziarti. 
+victory_advisernotice_wardendeaths1     Hai fallito nel rendere sicuro l'ambiente di lavoro. Nessuno vuole lavorare per te.
+victory_advisernotice_wardendeaths2     Non abbiamo altra scelta che mandarti via. Sei licenziato.
+victory_adviserwarning_reoffenders1     Molti dei detenuti che sono stati rilasciati prima hanno commesso altri crimini. Questo potrebbe costarci caro se non prendiamo il controllo della situazione.
+victory_adviserwarning_reoffenders2     Se altri detenuti commettono dei crimini dopo il rilascio  sarai tu il responsabile.
+victory_advisernotice_reoffenders1      Hai rilasciato troppo detenuti pericolosi. Non abbiamo altra scelta che mandarti via. Sei licenziato.
 
 score_title                             CLASSIFICAZIONE PRIGIONE
 score_reoffendingrate                   TASSO DI REITERAZIONE DEI REATI
@@ -1214,13 +1244,11 @@ score_minimumprisonersreleased          *X detenuti sono stati rilasciati prima 
 score_deaths                            *X detenuti morti in custodia
 score_escapes                           *X detenuti evasi
 score_reoffendingchance                 Stima reitificazione del reato
+score_prisonersparoled                  Rilasciato in anticipo (Reiterazione)     
+score_prisonersparoled_info             *P (*E%)        
 
 score_tooltip_punishment                Misura quanto vengono puniti efficacemente i detenuti, in base a quello che viene visto dall'esterno. Essere riunchiusi in prigione è una punizione fondamentale, anche far marcire i detenuti in isolamento funziona.\n\nTieni in mente che troppo tempo libero influisce negativamente sull'efficacia della punizione.\n\nUn alto grado di efficacia farà si che il detenuto non commetta nuovamente lo stesso sbaglio.
-
 score_tooltip_reform                    Misura quanto hai cercando di riformare e riabilitare i detenuti, attaverso i programmi di riforma.\n\nMettere i detenuti a lavoro nella prigione è considerato.\n\n Un buon grado di riformazione consentirà ai detenuti maggiori probabilità di trovare un buon lavoro una volta usciti, inoltre ridurrà le possibilità di ulteriori crimini.
-
-score_tooltip_welfare                   Misura la salute e il benessere dei detenuti durante la permanenza in prigione. L'esercizio fisico e il buon cibo sono considerati. Ferite non guarite, uso di droga o alcol sono anch'essi considerati, negativamente.\n\nUn cattivo grado aumentara la recidività, in particolar modo se il detenuto lascia il carcere con dipendeze da alcol o droga non considerate.
-
 score_tooltip_security                  Misura quando la tua prigione è sicura. Tenere i prigionieri rinchiusi e sotto controllo di pattuglie amrmate è molto considerat. Sarai penalizzato scoppieranno risse, ci saranno omicidi o fughe.\n\nUn cattivo grado indica che il detenuto continua la sua vita criminale anche all'interno della prigione, la sua recidività sarà alta una volta uscito.
 
 score_tooltip_reoffendingchance         Misura la probabilità di ricommettere il crimine una volta fuori. È influenzata da molti fattori:\n\n- DIMINUISCE Punizione severa\n- DIMINUISCE Ri-formazione\n- AUMENTA Bassa sicurezza e benessere\n- AUMENTA Dipendenze non curate\n\n- L'età dei prigionieri è il fattore principale\n- Va tenuto conto dei preconcetti del detenuto\n- Un importante fattore è l'aiuto della famiglia
@@ -1289,6 +1317,7 @@ schedule_zone_staffonly                 Personale
 schedule_zone_unlocked                  Sbloccata
 
 
+
 # =============================================================================
 # Needs / Actions / Bio etc
 # =============================================================================
@@ -1314,6 +1343,7 @@ action_eat                              Mangiare
 action_complain                         Lamentarsi
 action_work                             Lavorare
 action_visitation                       Far Visita
+action_parole                           Udienza per la libertà vigilata              
 action_none                             Niente
 action_misbehaving                      Comportarsi male
 action_escaping                         Scappare
@@ -1324,17 +1354,20 @@ action_rioting                          Rivoltarsi
 action_hostagetaking                    Prendere Ostaggi
 action_reformprogram                    Cambiare Programma
 action_changeclothes                    Cambiare Abbigliamento
+action_getbook                          Prende un libro
+action_pray                             Prega                     
 
-status_effect_title 			=[Stato]=
-status_effect_none			Nessuno
-status_effect_suppressed		Soppresso
-status_effect_goodfood			Ben nutrito
-status_effect_drunk			Ubriaco
+status_effect_title						=[Stato]=
+status_effect_none						Nessuno
+status_effect_suppressed				Soppresso
+status_effect_goodfood					Ben nutrito
+status_effect_drunk						Ubriaco
 status_effect_high                      Sballato
-status_effect_withdrawl			Arretra
 status_effect_tazed                     Scioccato
 status_effect_overdosed                 Overdose
 status_effect_surrendered               Arreso
+status_effect_calming                   Si calma
+status_effect_angst                     Arrabbiato                         
 
 experience_totaltime                    Tempo Totale
 experience_misconduct                   Cattiva Condotta
@@ -1372,12 +1405,13 @@ need_name_freedom                       Libertà
 need_name_clothing                      Abbigliamento
 need_name_drugs                         Droghe
 need_name_alcohol                       Alcol
+need_name_spirituality                  Spiritualità
+need_name_literacy                      Alfabetizzazione                     
 needs_locked                            (??? Psicologia ???)
 needs_title                             =[Bisogni]=
 
-
 reputation_title                        Reputazione
-reputation_hidden                       (??? Reputazione ???)
+reputation_hidden                       (Reputazione)
 reputation_hidden_short                 ???
 
 reputation_legendary                    --LEGGENDARIO--
@@ -1455,7 +1489,7 @@ objective_prisonerintake                Detenuti in arrivo
 objective_intake_arrivals               *X detenuti arrivano alle 8am
 objective_intake_closed                 Bloccati nuovi arrivi nella prigione
 objective_intake_closed2                (controlla Rapporto Detenuti)
-objective_intake_specials		Trasferimenti Speciali:
+objective_intake_specials				Trasferimenti Speciali:
 objective_intake_categories             Categorie: 
 objective_intake_minsec                 Minima
 objective_intake_medsec                 Normale
@@ -1480,6 +1514,9 @@ objective_punishment_solitary_mix       *X in Isolamento (+*Y in attesa)
 objective_punishment_lockdown           *X rinchiusi
 objective_incident_medical              *X richiedono attenzione medica
 objective_incident_dead                 *X corpi morti
+
+objective_prisonerparole                Udienza per la libertà vigilata
+objective_parole_count                  *X detenuti in coda per l'udienza
 
 objective_payment_receivedfull          Pagamento: *X ricevuto
 objective_payment_receivedpart          Pagamento: *X ricevuto di *Y totale
@@ -1702,6 +1739,7 @@ object_licenseplate                      Targa
 object_log                               Tronco
 object_wood                              Legno
 object_workman                           Operaio
+object_truckdriver                       Camionista        
 object_guard                             Guardia
 object_riotguard                         Guardia Anti-sommossa
 object_armedguard                        Guardia Armata
@@ -1793,10 +1831,19 @@ object_dismantleobject                   Smonta Oggetti
 object_dismantleutility                  Smonta Servizi
 object_sellobject                        Vendi Oggetti
 object_showallwires                      Mostra Collegamenti
+object_tidywires                         Cavetti                  
 object_cutscenepolaroid                  Cutscenes Polaroid
 object_cutscenecamera                    Cutscenes Telecamera
 object_cutscenecue                       Cutscenes Cue
 object_foodwaste                         Cibo Sprecato
+object_pews                              Panca                           
+object_prayermat                         Tappeto                    
+object_spiritualleader                   Leader Spirituale               
+object_librarybookshelf                  Scaffale
+object_librarybookunsorted               Libro (Non Ordinato)        
+object_librarybooksorted                 Libro (Ordinato)          
+object_sortingtable                      Banco Libreria             
+object_ruinedbook                        Libro Rovinato              
 
 material_none                            Nessuno
 material_building                        Edificio (mattoni)
@@ -1862,7 +1909,9 @@ room_library                             Biblioteca
 room_forestry                            Selvicoltura
 room_classroom                           Aula Scolastica
 room_exports                             Esportazioni
+room_chapel                              Cappella                    
 room_clearrooms                          Stanza Pulizie
+room_paroleroom                          Stanza Udienza                 
 
 equipment_none                           Nessuno
 equipment_fists                          Pugni
@@ -1916,16 +1965,20 @@ reformprogram_therapy                   Terapia Comportamentale
 reformprogram_methadone                 Trattamento Farmacologico per Tossicodipendenti
 reformprogram_alcoholicsmeeting         Terapia di Gruppo per Alcolisti
 reformprogram_tazertraining             Certificazione Taser per le Guardie
+reformprogram_spiritualguidance         Guida Spirituale     
+reformprogram_parolehearing             Udienza detenuti  
 
 reformprogram_tazertrained              Certificato : Taser
 
 reformprogram_workshopinduction_text    La sicurezza prima di tutto! I detenuti devono passare questo corso prima di poter lavorare in officina.
-reformprogram_foundationeducation_text  Molti detenuti non hanno nemmeno le basi fondamentali per leggere e scrivere, figuriamoci di matematica. Questo corso darà loro le basi.
+reformprogram_foundationeducation_text  Molti detenuti non hanno nemmeno le basi fondamentali per leggere e scrivere, figuriamoci di matematica. Questo corso darà loro le basi. Superare il corso  consente ai detenuti di lavorare in Biblioteca. 
 reformprogram_carpentry_text            Un'opera complessa richieste buone abilità pratiche. Detenuti qualificati potranno usare le loro abilità per creare oggetti pregiati di legno.
 reformprogram_kitcheninduction_text     Le norme alimentari sono importanti prima di poter servire centinaia di persone alla volta. I detenuti devono completare questo corso per lavorare in cucina.
 reformprogram_therapy_text              I detenuti spesso hanno difficoltà nel controllare la loro natura violenta. Queste sedute uno a uno tra detenuto e psicologo li aiuterà a disinnescare qualsiasi situazione in cui si trovino, prima che diventi pericoloso.
 reformprogram_methadone_text            Un corso riguardo 5 farmaci sostitutivi, per combattere l'uso di droga. Ogni trattamento aiuta i detenuti con la propria dipendenza, alla fine del corso c'è probabilità di eliminare la dipendeza.
 reformprogram_alcoholicsmeeting_text    Un gruppo di terapia per alcolisti. Aiuta a diminiure la voglia d'alcol. Non toglie mai completamente il bisogno.
+reformprogram_parolehearing_text        Un'udienza per determinare se il detenuto è adatto ad uno sconto di pena. A successful release in which a prisoner doesn't reoffend will award a nice bonus. If the prisoner does reoffend, you will instead be fined. The warden and chief must be in attendance. There can therefore only be 1 parole programming running at any time.
+reformprogram_spiritualguidance_text    Qualcuno dei detenuti è religioso o ha bisogno di spiritualità nella propria vita. Invita un leader spirituale dalla comunità locale per portare preghiera e calma fra i tuoi detenuti.
 
 reformerror_unscheduled                 NON PROGRAMMATO
 reformerror_noroom                      NESSUNA STANZA ADEGUATA
@@ -1961,6 +2014,8 @@ reform_program_intake_referralviolence          Motivo: Violenza
 reform_program_intake_referraldrugaddiction     Motivo: Droga
 reform_program_intake_referralalcoholism        Motivo: Alcolismo
 reform_program_intake_guards                    Solo per le Guardie
+reform_program_intake_parole                    Dopo sia il 50% che il 75% della pena sia stata scontata
+reform_program_intake_needrequired              Ogni detenuto deve avere dei requisiti specifichi per partecipare.
 
 reform_program_properties_canhireexternally     Possibile assunzione esterna
 reform_program_properties_studentssit           Posti Studenti
@@ -1969,6 +2024,7 @@ reform_program_properties_practical             Practico
 reform_program_properties_repeatable            Ripetibile
 reform_program_properties_passive               Passivo
 reform_program_properties_staffonly             Solo Personale
+reform_program_properties_outsideofwork         Può essere al di fuori delle ore lavorative
 
 reform_program_difficulty_easy          - Facile
 reform_program_difficulty_intermediate  - Intermedio
@@ -2077,7 +2133,7 @@ staff_needsrest                         Il personale preferisce riposarsi nella 
 
 dog_needskennel                         I cani necessitano di una cuccia per vivere
 
-doctor_requireinfirmary                 Necessita di un'infermeria
+doctor_requireinfirmary                 Richiede un'infermeria        
 
 entity_carryingequipment                Trasporta *X
 entity_carryingkeys                     Trasporta chiavi prigione
@@ -2085,15 +2141,15 @@ entity_carryingstaffkeys                Trasporta chiavi del Personale
 entity_wearingarmour                    Indossa *X
 
 reports_schedule                        Riorganizza il calendario
-reports_bankloan                       Banca prestiti
+reports_bankloan                        Banca prestiti
 reports_increaseloan                    Aumenta
 reports_decreaseloan                    Diminuisci
-reports_unlockbankloans                Sbloccato dal ragioniere
+reports_unlockbankloans                 Sbloccato dal ragioniere
 
 drugs_heroin                            Eroina
 drugs_cocaine                           Cocaina
 
-#                                       Eg "La madre di Bob"
+#                                       Eg "Bob's Mother"
 visitor_relationship                    *X' *Y
 visitor_age                             Età : *X
 
@@ -2120,10 +2176,9 @@ message_autosaving                      auto-salvataggio...
 
 buildtoolbar_entersearchterm            cerca oggetto...
 
-deploymentscheduler_title               PIANIFICAZIONE PATTUGLIA
-supplyanddemand_supplyheader            OFFERTA
-supplyanddemand_demandheader            DOMANDA
-
+deploymentscheduler_title               PIANIFICAZIONE
+supplyanddemand_supplyheader            SCORTA                       
+supplyanddemand_demandheader            DOMANDA                   
 
 # =============================================================================
 # Campaign info
