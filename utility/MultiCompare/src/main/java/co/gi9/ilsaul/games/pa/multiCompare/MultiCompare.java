@@ -114,7 +114,7 @@ public class MultiCompare implements Runnable {
 	}
 
 	public void runCompareEnglish() {
-		if (src.size() > 1) {
+		if (src.size() != 1) {
 			logger.error("In comparing English versions can only have an argument");
 			throw new RuntimeErrorException(null, "In comparing English versions can only have an argument");
 		}
@@ -122,7 +122,7 @@ public class MultiCompare implements Runnable {
 	}
 
 	private void runUntranslatedKeys() {
-		if (src.size() <= 1) {
+		if (src.size() != 1) {
 			logger.error("in comparison of the translations you must have multiple arguments");
 			throw new RuntimeErrorException(null, "in comparison of the translations you must have multiple arguments");
 		}
@@ -380,8 +380,9 @@ public class MultiCompare implements Runnable {
 							if (!r.getValue().equals(translations.get(0).getValue())) {
 								if (!missOnly) {
 									bw.write(String.format("%-" + columnsSize.get(0).intValue() + "s  %s -> %s%s", r.getKey(), translations.get(0).getValue(), r.getValue(), CRLF));
+									oldComment = null;
 								}
-								oldComment = null;
+
 							}
 						}
 
@@ -517,6 +518,8 @@ public class MultiCompare implements Runnable {
 // -c -e ../../../PrisonArchitect-traslate-3/English/base-language-29.txt -o ../../temp.txt ../../../PrisonArchitect-traslate-3/English/base-language-28.txt
 // -t
 // -m -e ../../../PrisonArchitect-traslate-3/English/base-language-29.txt -o ../../gamefile.txt ../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/base-language.txt ../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/New_tr.txt
+// -u -e ../../../PrisonArchitect-traslate-3/English/base-language-29.txt -o ../../miss.txt ../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/base-language-29.txt
+
 //			//For test only
 //			dstFile = new File("../../Italian/new_future.txt");
 //
