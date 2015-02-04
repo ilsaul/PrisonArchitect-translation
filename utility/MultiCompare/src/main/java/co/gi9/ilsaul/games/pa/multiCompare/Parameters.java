@@ -1,20 +1,22 @@
 package co.gi9.ilsaul.games.pa.multiCompare;
 
 import java.io.File;
-import java.util.List;
 
 import org.kohsuke.args4j.Argument;
 import org.kohsuke.args4j.Option;
 
 public class Parameters {
-	@Option(name="-c", forbids={"-t,-m"}, aliases="--compare", usage="compare english versions")
+	@Option(name="-c", forbids={"-t,-m, -u"}, aliases="--compare", usage="compare english versions")
 	public boolean compEnglish = false;
 
-	@Option(name="-t", forbids={"-c,-m"}, aliases="--translations", usage="compare the translated versions")
+	@Option(name="-t", forbids={"-c,-m, -u"}, aliases="--translations", usage="compare the translated versions")
 	public boolean compTranslate = false;
 
-	@Option(name="-m", forbids={"-t,-c"}, aliases="--makefile", usage="Create game file with traslation")
+	@Option(name="-m", forbids={"-t,-c, -u"}, aliases="--makefile", usage="Create game file with traslation")
 	public boolean makeTranslationFile = false;
+
+	@Option(name="-u", forbids={"-t,-c, -m"}, aliases="--untranslated", usage="list of untranslated keys")
+	public boolean untranslation = false;
 
 	@Option(name="-h", aliases="--help", usage="print this message")
 	public boolean help;

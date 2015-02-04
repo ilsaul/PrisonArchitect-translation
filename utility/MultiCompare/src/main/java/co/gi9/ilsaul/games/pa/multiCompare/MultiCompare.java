@@ -32,8 +32,6 @@ import org.kohsuke.args4j.CmdLineParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.sun.xml.internal.messaging.saaj.util.TeeInputStream;
-
 /**
  * It can work in many way:<ol>
  * <li>Compare multiple transtation files</li>
@@ -59,6 +57,8 @@ public class MultiCompare implements Runnable {
 	/** column widths for printing */
 	private List<MutableInt> columnsSize;
 
+	private boolean missOnly;
+
 	public MultiCompare(File destination, File english, File...traslations) {
 		srcEng = english;
 		src = Arrays.asList(traslations);
@@ -70,6 +70,8 @@ public class MultiCompare implements Runnable {
 		columnsSize.add(new MutableInt(0)); // Keyword
 		columnsSize.add(new MutableInt(0)); // english traslation
 		columnsSize.add(new MutableInt(0)); // italian traslation
+
+		missOnly = false;
 	}
 
 
@@ -116,6 +118,16 @@ public class MultiCompare implements Runnable {
 			logger.error("In comparing English versions can only have an argument");
 			throw new RuntimeErrorException(null, "In comparing English versions can only have an argument");
 		}
+		run();
+	}
+
+	private void runUntranslatedKeys() {
+		if (src.size() <= 1) {
+			logger.error("in comparison of the translations you must have multiple arguments");
+			throw new RuntimeErrorException(null, "in comparison of the translations you must have multiple arguments");
+		}
+		missOnly = true;
+
 		run();
 	}
 
@@ -366,7 +378,9 @@ public class MultiCompare implements Runnable {
 						if (translations.size() == 1) {
 							// I am interested only if the value is changed
 							if (!r.getValue().equals(translations.get(0).getValue())) {
-								bw.write(String.format("%-" + columnsSize.get(0).intValue() + "s  %s -> %s%s", r.getKey(), translations.get(0).getValue(), r.getValue(), CRLF));
+								if (!missOnly) {
+									bw.write(String.format("%-" + columnsSize.get(0).intValue() + "s  %s -> %s%s", r.getKey(), translations.get(0).getValue(), r.getValue(), CRLF));
+								}
 								oldComment = null;
 							}
 						}
@@ -544,6 +558,8 @@ public class MultiCompare implements Runnable {
 			convert.runCompareEnglish();
 		} else if (params.makeTranslationFile) {
 			convert.runMakeTranslationFile();
+		} else if (params.untranslation) {
+			convert.runUntranslatedKeys();
 		} else {
 			parser.printUsage(System.err);
 			return;
