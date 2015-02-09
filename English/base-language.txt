@@ -283,6 +283,7 @@ interfacetopbar_tension_recentdeaths            + *X people have been killed rec
 interfacetopbar_tension_recentsearches          + *X prisoners have been unnecessarily searched recently
 interfacetopbar_tension_angrygangmembers        + *X GANG MEMBERS ARE FURIOUS (leader being punished)
 interfacetopbar_tension_recentpunishments       = (DETERRENT) *X punishments have been handed down recently
+interfacetopbar_tension_recentcalmed            - *X prisoners have been calmed recently
 
 interfacecontrol_mainmenu                       Main Menu (Esc)
 interfacecontrol_mainmenu_tooltip               Toggle the main menu (New/Load/Save/Exit etc)
@@ -420,6 +421,9 @@ buildtoolbar_popup_room_medicalward		Area for your medical staff to work.
 buildtoolbar_popup_room_morgue			Where you send your dead prisoners and staff to.
 buildtoolbar_popup_room_commonroom		Allowing your prisoners some free time to relax.
 buildtoolbar_popup_room_kennel          Where your dogs live.
+buildtoolbar_popup_room_chapel          What happens when a beurocratic committee gets together and designs a solution to inmate's religious needs? A 'Multi Faith Prayer Room', that's what. We refer to it as the Chapel.
+buildtoolbar_popup_room_paroleroom      Your prisoners will be eligable for parole after serving 50% and 75% of their terms. Their fate will be decided in this room, with the Warden and the Chief.\n\nNb Extra security is advised. Prisoners have been known to become quite upset when their parole is denied.
+buildtoolbar_popup_room_library         Your prison will be sent boxes of discarded and used books from around the country. Prisoners will need to sort those books onto the shelves.
 
 buildtoolbar_popup_obj_bed				Not too soft, not too hard, just right. Well, actually, really hard and too small.
 buildtoolbar_popup_obj_toilet			A basic human right, if you believe all those crackpots.
@@ -456,6 +460,9 @@ buildtoolbar_popup_obj_tv				Pacify your prisoners with mind-numbing mediocrity.
 buildtoolbar_popup_obj_largetv			Allow lots of your prisoners to share the experience of brain rot.
 buildtoolbar_popup_obj_pooltable		Remove the monotony of prison life with a game of pool. 
 buildtoolbar_popup_obj_dismantleobject	Remove an object from your prison.
+buildtoolbar_popup_obj_altar            Relays your prayers directly to your higher power of choice.
+buildtoolbar_popup_obj_pews             Seats for the faithful. Made from the hardest, most unpadded of woods.
+buildtoolbar_popup_obj_prayermat        Protect your prisoners from the dirty floor while they offer their prayers. 
 
 buildtoolbar_popup_staff_workman		Will build your prison for you, based on the plans you provide them.
 buildtoolbar_popup_staff_guard			Used to keep your prisoners in check and out of trouble.
@@ -768,11 +775,39 @@ graphicschange_revert					Revert
 scriptdebugger_title                    Script Debugger (F3)
 
 # =============================================================================
+# Mod Confirmation
+# =============================================================================
+
+modnotification_title                   Mod Differences Found
+modnotification_info                    These mods were used when the current prison was saved. We highly recommend downloading and activating them before playing this prison.
+modnotification_playnow                 Play Now
+modnotification_active                  Active
+modnotification_inactive                Inactive
+modnotification_new                     New
+modnotification_unknown                 Unknown
+modnotification_popup_title             Mod difference
+modnotification_popup_active            This mod is currently active. Click to deactivate.
+modnotification_popup_inactive          This mod is currently inactive. Click to activate.
+modnotification_popup_new_url           This is a new mod. Click to open it's link in a web browser.
+modnotification_popup_new_steam         This is a new steam mod. Click to subscribe to and download the mod now.
+modnotification_popup_unknown           We were unable to determine where this mod came from. Please find and install this mod yourself.
+
+# =============================================================================
 # Biography
 # =============================================================================
 
 biography_search                        Stop and Search
 biography_selected                      SELECTED
+biography_prisoner_name                 *S, *F
+biography_prisoner_number               Prisoner #*X
+biography_prisoner_age                  Age : *X
+biography_prisoner_traits               Traits  :
+biography_prisoner_convicted            Convicted of *C (pleaded *P)
+biography_prisoner_sentenced            Sentenced to *X years in jail
+biography_parole_now                    Eligible for parole now
+biography_parole_later                  Eligible for parole after *X years
+biography_prisoner_served               Served *X years
+biography_prisoner_priors               Priors: 
 
 
 # =============================================================================
@@ -1159,6 +1194,13 @@ meal_quantity                           Meal Quantity
 meal_variety                            Meal Variety
 meal_cost                               Cost Per Prisoner
 
+reports_paroletitle                     Parole Policy
+parole_title                            Parole Release Rate
+parole_info                             Parole Cutoff: *P%
+parole_desc                             If a prisoner has a reoffending rate less than this value, they will be released at the end of their parole hearing.
+parole_fine                             Prisoner Reoffending Fine
+parole_reward                           Early Release Prisoner Reward
+
 victory_title                           CERTIFICATION
 
 victory_PrisonValue                     Prison Value
@@ -1187,6 +1229,8 @@ victory_prisoners_units                 Places
 victory_prisonersreleased_units         Released
 victory_toomanydeaths_units             Deaths
 victory_toomanyescapes_units            Escapes
+victory_prisonersparoled                Prisoners Paroled
+victory_prisonersreoffended             Reoffended Prisoners
 
 victory_adviserwarning_toomanydeaths1   Yesterday was a very dark chapter in the history of this prison. Far too many people lost their lives here.
 victory_adviserwarning_toomanydeaths2   Make sure nobody else dies today, or you will face prosecution for criminal negligence.
@@ -1201,6 +1245,13 @@ victory_advisernotice_toomanyescapes2   That somebody is you.  You're fired.
 victory_adviserwarning_bankrupt1        We are bankrupt! Your disastrous management has led us to financial ruin.
 victory_adviserwarning_bankrupt2        Find a way to fix this soon or you will be fired.
 victory_advisernotice_bankrupt1         We have no choice but to declare bankruptcy and put the prison into administration. You have failed.
+victory_adviserwarning_wardendeaths1    Working for you has become much too hazardous. We're struggling to find wardens who want to work at the prison.
+victory_adviserwarning_wardendeaths2    If you let another warden die, we will have no choice but to fire you.
+victory_advisernotice_wardendeaths1     You have failed to provide a safe working environment for your wardens. Everyone is afraid to work for you.
+victory_advisernotice_wardendeaths2     We have no choice by to let you go. You are fired.
+victory_adviserwarning_reoffenders1     A lot of the prisoners you have put up for early release have gone on to commit new crimes. This could cost us if we don't take control of the situation.
+victory_adviserwarning_reoffenders2     If too many more prisoners reoffend upon release, you'll be the one to take the blame.
+victory_advisernotice_reoffenders1      You have released too many dangerous criminals into the world. We have no choice but let you go. You have failed.
 
 score_title                             PRISON GRADING
 score_reoffendingrate                   REOFFENDING RATE
@@ -1209,6 +1260,8 @@ score_minimumprisonersreleased          *X prisoners must be released before thi
 score_deaths                            *X prisoners died in custody
 score_escapes                           *X prisoners escaped
 score_reoffendingchance                 Estimated Re-offending Chance
+score_prisonersparoled                  Paroled Early (Reoffended)
+score_prisonersparoled_info             *P (*E%)
 
 score_tooltip_punishment                This is a grading of how well the prisoner has been punished for his crimes, as perceived by the public. Serving a long term in prison is the foundation of a strong punishment, but hard times locked up alone will also count towards it.\n\nKeep in mind that too much reform or free time will be seen as 'soft on crime' and will count against their punishment grade.\n\nA strong punishment score will deter the prisoner from re-offending after release.
 score_tooltip_reform                    A grading of how well you have attempted to reform and rehabilitate this prisoner through the use of Reform programs.\n\nA high reform score will give the prisoner a much greater chance of finding genuine employment after release, and will therefore reduce his re-offending chance.\n\nNote: Putting your prisoners to work around the prison also counts towards this.
@@ -1307,6 +1360,7 @@ action_eat                              Eating
 action_complain                         Complaining
 action_work                             Working
 action_visitation                       Visitation
+action_parole                           Parole Hearing
 action_none                             None
 action_misbehaving                      Misbehaving
 action_escaping                         Escaping
@@ -1317,6 +1371,8 @@ action_rioting                          Rioting
 action_hostagetaking                    Hostage Taking
 action_reformprogram                    Reform Program
 action_changeclothes                    Changing Clothes
+action_getbook                          Get Book
+action_pray                             Praying
 
 status_effect_title						=[Status Effects]=
 status_effect_none						None
@@ -1328,6 +1384,8 @@ status_effect_withdrawal				Withdrawal
 status_effect_tazed                     Tazed
 status_effect_overdosed                 Overdosed
 status_effect_surrendered               Surrendered
+status_effect_calming                   Calming
+status_effect_angst                     Angry
 
 experience_totaltime                    Total Time
 experience_misconduct                   Misconduct
@@ -1366,6 +1424,8 @@ need_name_clothing                      Clothing
 need_name_drugs                         Drugs
 need_name_alcohol                       Alcohol
 need_name_starving                      Starving
+need_name_spirituality                  Spirituality
+need_name_literacy                      Literacy
 needs_locked                            (Psychologist Required To Show Needs)
 needs_title                             =[Needs]=
 
@@ -1473,6 +1533,9 @@ objective_punishment_solitary_mix       *X in Solitary (+*Y awaiting)
 objective_punishment_lockdown           *X in Lockdown
 objective_incident_medical              *X require medical attention
 objective_incident_dead                 *X dead bodies
+
+objective_prisonerparole                Prisoner Parole
+objective_parole_count                  *X prisoners up for parole
 
 objective_payment_receivedfull          Payment: *X received
 objective_payment_receivedpart          Payment: *X received out of *Y total
@@ -1789,10 +1852,20 @@ object_dismantleutility                  Dismantle Utility
 object_sellobject                        Sell Object
 object_canceljobs                        Cancel Jobs
 object_showallwires                      Show Wires
+object_tidywires                         Tidy Wires
 object_cutscenepolaroid                  Cutscene Polaroid
 object_cutscenecamera                    Cutscene Camera
 object_cutscenecue                       Cutscene Cue
 object_foodwaste                         Food Waste
+object_altar                             Altar
+object_pews                              Pews
+object_prayermat                         Prayer Mat
+object_spiritualleader                   Spiritual Leader
+object_librarybookshelf                  Library Shelf
+object_librarybookunsorted               Library Book (Unsorted)
+object_librarybooksorted                 Library Book (Sorted)
+object_sortingtable                      Librarians Desk
+object_ruinedbook                        Ruined Book
 
 material_none                            None
 material_building                        Building (Brick)
@@ -1859,7 +1932,9 @@ room_library                             Library
 room_forestry                            Forestry
 room_classroom                           Classroom
 room_exports                             Exports
+room_chapel                              Chapel
 room_clearrooms                          Clear Rooms
+room_paroleroom                          Parole Room
 
 equipment_none                           None
 equipment_fists                          Fists
@@ -1914,16 +1989,20 @@ reformprogram_therapy                   Behavioural Therapy
 reformprogram_methadone                 Pharmacological Treatment of Drug Addiction
 reformprogram_alcoholicsmeeting         Alcoholics Group Therapy
 reformprogram_tazertraining             Guard Tazer Certification
+reformprogram_spiritualguidance         Spiritual Guidance
+reformprogram_parolehearing             Parole Hearing
 
 reformprogram_tazertrained              Certified : Tazer
 
 reformprogram_workshopinduction_text    Safety first! Inmates must pass this course before they are permitted to work in the Workshop.
-reformprogram_foundationeducation_text  Many inmates lack even a basic foundation in reading, writing, and maths skills. This course brings inmates up to that level.
+reformprogram_foundationeducation_text  Many inmates lack even a basic foundation in reading, writing, and maths skills. This course brings inmates up to that level. Passing allows prisoners to work in the Library.
 reformprogram_carpentry_text            A complex tradeskill that requires good practical ability. Qualified inmates can use this skill to create high value wooden items on the carpenters table.
 reformprogram_kitcheninduction_text     Food standards are important when catering for hundreds of people at once. Inmates must complete this course before they are permitted to work in the kitchen.
 reformprogram_therapy_text              Inmates often struggle to control their violent nature. These one-on-one sessions with the prison psychologist aims to give them the tools necessary to de-escalate any situation they find themselves in before it turns violent.
 reformprogram_methadone_text            A course of 5 pharmacological substitutes, used to combat a prisoner's addiction to narcotics. Each treatment helps the prisoner with their addiction need, and completing the course has a chance to remove the addiction all together.
 reformprogram_alcoholicsmeeting_text    A group therapy meeting for alcoholics. Helps reduce the desire for alcohol. Never completely removes the need.
+reformprogram_parolehearing_text        A hearing to determine is a prisoner is eligible for early release. A successful release in which a prisoner doesn't reoffend will award a nice bonus. If the prisoner does reoffend, you will instead be fined. The warden and chief must be in attendance. There can therefore only be 1 parole programming running at any time.
+reformprogram_spiritualguidance_text    Some prisoners are religious, or have a general need for some spirituality in their life. Bring in a spiritual leader from the local community to lead them through prayers and instil a sense of calm amongst your prisoners.
 
 reformerror_unscheduled                 UNSCHEDULED
 reformerror_noroom                      NO ROOM FOUND
@@ -1959,6 +2038,8 @@ reform_program_intake_referralviolence          Referral: Violence
 reform_program_intake_referraldrugaddiction     Referral: Drug Addiction
 reform_program_intake_referralalcoholism        Referral: Alcoholism
 reform_program_intake_guards                    For Guards Only
+reform_program_intake_parole                    After either 50% or 75% of sentence has been served
+reform_program_intake_needrequired              Each prisoner requires a specific need before joining
 
 reform_program_properties_canhireexternally     Can Hire Externally
 reform_program_properties_studentssit           Students Sit
@@ -1967,6 +2048,7 @@ reform_program_properties_practical             Practical
 reform_program_properties_repeatable            Repeatable
 reform_program_properties_passive               Passive
 reform_program_properties_staffonly             Staff Only
+reform_program_properties_outsideofwork         Can be outside of work hours
 
 reform_program_difficulty_easy          - Easy
 reform_program_difficulty_intermediate  - Intermediate
