@@ -1,0 +1,10 @@
+
+click_to_continue                       Tap to Continue...
+
+adviser_deathrow_explain5               While we wait, take a look around. Drag the screen to move the view around, and pinch with two fingers to zoom in and out.
+
+adviser_deathrow_internaldoors2          You can rotate an object before placement by tapping the Rotate button on the right of the screen
+
+objective_deathrow_buildinternaldoors   Build internal doors
+
+adviser_deathrow_transfer2              Simply tap on him to select him, then tap-hold just outside his Cell to initiate the transfer.
