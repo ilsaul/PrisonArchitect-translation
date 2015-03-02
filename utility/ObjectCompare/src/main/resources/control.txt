@@ -1,5 +1,0 @@
-#ObjectID.Property
-CriminalTrait.Name
-Crime.Name
-Crime.Risk
-Crime.Trait
