@@ -515,7 +515,10 @@ public class MultiCompare implements Runnable {
 		File srcEng = null;
 		File src[] = null;
 
+// the same file different version (English version)
+// -c -e ../../English/base-language.txt -o ../../new_future.txt ../../English/base-language-29.txt
 // -c -e ../../../PrisonArchitect-traslate-3/English/base-language-29.txt -o ../../temp.txt ../../../PrisonArchitect-traslate-3/English/base-language-28.txt
+
 // -t
 // -m -e ../../../PrisonArchitect-traslate-3/English/base-language-29.txt -o ../../gamefile.txt ../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/base-language.txt ../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/New_tr.txt
 // -u -e ../../../PrisonArchitect-traslate-3/English/base-language-29.txt -o ../../miss.txt ../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/base-language-29.txt
