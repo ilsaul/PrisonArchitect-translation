@@ -115,8 +115,8 @@ public class MultiCompare implements Runnable {
 
 	public void runCompareEnglish() {
 		if (src.size() != 1) {
-			logger.error("In comparing English versions can only have an argument");
-			throw new RuntimeErrorException(null, "In comparing English versions can only have an argument");
+			logger.error("In comparing English versions can only have an argument (actually is {})", src.size());
+			throw new RuntimeErrorException(null, "In comparing English versions can only have an argument  (actually is " + src.size() + ")");
 		}
 		run();
 	}
@@ -516,8 +516,9 @@ public class MultiCompare implements Runnable {
 		File src[] = null;
 
 // the same file different version (English version)
-// -c -e ../../English/base-language.txt -o ../../new_future.txt ../../English/base-language-29.txt
-// -c -e ../../../PrisonArchitect-traslate-3/English/base-language-29.txt -o ../../temp.txt ../../../PrisonArchitect-traslate-3/English/base-language-28.txt
+// -c -e ../../English/base-language.txt -o ../../English/base-language_new_key.txt ../../English/base-language-30.txt
+// -c -e ../../English/tablets.txt -o ../../English/tablets_new_key.txt ../../English/tablets-30.txt
+
 
 // -t
 // -m -e ../../../PrisonArchitect-traslate-3/English/base-language-29.txt -o ../../gamefile.txt ../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/base-language.txt ../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/New_tr.txt

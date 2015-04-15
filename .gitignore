@@ -16,3 +16,4 @@ hs_err_pid*
 .classpath
 .project
 utility/MultiCompare/build
+utility/MultiCompare/bin

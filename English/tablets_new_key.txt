@@ -1,0 +1,5 @@
+object_firemen_hosehelp                      Press and hold to move. Press and hold on flames to aim the hoses.                 
+
+objective_deathrow_transferinmate            When you are done, begin the Prisoner Transfer.  Tap on him to select him, then Tap-hold in the zone outside his cell.
+
+objective_food_extinguishflames_description  When you have firemen selected you can press and hold on flames to aim their hoses, but the flames have to be less than 15 squares away.
