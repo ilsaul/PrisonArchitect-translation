@@ -362,10 +362,10 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name CorruzioneAggravata
+     Name Corruzione_Aggravata
      MinSentence 10
      MaxSentence 25
-     Risk medio
+     Risk Medio
      Trait Ladro
      Trait Pericoloso 
 END
@@ -380,10 +380,10 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name IncendioDoloso
+     Name Incendio_Doloso
      MinSentence 15
      MaxSentence 25
-     Risk medio
+     Risk Medio
      Trait Pericoloso 
      Trait Distruttivo
 END
@@ -406,7 +406,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name DistrurboViolento
+     Name Disordini_Violenti
      MinSentence 2
      MaxSentence 5
      Risk medio
@@ -414,7 +414,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name PossessoDiStupefacenti
+     Name Possesso_Di_Stupefacenti
      MinSentence 2
      MaxSentence 7
      Risk medio
@@ -438,7 +438,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name Imbroglione
+     Name Frode
      MinSentence 2
      MaxSentence 10
      Risk Basso
@@ -446,7 +446,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name ContraffazioneDiMoneta
+     Name Contraffazione_Di_Moneta
      MinSentence 2
      MaxSentence 10
      Risk Basso
@@ -455,7 +455,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name FalsaIdentita'
+     Name Falsa_Identità
      MinSentence 1
      MaxSentence 7
      Risk Basso
@@ -464,7 +464,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name InsiderTrading
+     Name Insider_Trading
      MinSentence 1
      MaxSentence 7
      Risk Basso
@@ -473,7 +473,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name RiciclaggioDiDenaro
+     Name Riciclaggio_Di_Denaro
      MinSentence 5
      MaxSentence 14
      Risk Basso
@@ -482,52 +482,52 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name FurtoD'AutoAggravato
+     Name Furto_D'Auto_Aggravato
      MinSentence 3
      MaxSentence 10
      Risk Medio
      Trait Ladro
      Trait Pericoloso 
-     Trait veicolare
+     Trait Veicolare
      Trait Giovane
 END
 
 BEGIN Crime
-     Name FurtoD'Auto
+     Name Furto_D'Auto
      MinSentence 1
      MaxSentence 5
-     Risk medio
+     Risk Medio
      Trait Pericoloso
-     Trait veicolare
+     Trait Veicolare
      Trait Giovane
 END
 
 BEGIN Crime
-     Name GuidaPericolosa
+     Name Guida_Pericolosa
      MinSentence 1
      MaxSentence 2
      Risk Basso
      Trait Pericoloso 
-     Trait veicolare
+     Trait Veicolare
 END
 
 BEGIN Crime
-     Name OmicidioStradale
+     Name Omicidio_Stradale
      MinSentence 8
      MaxSentence 14
      Risk Medio
      Trait Pericoloso 
-     Trait veicolare
+     Trait Veicolare
 END
 
 BEGIN Crime
-     Name GuidaSottoSostanzeStupefacenti
+     Name Guida_Sotto_Stupefacenti
      MinSentence 1
      MaxSentence 4
      Risk Medio
      Trait Pericoloso 
      Trait Spacciatore
-     Trait veicolare
+     Trait Veicolare
 END
 
 BEGIN Crime
@@ -539,10 +539,10 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name FalsoImprigionamento
+     Name Falso_Imprigionamento
      MinSentence 5
      MaxSentence 15
-     Risk medio
+     Risk Medio
      Trait Ossessivo
 END
 
@@ -559,12 +559,12 @@ BEGIN Crime
      Name Assalto
      MinSentence 1
      MaxSentence 10
-     Risk medio
+     Risk Medio
      Trait Violento
 END
 
 BEGIN Crime
-     Name AssaltoAggravato
+     Name Assalto_Aggravato
      MinSentence 10
      MaxSentence 15
      Risk Alto
@@ -573,7 +573,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name AggressioneAPubblicoUfficiale
+     Name Aggressione_A_Pubblico_Ufficiale
      MinSentence 3
      MaxSentence 10
      Risk Medio
@@ -581,7 +581,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name LesioniGravi
+     Name Lesioni_Gravi
      MinSentence 7
      MaxSentence 15
      RiskAlto
@@ -599,7 +599,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name TentatoOmicidio
+     Name Tentato_Omicidio
      MinSentence 10
      MaxSentence 25
      Risk Alto
@@ -608,7 +608,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name OmicidioColposo
+     Name Omicidio_Colposo
      MinSentence 10
      MaxSentence 25
      Risk Medio
@@ -616,14 +616,14 @@ BEGIN Crime
 END
 
 # BEGIN Crime
-# Name GiustiziaPersonale
+# Name Giustizia_Personale
 # MinSentence 5
 # MaxSentence 15
 # Risk Basso
 # END
 
 # BEGIN Crime
-# Name ConcorsoDiColpa
+# Name Concorso_Di_Colpa
 # MinSentence 1
 # MaxSentence 2
 # Risk Basso
@@ -634,11 +634,11 @@ BEGIN Crime
      MinSentence 1
      MaxSentence 2
      Risk Basso
-     Trait Spaccio
+     Trait Spacciatore
 END
 
 # BEGIN Crime
-# Name FugaDallaCustidia
+# Name Fuga_Dalla_Custidia
 # MinSentence 1
 # MaxSentence 3
 # Risk Basso
@@ -668,10 +668,10 @@ END
 # END
 
 BEGIN Crime
-     Name DistrurboViolento
+     Name Distrurbo_Violento
      MinSentence 3
      MaxSentence 5
-     Risk medio
+     Risk Medio
      Trait Violento
      Trait Distruttivo
 END
@@ -680,12 +680,12 @@ BEGIN Crime
      Name Narcotraffico
      MinSentence 10
      MaxSentence 15
-     Risk medio
+     Risk Medio
      Trait Ossessivo
 END
 
 BEGIN Crime
-     Name RapinaArmata
+     Name Rapina_Armata
      MinSentence 15
      MaxSentence 25
      Risk Alto
@@ -702,17 +702,17 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name AssaltoAUnVeicolo
+     Name Assalto_A_Un_Veicolo
      MinSentence 5
      MaxSentence 15
-     Risk medio
+     Risk Medio
      Trait Ladro
-     Trait veicolare
+     Trait Veicolare
      Trait Giovane
 END
 
 BEGIN Crime
-     Name MercatoNero
+     Name Mercato_Nero
      MinSentence 6
      MaxSentence 14
      Risk Basso
@@ -729,7 +729,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name SoftwarePirata
+     Name Software_Pirata
      MinSentence 2
      MaxSentence 4
      Risk Basso
@@ -738,7 +738,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name GiochiIndiePirata
+     Name Giochi_Indie_Pirata
      MinSentence 3
      MaxSentence 6
      Risk Basso
@@ -747,7 +747,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name RapinaInNegozio
+     Name Rapina_In_Negozio
      MinSentence 2
      MaxSentence 10
      Risk Basso
@@ -756,7 +756,7 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name FurtoConScasso
+     Name Furto_Con_Scasso
      MinSentence 2
      MaxSentence 10
      Risk Basso
@@ -766,12 +766,12 @@ BEGIN Crime
 END
 
 BEGIN Crime
-     Name FurtoD'Auto
+     Name Furto_D'Auto
      MinSentence 5
      MaxSentence 14
      Risk Basso
      Trait Ladro
-     Trait veicolare
+     Trait Veicolare
 END
 
 BEGIN Crime
@@ -779,16 +779,16 @@ BEGIN Crime
      MinSentence 4
      MaxSentence 15
      Risk Alto
-     Trait Maniaco Sessuale
+     Trait Maniaco
      Trait Violento
 END
 
 BEGIN Crime
-     Name AttiOsceni
+     Name Atti_Osceni
      MinSentence 2
      MaxSentence 10
      Risk Basso
-     Trait Maniaco Sessuale
+     Trait Maniaco
 END
 
 BEGIN Crime
@@ -796,5 +796,102 @@ BEGIN Crime
      MinSentence 1
      MaxSentence 2
      Risk Basso
-     Trait Maniaco Sessuale
+     Trait Maniaco
+END
+
+
+
+
+# =============================================================================
+# Reputation
+
+BEGIN Reputation
+    Name            Leggendario
+    ChanceLow       0
+    ChanceMedium    0
+    ChanceHigh      1
+END
+
+BEGIN Reputation
+    Name            Forte
+    ChanceLow       0
+    ChanceMedium    5
+    ChanceHigh      15
+END
+
+BEGIN Reputation
+    Name            Resistente
+    ChanceLow       0
+    ChanceMedium    5
+    ChanceHigh      15
+END
+
+BEGIN Reputation
+    Name            Rapido
+    ChanceLow       3
+    ChanceMedium    5
+    ChanceHigh      3
+END
+
+BEGIN Reputation
+    Name            Esplosivo
+    ChanceLow       0
+    ChanceMedium    3
+    ChanceHigh      7
+END
+
+BEGIN Reputation
+    Name            Stoico
+    ChanceLow       0
+    ChanceMedium    10
+    ChanceHigh      20
+END
+
+BEGIN Reputation
+    Name            Impavido
+    ChanceLow       0
+    ChanceMedium    5
+    ChanceHigh      15
+END
+
+BEGIN Reputation
+    Name            Mortale
+    ChanceLow       0
+    ChanceMedium    1
+    ChanceHigh      2
+END
+
+BEGIN Reputation
+    Name            Spia
+    ChanceLow       3
+    ChanceMedium    2
+    ChanceHigh      1
+END
+
+BEGIN Reputation
+    Name            Ex_Poliziotto
+    ChanceLow       3
+    ChanceMedium    2
+    ChanceHigh      1
+END
+
+BEGIN Reputation
+    Name            Ammazza_Poliziotti
+    ChanceLow       0
+    ChanceMedium    0
+    ChanceHigh      5
+END
+
+BEGIN Reputation
+    Name            Istigatore
+    ChanceLow       0
+    ChanceMedium    1
+    ChanceHigh      3
+END
+
+BEGIN Reputation
+    Name            Guerriero
+    ChanceLow       1
+    ChanceMedium    2
+    ChanceHigh      5
 END

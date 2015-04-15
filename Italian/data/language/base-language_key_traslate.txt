@@ -1,0 +1,112 @@
+# =============================================================================
+# Interface Mode
+# =============================================================================
+
+interfacemode_selection                              Seleziona                       
+interfacedeployment_removeguards                     Rimuovi Guardie                  
+interfacedeployment_clearpatrols                     Azzera Pattuglie              
+interfacelogistics_removejobs                        Rimuovi Lavorante               
+sector_jobs_required                                 (Richiede: *X)    
+             
+# =============================================================================
+# Build Toolbar
+# =============================================================================
+
+buildtoolbar_popup_room_intake                      Dove vengono portati i detenuti appena giunti.
+
+# =============================================================================
+# Research Names + Captions
+# =============================================================================
+
+research_tap_to_authorise                            CLICCA PER AUTORIZZARE      
+         
+# =============================================================================
+# Room Requirements
+# =============================================================================
+
+roomrequirement_minimumsize_short                    Misura *L x *A                   
+roomrequirement_secure_short                         Metti in Sicurezza                        
+roomrequirement_enclosed_short                       Chiuso                      
+ 
+# =============================================================================
+# Valuation, Reports etc
+# =============================================================================
+
+report_intake                                        Nuovi Giunti                         
+report_grants_taptoaccept                            CLICCA PER ACCETTARE                  
+report_grants_cancelfee                              Costi Annullamento: *X          
+report_prisoners_title                               Detenuti Totali: *X
+report_intake_title                                  Nuovi Giunti                         
+report_intake_catheader_cat                          Categoria                    
+report_intake_catheader_pay                          Pagamento                        
+report_intake_catheader_available                    Disponibile                    
+report_intake_catheader_amount                       Ratio                        
+report_intake_next_header                            In Arrivo: *X               
+report_intake_cat_minsec                             Min Sec                        
+report_intake_cat_normal                             Med Sec                        
+report_intake_cat_maxsec                             Max Sec                        
+report_intake_slider_minsec                          Regola l'arrivo di Detenuti Min 
+Secreport_intake_slider_normal                       Regola l'arrivo di Detenuti Med 
+Secreport_intake_slider_maxsec                       Regola l'arrivo di Detenuti Max 
+Secreport_intake_closed                              CHIUSO                         
+report_intakemaxperdaydesc                           Arrivi Giornalieri                   
+report_intakemaxperdaydesc_tooltip                   Il numero di Detenuti che vuoi ricevere per il prossimo recapito
+report_intakemaxperdaydecr                           <<                             
+report_intakemaxperdayincr                           >>                             
+report_intakemaxperdaynone                           No                           
+report_intakemaxperdayall                            Tutti                         
+reports_intakedelivernow                             Recapita adesso                 
+report_intakepayment                                 Pagamento                       
+report_intakeall                                     TUTTI                         
+report_intake_list_tooltip_title                     Categoria arrivi
+report_intake_list_tooltip                           Una lista delle categorie di Detenuti nella prigione.\n\nPuoi vedere il numero totale di Detenuti che possono essere consegnati per ogni categoria. Questo numero crescer‡ in base al ratio di arrivo.\n\nPuoi cambiare il ratio per gestire la categoria di detenuti che verr‡ consegnata alla prigione.
+report_intake_buttons_tooltip_title                  Prossimo recapito    
+report_intake_buttons_tooltip                        Puoi aumentare o diminuire il numero di Detenuti che vuoi ricevere al prossimo recapito.\n\nSelezionando "No" puoi chiudere la prigione a nuovi detenuti, selezionando "tutti" riceverai il massimo numero possibile di Detenuti.\n\nIl numero di Detenuti per categoria puÚ essere regolato dagli indicatori sotto.
+report_intake_overview_tooltip_title                 Panoramica arrivi  
+report_intake_overview_tooltip                       Qui puoi controllare il tuo prossimo recapito e il pagamento annesso. Il numero di Detenuti consegnati, e la loro categoria, possono essere cambiati con gli appositi indicatori. Il pagamento Ë basato sul numero di Detenuti per categoria.
+
+valuation_tap_to_authorise                           CLICCA PER AUTORIZZARE             
+
+job_giveuniform                                      Dai al Detenuto un'uniforme        
+job_feedprisoner                                     Nutri Detenuto                       
+
+finances_category_prisoners                          Concessione Detenuti             
+  
+# =============================================================================
+# Objectives, Grants
+# =============================================================================
+
+objective_intake_closed3                             (Guarda il Report sui Nuovi Giunti)        
+objective_outgoing_count                             *X Detenuti verrano rilasciati a breve
+
+# =============================================================================
+# Materials
+# =============================================================================
+
+object_prisonerbus                                   Bus Detenuti                   
+object_paroleofficer                                 Delegato libertà vigilata           
+object_parolelawyer                                  Avvocato libertà vigilata                 
+object_foodbowl                                      Cibo                           
+
+room_intake                                          Nuovi Giunti                        
+room_paroleroom                                      Stanza Udienza
+
+reform_program_ledwith                               - Assistito da *S             
+
+reform_program_properties_teacherssit                Sedia Insegnante                 
+reform_program_properties_canescortstudent           Gli Studenti posso essere scortati dalle Guardie
+
+# =============================================================================
+# Misc
+# =============================================================================
+
+tooltip_multipleobjects                              Premi TAB per serie oggetti    
+
+# =============================================================================
+# Expense popups
+# =============================================================================
+
+finance_cost_prisonerintake                          Nuovi Detenuti                
+finance_cost_grantcancellation                       Costi Annullamento            
+finance_cost_grantrefund                             - Rimborso: *X                
+finance_cost_grantfine                               - Propriet‡: *X                     
