@@ -1,4 +1,4 @@
-﻿
+
 # =============================================================================
 # Basic dialog strings
 # =============================================================================
@@ -155,6 +155,7 @@ interfacemode_grading                         Grading
 interfacemode_spawn                           (Spawn)
 interfacemode_properties                      (Properties)
 interfacemode_cutscenes                       (Cutscenes)
+interfacemode_selection                       Select
 
 interfaceoverlay_security                       Security
 interfaceoverlay_patrols                        Patrols
@@ -173,6 +174,8 @@ interfacedeployment_guards                      Guards
 interfacedeployment_patrols                     Guard Patrols
 interfacedeployment_dogpatrols                  Dog Patrols
 interfacedeployment_armedpatrols                Armed Patrols
+interfacedeployment_removeguards                Remove Guards
+interfacedeployment_clearpatrols                Clear Patrols
 interfacedeployment_targetting                  Logistics
 interfacedeployment_targettingfood              Food Logistics
 interfacedeployment_targettinglaundry           Laundry Logistics
@@ -191,6 +194,7 @@ interfacedeployment_zoneblue                    Blue Wing
 interfacedeployment_zoneyellow                  Yellow Wing
 
 interfacelogistics_jobs                         Prison Labour
+interfacelogistics_removejobs                   Remove Labour
 interfacelogistics_targettingfood               Food Distribution
 interfacelogistics_targettinglaundry            Laundry Distribution
 
@@ -335,6 +339,7 @@ gameover_caption                                Press ESC to Continue
 
 sector_jobs_max                                 Max Jobs *X
 sector_jobs_qualified                           Qualified Prisoners: *X
+sector_jobs_required                            (Required: *X)
 sector_noaccess                                 NO ACCESS
 
 patrol_assign_1                                 To assign guards to patrols:
@@ -424,6 +429,7 @@ buildtoolbar_popup_room_kennel          Where your dogs live.
 buildtoolbar_popup_room_chapel          What happens when a beurocratic committee gets together and designs a solution to inmate's religious needs? A 'Multi Faith Prayer Room', that's what. We refer to it as the Chapel.
 buildtoolbar_popup_room_paroleroom      Your prisoners will be eligable for parole after serving 50% and 75% of their terms. Their fate will be decided in this room, with the Warden and the Chief.\n\nNb Extra security is advised. Prisoners have been known to become quite upset when their parole is denied.
 buildtoolbar_popup_room_library         Your prison will be sent boxes of discarded and used books from around the country. Prisoners will need to sort those books onto the shelves.
+buildtoolbar_popup_room_intake          Where your prisoners are first taken when they arrive.
 
 buildtoolbar_popup_obj_bed				Not too soft, not too hard, just right. Well, actually, really hard and too small.
 buildtoolbar_popup_obj_toilet			A basic human right, if you believe all those crackpots.
@@ -914,7 +920,7 @@ research_costperitem                    + *X per item.
 research_timetounlock                   Time to unlock : *X hours
 research_movementpenalty                Movement Penalty: *X%
 research_protectionbonus                Protection: *X%
-
+research_tap_to_authorise               TAP TO AUTHORISE
 
 research_none                           None
 research_warden                         Warden
@@ -987,11 +993,14 @@ researchtooltip_advancedmanagement      Gives you the tools to micro manage aspe
 roomrequirement_required                REQUIRED:
 roomrequirement_recommended             Recommended: 
 roomrequirement_minimumsize             Minimum Size *W x *H
+roomrequirement_minimumsize_short	Size *W x *H
 roomrequirement_indoor                  Indoors
 roomrequirement_outdoor                 Outdoor
 roomrequirement_solidground             Solid Ground
 roomrequirement_secure                  Secure (behind at least one Door)
+roomrequirement_secure_short		Secure
 roomrequirement_enclosed                Enclosed (surrounded by walls and doors)
+roomrequirement_enclosed_short		Enclosed
 requirement_entrance                    Requires Entrance
 roomrequirement_title                   =[Room Requirements]=
 roomrequirement_passed                  [PASSED] 
@@ -1052,6 +1061,7 @@ report_valuation                        Valuation
 report_contraband                       Contraband
 report_programs                         Programs
 report_schedule                         Scheduler
+report_intake                           Intake
 
 report_grants_bankloan                  Bank Loan
 report_grants_bankloan_text             You can borrow a large lump sum from the bank. In return the bank will charge you interest each day which you must pay out of your cashflow.\n\nAs you make regular payments your credit rating will increase, and the bank will allow you to borrow more. However if you miss payments your credit rating will be decimated and the bank will refuse to lend you more when you need it.\n\nNote: Your loan will never be paid off by daily interest payments alone.  
@@ -1073,9 +1083,11 @@ report_grants_completed                 COMPLETED
 report_grants_locked                    Locked
 report_grants_inprogress                In Progress
 report_grants_hidden                    (*X more hidden)
+report_grants_taptoaccept               TAP TO ACCEPT
+report_grants_cancelfee                 Cancellation cost: *X
 
 report_staff_title                      Total Staff: *X
-report_prisoners_title                  Total Prisoners: *X (Max: *M)
+report_prisoners_title                  Total Prisoners: *X
 report_staff_group_builders             Workers
 report_staff_group_guards               Guards
 report_staff_group_staff                Staff
@@ -1088,6 +1100,35 @@ report_staff_group_prisoners_protected  Protective Custody
 report_staff_group_prisoners_supermax   SuperMax
 
 report_staff_fire                       FIRE
+
+report_intake_title                     Intake
+report_intake_catheader_cat             Category
+report_intake_catheader_pay             Payment
+report_intake_catheader_available       Available
+report_intake_catheader_amount          Ratio
+report_intake_next_header               Next Intake : *X
+report_intake_cat_minsec                Min Sec
+report_intake_cat_normal                Med Sec
+report_intake_cat_maxsec                Max Sec
+report_intake_slider_minsec             Adjust the Min Sec intake ratio
+report_intake_slider_normal             Adjust the Med Sec intake ratio
+report_intake_slider_maxsec             Adjust the Max Sec intake ratio
+report_intake_closed                    CLOSED
+report_intakemaxperdaydesc              Daily Intake
+report_intakemaxperdaydesc_tooltip      The total number of prisoners you want delivered in the next intake
+report_intakemaxperdaydecr              <<
+report_intakemaxperdayincr              >>
+report_intakemaxperdaynone              None
+report_intakemaxperdayall               All
+reports_intakedelivernow                Deliver Now
+report_intakepayment                    Payment
+report_intakeall                        ALL
+report_intake_list_tooltip_title        Intake Categories
+report_intake_list_tooltip              A list of all categories you can have delivered to your prison.\n\nThe pool size shows the total number of prisoners available to be delivered in each category. This number will grow over time depending on the ratio of the sliders.\n\nYou can adjust the sliders to change the ratio of prisoner categories you will receive in the next intake.
+report_intake_buttons_tooltip_title     Next Intake
+report_intake_buttons_tooltip           You can increase or decrease the number of prisoners you wish to receive in the next intake using this section.\n\nSelecting "None" will close your prison to new prisoners, while selecting "All" will take the total number of available prisoners.\n\nThe number of prisoner from each category is adjusted with the sliders above.
+report_intake_overview_tooltip_title    Intake Overview
+report_intake_overview_tooltip          Here you can view your next prisoner delivery, and the payment you will receive. The number of prisoners being delivered, and their category, can be changed with the sliders and buttons above. The payment is based on the number of prisoners in each category.
 
 valuation_categoryprison                Prison Value
 valuation_construction                  Bricks and Mortar
@@ -1119,6 +1160,7 @@ valuation_totalprisonvalue              Total Prison Value : *X
 valuation_subcashreserves               Minus Cash Reserves : *X
 valuation_tenpercentprice               Price for 10% : *X
 valuation_profit                        Your Profit : *X
+valuation_tap_to_authorise              TAP TO AUTHORISE
 
 salecondition_title                     SALE REQUIREMENTS
 salecondition_cannotsell                You cannot sell your prison or trade in shares until the conditions below are met.
@@ -1162,7 +1204,9 @@ job_searchcellblock                     Search Cell Block
 job_improvecellindoor                   Clean indoor area
 job_improvecelloutdoor                  Garden outdoor area
 job_opendoor                            Open Locked Door
+job_giveuniform                         Give Prisoner Uniform
 job_failurecount                        Failed *X times
+job_feedprisoner                        Feed Prisoner
        
 finances_title                          Finances
 finances_income                         Income
@@ -1176,6 +1220,7 @@ finances_category_federalgrant          Federal Grant
 finances_category_minsecprisoners       Minsec Prisoner Grant
 finances_category_medsecprisoners       Standard Prisoner Grant
 finances_category_maxsecprisoners       Maxsec Prisoner Grant
+finances_category_prisoners             Prisoner Grant
 finances_category_workmen               Workmen Wages
 finances_category_guards                Guard Wages
 finances_category_admin                 Administrator Wages
@@ -1508,6 +1553,7 @@ objective_prisonerintake                Prisoner Intake
 objective_intake_arrivals               *X prisoners arriving 8am
 objective_intake_closed                 Your prison is closed to new inmates
 objective_intake_closed2                (See the Prisoner's Report)
+objective_intake_closed3                (See the Intake Report)
 objective_intake_specials				Special Transfers:
 objective_intake_categories             Categories: 
 objective_intake_minsec                 Min, 
@@ -1515,7 +1561,7 @@ objective_intake_medsec                 Normal,
 objective_intake_maxsec                 Max
 
 objective_outgoing                      Prisoners due for release
-objective_outgoing_count                *X prisoners are due for release soon
+objective_outgoing_count                *X prisoners due for release soon
 objective_outgoing_timer                (*X hrs)
 
 objective_visitors                      Visitors (8am - 8pm)
@@ -1784,6 +1830,7 @@ object_psychologist                      Psychologist
 object_accountant                        Accountant
 object_lawyer                            Lawyer
 object_supplytruck                       Supply Truck
+object_prisonerbus                       Prisoner Bus
 object_fireengine                        Fire Engine
 object_riotvan                           Riot Van
 object_ambulance                         Ambulance
@@ -1860,12 +1907,15 @@ object_foodwaste                         Food Waste
 object_altar                             Altar
 object_pews                              Pews
 object_prayermat                         Prayer Mat
+object_paroleofficer                     Parole Officer
+object_parolelawyer                      Parole Lawyer
 object_spiritualleader                   Spiritual Leader
 object_librarybookshelf                  Library Shelf
 object_librarybookunsorted               Library Book (Unsorted)
 object_librarybooksorted                 Library Book (Sorted)
 object_sortingtable                      Librarians Desk
 object_ruinedbook                        Ruined Book
+object_foodbowl                          Food
 
 material_none                            None
 material_building                        Building (Brick)
@@ -1933,8 +1983,9 @@ room_forestry                            Forestry
 room_classroom                           Classroom
 room_exports                             Exports
 room_chapel                              Chapel
+room_intake                              Intake
 room_clearrooms                          Clear Rooms
-room_paroleroom                          Parole Room
+room_paroleroom                          Parole
 
 equipment_none                           None
 equipment_fists                          Fists
@@ -2025,6 +2076,7 @@ reform_program_active                   ACTIVE
 reform_program_paused                   Paused
 reform_program_stop                     STOP
 reform_program_ledby                    - Led by a *P in a *Z
+reform_program_ledwith                  - Assisted by a *S
 reform_program_length                   - Session Length: *X hours
 reform_program_requirements             - Each prisoner requires a *X
 reform_program_requirements_alt         - Each prisoner requires a *X or a *Y
@@ -2049,6 +2101,8 @@ reform_program_properties_repeatable            Repeatable
 reform_program_properties_passive               Passive
 reform_program_properties_staffonly             Staff Only
 reform_program_properties_outsideofwork         Can be outside of work hours
+reform_program_properties_teacherssit           Teachers Sit
+reform_program_properties_canescortstudent      Students can be escorted by guards
 
 reform_program_difficulty_easy          - Easy
 reform_program_difficulty_intermediate  - Intermediate
@@ -2205,6 +2259,8 @@ buildtoolbar_entersearchterm            enter search term...
 deploymentscheduler_title               DEPLOYMENT SCHEDULER
 supplyanddemand_supplyheader            SUPPLY
 supplyanddemand_demandheader            DEMAND
+
+tooltip_multipleobjects                 Press TAB to cycle objects
 
 # =============================================================================
 # Campaign info
@@ -2383,7 +2439,10 @@ finance_cost_reformprogram              Reform Program Session
 finance_cost_repair                     Repair
 finance_cost_sellobject                 Sell Object
 finance_cost_landpurchase               Land Purchase
-
+finance_cost_prisonerintake             Prisoner Intake
+finance_cost_grantcancellation          Cancellation Costs
+finance_cost_grantrefund                - Repayment: *X
+finance_cost_grantfine                  - Fine: *X
 
 
 # =============================================================================

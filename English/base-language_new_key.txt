@@ -1,0 +1,124 @@
+
+# =============================================================================
+# Interface Mode
+# =============================================================================
+
+interfacemode_selection                              Select                         
+
+interfacedeployment_removeguards                     Remove Guards                  
+interfacedeployment_clearpatrols                     Clear Patrols                  
+
+interfacelogistics_removejobs                        Remove Labour                  
+
+sector_jobs_required                                 (Required: *X)                 
+
+# =============================================================================
+# Build Toolbar
+# =============================================================================
+
+buildtoolbar_popup_room_intake                       Where your prisoners are first taken when they arrive.
+
+# =============================================================================
+# Research Names + Captions
+# =============================================================================
+
+research_tap_to_authorise                            TAP TO AUTHORISE               
+
+# =============================================================================
+# Room Requirements
+# =============================================================================
+
+roomrequirement_minimumsize_short                    Size *W x *H                   
+roomrequirement_secure_short                         Secure                         
+roomrequirement_enclosed_short                       Enclosed                       
+
+# =============================================================================
+# Valuation, Reports etc
+# =============================================================================
+
+report_intake                                        Intake                         
+
+report_grants_taptoaccept                            TAP TO ACCEPT                  
+report_grants_cancelfee                              Cancellation cost: *X          
+
+report_prisoners_title                               Total Prisoners: *X (Max: *M) -> Total Prisoners: *X
+
+report_intake_title                                  Intake                         
+report_intake_catheader_cat                          Category                       
+report_intake_catheader_pay                          Payment                        
+report_intake_catheader_available                    Available                      
+report_intake_catheader_amount                       Ratio                          
+report_intake_next_header                            Next Intake : *X               
+report_intake_cat_minsec                             Min Sec                        
+report_intake_cat_normal                             Med Sec                        
+report_intake_cat_maxsec                             Max Sec                        
+report_intake_slider_minsec                          Adjust the Min Sec intake ratio
+report_intake_slider_normal                          Adjust the Med Sec intake ratio
+report_intake_slider_maxsec                          Adjust the Max Sec intake ratio
+report_intake_closed                                 CLOSED                         
+report_intakemaxperdaydesc                           Daily Intake                   
+report_intakemaxperdaydesc_tooltip                   The total number of prisoners you want delivered in the next intake
+report_intakemaxperdaydecr                           <<                             
+report_intakemaxperdayincr                           >>                             
+report_intakemaxperdaynone                           None                           
+report_intakemaxperdayall                            All                            
+reports_intakedelivernow                             Deliver Now                    
+report_intakepayment                                 Payment                        
+report_intakeall                                     ALL                            
+report_intake_list_tooltip_title                     Intake Categories              
+report_intake_list_tooltip                           A list of all categories you can have delivered to your prison.\n\nThe pool size shows the total number of prisoners available to be delivered in each category. This number will grow over time depending on the ratio of the sliders.\n\nYou can adjust the sliders to change the ratio of prisoner categories you will receive in the next intake.
+report_intake_buttons_tooltip_title                  Next Intake                    
+report_intake_buttons_tooltip                        You can increase or decrease the number of prisoners you wish to receive in the next intake using this section.\n\nSelecting "None" will close your prison to new prisoners, while selecting "All" will take the total number of available prisoners.\n\nThe number of prisoner from each category is adjusted with the sliders above.
+report_intake_overview_tooltip_title                 Intake Overview                
+report_intake_overview_tooltip                       Here you can view your next prisoner delivery, and the payment you will receive. The number of prisoners being delivered, and their category, can be changed with the sliders and buttons above. The payment is based on the number of prisoners in each category.
+
+valuation_tap_to_authorise                           TAP TO AUTHORISE               
+
+job_giveuniform                                      Give Prisoner Uniform          
+job_feedprisoner                                     Feed Prisoner                  
+       
+
+finances_category_prisoners                          Prisoner Grant                 
+
+# =============================================================================
+# Objectives, Grants
+# =============================================================================
+
+objective_intake_closed3                             (See the Intake Report)        
+
+objective_outgoing_count                             *X prisoners are due for release soon -> *X prisoners due for release soon
+
+# =============================================================================
+# Materials
+# =============================================================================
+                                              
+                                                                                                       
+object_prisonerbus                                   Prisoner Bus                   
+object_paroleofficer                                 Parole Officer                 
+object_parolelawyer                                  Parole Lawyer                  
+object_foodbowl                                      Food                           
+
+room_intake                                          Intake                         
+room_paroleroom                                      Parole Room -> Parole
+
+reform_program_ledwith                               - Assisted by a *S             
+
+reform_program_properties_teacherssit                Teachers Sit                   
+reform_program_properties_canescortstudent           Students can be escorted by guards
+
+# =============================================================================
+# Misc
+# =============================================================================
+
+tooltip_multipleobjects                              Press TAB to cycle objects     
+
+# =============================================================================
+# Expense popups
+# =============================================================================
+
+finance_cost_prisonerintake                          Prisoner Intake                
+finance_cost_grantcancellation                       Cancellation Costs             
+finance_cost_grantrefund                             - Repayment: *X                
+finance_cost_grantfine                               - Fine: *X                     
+
+
