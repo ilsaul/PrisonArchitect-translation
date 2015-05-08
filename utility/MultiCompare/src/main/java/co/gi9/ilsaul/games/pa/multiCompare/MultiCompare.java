@@ -115,8 +115,8 @@ public class MultiCompare implements Runnable {
 
 	public void runCompareEnglish() {
 		if (src.size() != 1) {
-			logger.error("In comparing English versions can only have an argument");
-			throw new RuntimeErrorException(null, "In comparing English versions can only have an argument");
+			logger.error("In comparing English versions can only have an argument (actually is {})", src.size());
+			throw new RuntimeErrorException(null, "In comparing English versions can only have an argument  (actually is " + src.size() + ")");
 		}
 		run();
 	}
@@ -148,7 +148,11 @@ public class MultiCompare implements Runnable {
 			while ((s = br.readLine()) != null) {
 				logger.trace("Line {}", iLine);
 				Row e = new Row(s);
-				translateSequence.add(e);
+				if (translateSequence.add(e)) {
+					logger.trace("Added row: {}", e);
+				} else {
+					logger.warn("Problem to add row: {}", e);
+				}
 
 				if (!e.isComment()) {
 					String key = e.getKey();
@@ -163,6 +167,7 @@ public class MultiCompare implements Runnable {
 				iLine++;
 			}
 
+			logger.debug("Loaded sequence {} and traslateKey {}.", translateSequence.size(), translateKeys.size());
 			columnsSize.get(1).setValue(columnsSize.get(1).longValue() / iVal);
 		} catch (Exception e) {
 			logger.error("Errore", e);
@@ -259,6 +264,8 @@ public class MultiCompare implements Runnable {
 	 * @param file
 	 */
 	private void loadSingleTraslate(File file) {
+
+		//TODO: find a new way to set the maker
 		String name = file.getParentFile().getParentFile().getParent();
 		name = name.substring(name.lastIndexOf('/') +1);
 
@@ -515,7 +522,13 @@ public class MultiCompare implements Runnable {
 		File srcEng = null;
 		File src[] = null;
 
-// -c -e ../../../PrisonArchitect-traslate-3/English/base-language-29.txt -o ../../temp.txt ../../../PrisonArchitect-traslate-3/English/base-language-28.txt
+// the same file different version (English version)
+// -c -e ../../English/base-language.txt -o ../../English/base-language_new_key.txt ../../English/base-language-30.txt
+// -c -e ../../English/tablets.txt -o ../../English/tablets_new_key.txt ../../English/tablets-30.txt
+
+// update traslate files (First complete one)
+// -m -e ../../English/base-language-31.txt -o ../../Italian/data/language/base-language-31.txt ../../Italian/data/language/base-language-30.txt ../../Italian/data/language/base-language_new_key_translate.txt
+
 // -t
 // -m -e ../../../PrisonArchitect-traslate-3/English/base-language-29.txt -o ../../gamefile.txt ../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/base-language.txt ../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/New_tr.txt
 // -u -e ../../../PrisonArchitect-traslate-3/English/base-language-29.txt -o ../../miss.txt ../../../PrisonArchitect-traslate-3/Italian/PaulGhost/data/language/base-language-29.txt

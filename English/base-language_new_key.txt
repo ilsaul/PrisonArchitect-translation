@@ -3,122 +3,161 @@
 # Interface Mode
 # =============================================================================
 
-interfacemode_selection                              Select                         
+interfacedeployment_deathrowzone                     Death Row Only                   
 
-interfacedeployment_removeguards                     Remove Guards                  
-interfacedeployment_clearpatrols                     Clear Patrols                  
+interfacetopbar_prisonercells_minseconly             Minimum only capacity: *X -> Minimum capacity: *X
+interfacetopbar_prisonercells_medseconly             Medium only capacity: *X -> Medium capacity: *X
+interfacetopbar_prisonercells_maxseconly             Maximum only capacity: *X -> Maximum capacity: *X
+interfacetopbar_prisonercells_protectedonly          Protected only capacity: *X -> Protected capacity: *X
+interfacetopbar_prisonercells_supermaxonly           SuperMax only capacity: *X -> SuperMax capacity: *X
+interfacetopbar_prisonercells_deathrowonly           Death Row capacity: *X           
 
-interfacelogistics_removejobs                        Remove Labour                  
-
-sector_jobs_required                                 (Required: *X)                 
+interfacetopbar_tension_lockedupprisoners            + *X prisoners are locked up for no reason -> + *X prisoners are shackled in their cells or in solitary
 
 # =============================================================================
-# Build Toolbar
+# Hardware Compatibility
 # =============================================================================
 
-buildtoolbar_popup_room_intake                       Where your prisoners are first taken when they arrive.
+connectionmenu_connect                               Connect                          
+connectionmenu_disconnect                            Disconnect                       
+connectionmenu_clear                                 Clear                            
+connectionmenu_done                                  Done                             
+
+# =============================================================================
+# Rap Sheet
+# =============================================================================
+
+rapsheet_category_deathrow                           Death Row                        
+
+rapsheet_scheduleexecution                           Schedule Execution               
+
+punish_solitary_perm                                 Solitary (Permanent)             
+punish_lockdown_perm                                 Lockdown (Permanent)             
+punish_permanent                                     (Permanent)                      
 
 # =============================================================================
 # Research Names + Captions
 # =============================================================================
 
-research_tap_to_authorise                            TAP TO AUTHORISE               
+research_deathrow                                    Death Row                        
+research_permanentpunishment                         Permanent Punishments            
+research_removemincellsize                           Small Cells                      
+research_reduceexecutionliability                    Reduce Execution Liability       
 
-# =============================================================================
-# Room Requirements
-# =============================================================================
-
-roomrequirement_minimumsize_short                    Size *W x *H                   
-roomrequirement_secure_short                         Secure                         
-roomrequirement_enclosed_short                       Enclosed                       
+researchtooltip_legal                                (CURRENTLY SERVES NO PURPOSE)\n\nUnlocks the Lawyer.\nLawyers can reduce the overall number of Penalty Points you have been awarded, and you can hire as many of them as you need.\n\nLike all Administrators, he requires an office to work.   -> Unlocks the Lawyer, who can be hired from the Staff toolbar. Unlocks a number of research options to give you greater control over your prison.\n\nLike all Administrators, he requires an office to work.  
+researchtooltip_permanentpunishment                  Sometimes being in Prison just isn't locked away enough. Your lawyer can file the necessary papers to let you confine prisoners to a cell, permanently. 
+researchtooltip_removemincellsize                    The cells in your prison require a certain amount of space to fit legal requirements. But imagine how many more cells you could fit in if that wasn't the case! Removes the minimum size requirements for standard cells.
+researchtooltip_lowerconvictionstrength              Your lawyer lobbies for a reduction in the required strength of the conviction before death row proceedings can be properly started. Essentially lowers the number of appeals a prisoner gets before you can schedule their execution without liability.
 
 # =============================================================================
 # Valuation, Reports etc
 # =============================================================================
 
-report_intake                                        Intake                         
+report_staff_group_prisoners_deathrow                Death Row                        
 
-report_grants_taptoaccept                            TAP TO ACCEPT                  
-report_grants_cancelfee                              Cancellation cost: *X          
+report_intake_cat_deathrow                           Death Row                        
+report_intake_slider_deathrow                        Adjust the Death Row intake ratio
+report_intake_locked                                 LOCKED                           
+report_intake_list_tooltip_dr                        \n\nDeathrow inmates require a specifically designated Deathrow cell before they are able to be transferred in to your prison. The Deathrow intake is also a lot slower than regular intake, and you won't always get an increase to the Deathrow pool. These inmates are few and far between.
 
-report_prisoners_title                               Total Prisoners: *X (Max: *M) -> Total Prisoners: *X
-
-report_intake_title                                  Intake                         
-report_intake_catheader_cat                          Category                       
-report_intake_catheader_pay                          Payment                        
-report_intake_catheader_available                    Available                      
-report_intake_catheader_amount                       Ratio                          
-report_intake_next_header                            Next Intake : *X               
-report_intake_cat_minsec                             Min Sec                        
-report_intake_cat_normal                             Med Sec                        
-report_intake_cat_maxsec                             Max Sec                        
-report_intake_slider_minsec                          Adjust the Min Sec intake ratio
-report_intake_slider_normal                          Adjust the Med Sec intake ratio
-report_intake_slider_maxsec                          Adjust the Max Sec intake ratio
-report_intake_closed                                 CLOSED                         
-report_intakemaxperdaydesc                           Daily Intake                   
-report_intakemaxperdaydesc_tooltip                   The total number of prisoners you want delivered in the next intake
-report_intakemaxperdaydecr                           <<                             
-report_intakemaxperdayincr                           >>                             
-report_intakemaxperdaynone                           None                           
-report_intakemaxperdayall                            All                            
-reports_intakedelivernow                             Deliver Now                    
-report_intakepayment                                 Payment                        
-report_intakeall                                     ALL                            
-report_intake_list_tooltip_title                     Intake Categories              
-report_intake_list_tooltip                           A list of all categories you can have delivered to your prison.\n\nThe pool size shows the total number of prisoners available to be delivered in each category. This number will grow over time depending on the ratio of the sliders.\n\nYou can adjust the sliders to change the ratio of prisoner categories you will receive in the next intake.
-report_intake_buttons_tooltip_title                  Next Intake                    
-report_intake_buttons_tooltip                        You can increase or decrease the number of prisoners you wish to receive in the next intake using this section.\n\nSelecting "None" will close your prison to new prisoners, while selecting "All" will take the total number of available prisoners.\n\nThe number of prisoner from each category is adjusted with the sliders above.
-report_intake_overview_tooltip_title                 Intake Overview                
-report_intake_overview_tooltip                       Here you can view your next prisoner delivery, and the payment you will receive. The number of prisoners being delivered, and their category, can be changed with the sliders and buttons above. The payment is based on the number of prisoners in each category.
-
-valuation_tap_to_authorise                           TAP TO AUTHORISE               
-
-job_giveuniform                                      Give Prisoner Uniform          
-job_feedprisoner                                     Feed Prisoner                  
+job_healprisoner                                     Heal Prisoner                    
        
 
-finances_category_prisoners                          Prisoner Grant                 
+victory_executions                                   Illegal Executions               
+
+victory_adviserwarning_executions1                   This is the second time that you have put an innocent prisoner to death. The public outrage is enormous.
+victory_adviserwarning_executions2                   If another innocent prisoner is executed, you will be held responsible.
+victory_advisernotice_executions1                    You have allowed too many innocent people to be executed. We can not longer allow you to run this prison. You have failed.
+
+score_clemencychance                                 Likelihood of Clemency           
+score_convictionstrength                             State Approved Conviction Strength
+score_prisonersexecuted                              Prisoners Executed (Innocent)    
+score_prisonersexecuted_info                         *E (*I)                          
+
+score_tooltip_clemencychance_title                   Likelihood of Clemency           
+score_tooltip_clemencychance                         The likelihood that the Appeals Board will grant clemency and commute the prisoners death row sentence. Each unsuccessful appeal lowers this value until it is below the State Approved Conviction Strength, at which point full authorisation to proceed is given. Scheduling the execution before this point will result in extreme penalties if it is later found that the prisoner's appeal would have succeeded.\n\nIf clemency is granted, the prisoner will be immediately released (if found innocent), or transferred to Maximum Security (if still judged as guilty.)
+score_tooltip_currentchance                          The State Approved Conviction Strength is *X%
+score_tooltip_clemencywarning                        The chance of this prisoner being granted clemency is currently above the State Approved safe level. If you proceed with this execution, you will be held personally responsible if it is later found he would have been granted clemency. 
+
+schedule_zone_deathrowonly                           Death Row                        
 
 # =============================================================================
 # Objectives, Grants
 # =============================================================================
 
-objective_intake_closed3                             (See the Intake Report)        
-
-objective_outgoing_count                             *X prisoners are due for release soon -> *X prisoners due for release soon
+objective_intake_deathrow                            Death Row                        
 
 # =============================================================================
 # Materials
 # =============================================================================
                                               
                                                                                                        
-object_prisonerbus                                   Prisoner Bus                   
-object_paroleofficer                                 Parole Officer                 
-object_parolelawyer                                  Parole Lawyer                  
-object_foodbowl                                      Food                           
+object_executionwitness                              Execution Witness                
+object_appealslawyer                                 Appeals Lawyer                   
+object_appealsmagistrate                             Appeals Magistrate               
 
-room_intake                                          Intake                         
-room_paroleroom                                      Parole Room -> Parole
+room_intake                                          Intake -> Reception
 
-reform_program_ledwith                               - Assisted by a *S             
+reformprogram_deathrowappeal                         Death Row Appeal                 
 
-reform_program_properties_teacherssit                Teachers Sit                   
-reform_program_properties_canescortstudent           Students can be escorted by guards
+reformprogram_parolehearing_text                     A hearing to determine is a prisoner is eligible for early release. A successful release in which a prisoner doesn't reoffend will award a nice bonus. If the prisoner does reoffend, you will instead be fined. The warden and chief must be in attendance. There can therefore only be 1 parole programming running at any time. -> A hearing to determine is a prisoner is eligible for early release. A successful release in which a prisoner doesn't reoffend will award a nice bonus. 
+
+reform_program_intake_deathrow                       Prisoner is on Death Row         
+
+# =============================================================================
+# DoorTimer stuff
+# =============================================================================
+
+doortimer_security_DeathRow                          Death Row                        
+
+# =============================================================================
+# Execution
+# =============================================================================
+
+execution_stage_Start                                Execution initiated              
+execution_stage_Lockdown                             Initiate prison-wide lockdown    
+execution_stage_Testing                              Test facility                    
+execution_stage_Assemble                             Assemble execution detail        
+execution_stage_Witnesses                            Escort witnesses to facility     
+execution_stage_Escort                               Escort prisoner to facility      
+execution_stage_Execution                            EXECUTION                        
+execution_stage_Dismissed                            Dismiss staff and witnesses      
+execution_stage_FinalReport                          Final report                     
+
+execution_stagetooltip_start                         You have scheduled the execution of this inmate, and must now follow the official procedure.
+execution_stagetooltip_lockdown                      All prisoners are sent back to their cells and the prison is locked down.
+execution_stagetooltip_testing                       The final test pass to ensure everything is working. The electrical supply to the chair is tested under load.  In addition, the final route of the prisoner is planned out - he must be able to walk to the execution room himself.
+execution_stagetooltip_assemble                      The Warden and the Chief make thier way to the condemned inmate's cell.  In addition, a priest or spiritual leader of the prisoners choice arrives on site and visits the prisoner in his cell to say final prayers.
+execution_stagetooltip_witnesses                     Witnesses to the execution arrive on site, and make their way to the execution facility. This group can include family members of the condemned inmate, and also members of the victims family.\n\nNb. Execution witnesses should be provided with chairs.
+execution_stagetooltip_escort                        The condemned inmate is escorted from his cell to the execution facility. The Warden, Chief, and Priest accompany him.
+execution_stagetooltip_execution                     With everyone in place and all procedures followed, the final authorisation for the execution is given.
+execution_stagetooltip_dismissed                     The staff and witnesses are dismissed and may leave the facility.
+execution_stagetooltip_finalreport                   With the execution completed, a report is compiled, and your performance graded.
+
+execution_underway                                   EXECUTION UNDERWAY               
+execution_result_ok                                  The mandated execution of *N was carried out at *T as scheduled, by electric chair, in the presence of witnesses. The standard compensation of $10,000 is awarded to the institution for their part in this process.
+execution_result_appealed                            The mandated execution of *N was carried out at *T as scheduled, by electric chair, in the presence of witnesses. Regrettably, new information came to light after the fact that would have affected his appeal for clemency, though no action will be taken against the institution and they will receive the standard compensation of $10,000 for their part in the process.
+execution_result_innocent                            The mandated execution of *N was carried out at *T as scheduled, by electric chair, in the presence of witnesses. Regrettably, evidence was later uncovered that revealed *N's innocence, though no action will be taken against the institution and they will receive the standard compensation of $10,000 for their part in the process.
+execution_result_illegal                             The execution of *N was carried out at *T as scheduled, by electric chair, in the presence of witnesses. Due to the failure to follow the legally required appeals process and the discovery of information that would have ultimately resulted in a successful appeal, the institution is fined $50,000. Due to the failure to follow proper protocol, executions are suspended until a later date, and any remaining Death Row prisoners will be transferred to another facility. 
+execution_warning_one                                Should the next execution performed here not follow the correct procedure, you will be fired from your position.
+execution_warning_two                                Due to your past failures to follow correct procedure, one more breach of protocol in this manner will result in you being fired from your position.
+
+execution_error_MissingEquipment                     ERROR: MISSING EQUIPMENT\nYou need an execution room with an electric chair.
+execution_error_ElectricalSupply                     ERROR: POWER FAILURE\nThere is insufficient electrical power to the chair.
+execution_error_NavigationPrisoner                   ERROR: PRISONER NAVIGATION\nThe condemned inmate cannot walk from his cell to the execution room.
 
 # =============================================================================
 # Misc
 # =============================================================================
 
-tooltip_multipleobjects                              Press TAB to cycle objects     
+family_priest                                        Priest                           
+family_victims                                       Victim's family                  
+
+remotedoor_noservo                                   Remote Doors will not open without a working servo attached.
 
 # =============================================================================
 # Expense popups
 # =============================================================================
 
-finance_cost_prisonerintake                          Prisoner Intake                
-finance_cost_grantcancellation                       Cancellation Costs             
-finance_cost_grantrefund                             - Repayment: *X                
-finance_cost_grantfine                               - Fine: *X                     
-
-
+finance_cost_executionfine                           Improper Execution Fine          
+finance_cost_executioncompensation                   Execution Compensation           

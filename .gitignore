@@ -15,3 +15,8 @@ hs_err_pid*
 .settings
 .classpath
 .project
+utility/MultiCompare/build
+utility/MultiCompare/bin
+base-language-*.txt
+tablets-*.txt
+base-language_new_key-*.txt

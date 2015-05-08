@@ -24,7 +24,7 @@ public class Parameters {
 	@Option(name="-o", aliases="--output", required=true, metaVar="<file>", usage="output to this file")
 	public File dstFile;
 
-	@Option(name="-e", aliases="--english", required=true, metaVar="<file>", usage="english version")
+	@Option(name="-e", aliases="--english", required=true, metaVar="<file>", usage="english file version")
 	public File srcEng;
 
 	@Argument(metaVar="<file> [<file> [<file>]]", required=true, usage="If the key is found in more than one file, key in the most right file is used")
