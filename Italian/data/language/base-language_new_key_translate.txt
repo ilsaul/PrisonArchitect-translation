@@ -1,112 +1,185 @@
+
 # =============================================================================
 # Interface Mode
 # =============================================================================
 
-interfacemode_selection                              Seleziona                       
-interfacedeployment_removeguards                     Rimuovi Guardie                  
-interfacedeployment_clearpatrols                     Azzera Pattuglie              
-interfacelogistics_removejobs                        Rimuovi Lavorante               
-sector_jobs_required                                 (Richiede: *X)    
-             
+interfacedeployment_deathrowzone                     Solo Braccio della Morte
+
+interfacetopbar_prisonercells_minseconly             Capacità sic. Minima: *X
+interfacetopbar_prisonercells_medseconly             Capacità sic. Media: *X
+interfacetopbar_prisonercells_maxseconly             Capacità sic. Massima: *X
+interfacetopbar_prisonercells_protectedonly          Capacità detenuti protetti: *X
+interfacetopbar_prisonercells_supermaxonly           Capacità sic. SuperMassima: *X
+interfacetopbar_prisonercells_deathrowonly           Capacità Braccio della Morte: *X
+
+interfacetopbar_tension_lockedupprisoners            + *X detenuti sono rinchiusi nelle celle o in Isolamento
+
 # =============================================================================
-# Build Toolbar
+# Hardware Compatibility
 # =============================================================================
 
-buildtoolbar_popup_room_intake                      Dove vengono portati i detenuti appena giunti.
+connectionmenu_connect                               Connesso
+connectionmenu_disconnect                            Disconnesso
+connectionmenu_clear                                 Niente
+connectionmenu_done                                  Fatto
+
+# =============================================================================
+# Rap Sheet
+# =============================================================================
+
+rapsheet_category_deathrow                           Braccio della Morte
+
+rapsheet_scheduleexecution                           Programma Esecuzioni
+
+punish_solitary_perm                                 Isolamento (Permanente)
+punish_lockdown_perm                                 Rinchiuso (Permanente)
+punish_permanent                                     (Permanente)
 
 # =============================================================================
 # Research Names + Captions
 # =============================================================================
 
-research_tap_to_authorise                            CLICCA PER AUTORIZZARE      
-         
-# =============================================================================
-# Room Requirements
-# =============================================================================
+research_deathrow                                    Braccio della Morte
+research_permanentpunishment                         Punizioni Permanenti
+research_removemincellsize                           Celle Piccole
+research_reduceexecutionliability                   Riduzione responsabilità per le Esecuzioni
 
-roomrequirement_minimumsize_short                    Misura *L x *A                   
-roomrequirement_secure_short                         Metti in Sicurezza                        
-roomrequirement_enclosed_short                       Chiuso                      
- 
+researchtooltip_legal                                Sblocca l'Avvocato, che può essere assunto dal pannello Personale, fornisce delle opzioni di ricerca per un controllo più accurato della Prigione.\n\nCome tutti gli Amministratori ha bisogno di un ufficio.
+
+researchtooltip_permanentpunishment                  A volte essere in una Prigione non è sufficiente. L'Avvocato può ottenere le autorizzazioni per rinchiudere un detenuto nella sua cella, permanentemente. 
+
+researchtooltip_removemincellsize                    Le celle della Prigione richiedono una dimensione minima per ragioni legali. Immagina quante puoi costruine in più senza queste restrinzioni! Rimuove le dimensioni minime per le celle standard.
+
+researchtooltip_lowerconvictionstrength              I tuoi Avvocati negoziano per una riduzione della condanna necessaria per le procedure del Braccio della Morte. In pratica diminuisce il numero di appelli che un detenuto può ottenere prima che tu possa programmare la sua esecuzione, senza avere penalità morali.
+
 # =============================================================================
 # Valuation, Reports etc
 # =============================================================================
 
-report_intake                                        Nuovi Giunti                         
-report_grants_taptoaccept                            CLICCA PER ACCETTARE                  
-report_grants_cancelfee                              Costi Annullamento: *X          
-report_prisoners_title                               Detenuti Totali: *X
-report_intake_title                                  Nuovi Giunti                         
-report_intake_catheader_cat                          Categoria                    
-report_intake_catheader_pay                          Pagamento                        
-report_intake_catheader_available                    Disponibile                    
-report_intake_catheader_amount                       Ratio                        
-report_intake_next_header                            In Arrivo: *X               
-report_intake_cat_minsec                             Min Sec                        
-report_intake_cat_normal                             Med Sec                        
-report_intake_cat_maxsec                             Max Sec                        
-report_intake_slider_minsec                          Regola l'arrivo di Detenuti Min 
-Secreport_intake_slider_normal                       Regola l'arrivo di Detenuti Med 
-Secreport_intake_slider_maxsec                       Regola l'arrivo di Detenuti Max 
-Secreport_intake_closed                              CHIUSO                         
-report_intakemaxperdaydesc                           Arrivi Giornalieri                   
-report_intakemaxperdaydesc_tooltip                   Il numero di Detenuti che vuoi ricevere per il prossimo recapito
-report_intakemaxperdaydecr                           <<                             
-report_intakemaxperdayincr                           >>                             
-report_intakemaxperdaynone                           No                           
-report_intakemaxperdayall                            Tutti                         
-reports_intakedelivernow                             Recapita adesso                 
-report_intakepayment                                 Pagamento                       
-report_intakeall                                     TUTTI                         
-report_intake_list_tooltip_title                     Categoria arrivi
-report_intake_list_tooltip                           Una lista delle categorie di Detenuti nella prigione.\n\nPuoi vedere il numero totale di Detenuti che possono essere consegnati per ogni categoria. Questo numero crescer‡ in base al ratio di arrivo.\n\nPuoi cambiare il ratio per gestire la categoria di detenuti che verr‡ consegnata alla prigione.
-report_intake_buttons_tooltip_title                  Prossimo recapito    
-report_intake_buttons_tooltip                        Puoi aumentare o diminuire il numero di Detenuti che vuoi ricevere al prossimo recapito.\n\nSelezionando "No" puoi chiudere la prigione a nuovi detenuti, selezionando "tutti" riceverai il massimo numero possibile di Detenuti.\n\nIl numero di Detenuti per categoria puÚ essere regolato dagli indicatori sotto.
-report_intake_overview_tooltip_title                 Panoramica arrivi  
-report_intake_overview_tooltip                       Qui puoi controllare il tuo prossimo recapito e il pagamento annesso. Il numero di Detenuti consegnati, e la loro categoria, possono essere cambiati con gli appositi indicatori. Il pagamento Ë basato sul numero di Detenuti per categoria.
+report_staff_group_prisoners_deathrow                Braccio della Morte
+report_intake_slider_normal                       Regola l'arrivo di Detenuti Med 
+report_intake_slider_maxsec                       Regola l'arrivo di Detenuti Max 
 
-valuation_tap_to_authorise                           CLICCA PER AUTORIZZARE             
+report_intake_cat_deathrow                           Braccio della Morte
+report_intake_slider_deathrow                        Regola gli arrivi per il Braccio della Morte
+report_intake_closed                              CHIUSO                         
+report_intake_locked                                 CHIUSO                           
+report_intake_list_tooltip_dr                        \n\nI Detenuti nel Braccio della Morte necessitano di Celle specifiche prima di porter essere trasferite nella tua Prigione. L'arrivo di questi detenuti è minore degli altri, non vorrai avere a che fare con loro. Questi detenuti sono pochi e rari.
 
-job_giveuniform                                      Dai al Detenuto un'uniforme        
-job_feedprisoner                                     Nutri Detenuto                       
+job_healprisoner                                     Cura Detenuto
+       
 
-finances_category_prisoners                          Concessione Detenuti             
-  
+victory_executions                                   Esecuzioni Illegali
+
+victory_adviserwarning_executions1                   Questa è la seconda volta che giustizi un detenuto innocente. L'indignazione generale è enorme.
+victory_adviserwarning_executions2                   Se un altro detenuto innocente verrà giustiziato sarai ritenuto responsabile.
+victory_advisernotice_executions1                    Hai permesso che troppi innocenti fossero giustiziati. Non possiamo più permetterti di amministrare questa prigione. Hai fallito.
+
+score_clemencychance                                 Probabilità di clemenza
+score_convictionstrength                             Gravità Condanna
+score_prisonersexecuted                              Detenuti Giustiziati (Innocenti)
+score_prisonersexecuted_info                         *G (*I)
+
+score_tooltip_clemencychance_title                   Probabilità di clemenza
+
+score_tooltip_clemencychance                         La probabilità che al detenuto verrà concessa clemenza e che verrà cambiata la sentenza. Ogni tentativo d'appello non riuscito abbassa il valore finché andrà al di sotto dello standard dello stato, nel qual caso avrai la piena autorizzazione a procedere. Programmare l'esecuzione prima di ciò ti farà ricevere pesanti penalità se si verrà a sapere che l'appello del detenuto avrebbe avuto successo.\n\nSe verrà garantita clemenza il detenuto verrà immediatamente rilasciato (se innocente) o trasferito in Massima Sicurezza (se ritenuto ancora colpevole.)
+
+score_tooltip_currentchance                          Gravità Condanna *X%
+
+score_tooltip_clemencywarning                       La probabilità che al detenuto venga concessa clemenza, in questo momento, è sopra il livello di Gravità Condanna. Se procedi con l'esecuzione sarai ritenuto personalmente responsabile in caso in futuro si verrà a sapere che gli sarebbe stata concessa effettivamente clemenza.
+
+schedule_zone_deathrowonly                           Braccio della Morte
+
 # =============================================================================
 # Objectives, Grants
 # =============================================================================
 
-objective_intake_closed3                             (Guarda il Report sui Nuovi Giunti)        
-objective_outgoing_count                             *X Detenuti verrano rilasciati a breve
+objective_intake_deathrow                            Braccio della Morte
 
 # =============================================================================
 # Materials
 # =============================================================================
+                                              
+                                                                                                       
+object_executionwitness                              Testimoni Esecuzione
+object_appealslawyer                                 Avvocato d'appello
+object_appealsmagistrate                           Giudice d'appello
 
-object_prisonerbus                                   Bus Detenuti                   
-object_paroleofficer                                 Delegato libertà vigilata           
-object_parolelawyer                                  Avvocato libertà vigilata                 
-object_foodbowl                                      Cibo                           
+room_intake                                          Nuovi Giunti
 
-room_intake                                          Nuovi Giunti                        
-room_paroleroom                                      Stanza Udienza
+reformprogram_deathrowappeal                         Appello Braccio della Morte
 
-reform_program_ledwith                               - Assistito da *S             
+reformprogram_parolehearing_text                     Un'udienza per determinare se il detenuto può essere rilasciato in anticipo. Un rilascio anticipato nel quale il detenuto non risulterà recidivo offre dei bonus. Se il detenuto infrange nuovamente la legge sarai multato.
 
-reform_program_properties_teacherssit                Sedia Insegnante                 
-reform_program_properties_canescortstudent           Gli Studenti posso essere scortati dalle Guardie
+reform_program_intake_deathrow                      Il detenuto è nel Braccio della Morte
+
+# =============================================================================
+# DoorTimer stuff
+# =============================================================================
+
+doortimer_security_DeathRow                          Braccio della Morte
+
+# =============================================================================
+# Execution
+# =============================================================================
+
+execution_stage_Start                                      Esecuzione iniziata
+execution_stage_Lockdown                            Inizia blocco di tutta la Prigione
+execution_stage_Testing                                Collauda Struttura
+execution_stage_Assemble                            Cura i particolari dell'esecuzione
+execution_stage_Witnesses                           Scorta i Testimoni
+execution_stage_Escort                                  Scorta il Detenuto
+execution_stage_Execution                            ESECUZIONE
+execution_stage_Dismissed                            Congeda Personale e Testimoni
+execution_stage_FinalReport                          Relazione finale
+
+execution_stagetooltip_start                         Hai programmato l'esecuzione di questo detenuto, dovrai seguire le procedure ufficiali.
+
+execution_stagetooltip_lockdown                     Tutti i detenuti sono stati mandati nelle proprie celle e la prigione è bloccata.
+
+execution_stagetooltip_testing                        L'esame finale per assicurarsi che tutto funzioni. Il bisogno elettrico della sedia in funzione viene esaminato. Il percorso che dovrà seguire il detenuto viene pianificato – dovrà essere in grado di raggiungere la stanza da solo.
+
+execution_stagetooltip_assemble                      Il Capitano e il Direttore raggiungono la cella del condannato. Un leader spirituale o un prete arrivano per visitare e dare l'ultima benedizione al detenuto.
+
+execution_stagetooltip_witnesses                     I Testimoni dell'esecuzione arrivano nella prigione e raggiungono la stanza delle esecuzioni. Questo gruppo può includere la famiglia del condannato e/o la famiglia della vittima.\n\nNb.I Testimoni avranno bisogno di alcune sedie.
+
+execution_stagetooltip_escort                        Il condannato viene scortato dalla sua cella alla stanza delle Esecuzioni. Il Capitano, il Direttore e il Prete lo accompagnano.
+
+execution_stagetooltip_execution                     Quando tutti sono sul posto e tutte le procedure concluse viene data l'autorizzazione finale all'Esecuzione.
+
+execution_stagetooltip_dismissed                     Il Personale e i Testimoni vengono congedati e possono lasciare l'edificio.
+
+execution_stagetooltip_finalreport                   Quando l'Esecuzione è ultimata una relazione valuterà la tua performance.
+execution_underway                                   ESECUZIONE IN CORSO
+
+execution_result_ok                                  L'Esecuzione di *N è stata effettuata da *N come programmato tramite Sedia Elettrica, in presenza di Testimoni. Il compenso standard di $10,000 è elargito alla prigione per il servizio. 
+
+execution_result_appealed                       L'Esecuzione di *N è stata effettuata da *N come programmato tramite Sedia Elettrica, in presenza di Testimoni. Purtroppo delle nuove informazioni, che avrebbero influito sull'udienza di clemenza, sono venuto fuori, non c'è intenzione di agire legalmente contro la Prigione e riceverai il compenso standard di $10,000 per il servizio.
+
+execution_result_innocent                            L'Esecuzione di *N è stata effettuata da *N come programmato tramite Sedia Elettrica, in presenza di Testimoni. Purtroppo sono state scoperte nuove infomazioni che provano l'innocenza di *N, non c'è intenzione di agire legalmente contro la Prigione e riceverai il compenso standard di $10,000 per il servizio.
+
+execution_result_illegal                              L'Esecuzione di *N è stata effettuata da *N come programmato tramite Sedia Elettrica, in presenza di Testimoni. Poichè non sei riuscito a seguire il processo d'appello legalmente richiesto e aver scoperto le informazioni necessarie affinché l'appello avesse esito positivo, la Prigione è multata di $50,000. Per non essere riuscito a seguire il giusto protocollo, le esecuzioni sono sospese fino a data da destinarsi, tutti i restanti Detenuti del Braccio della Morte verranno trasferiti in un'altra Prigione.
+
+execution_warning_one                                Se la prossima esecuzione eseguita non rispetterà il protocollo sarai sollevato dal tuo incarico.
+
+execution_warning_two                                Nel caso in cui dovessi nuovamente infrangere il protocollo, sulla base ai tuoi fallimenti precedenti nel seguire la procedura per l'esecuzione, sarai sollevato dal tuo incarico.
+
+execution_error_MissingEquipment                     ERRORE: MANCA ATTREZZATURA\nHai bisogno di una Stanza delle Esecuzioni con una Sedia Elettrica.
+execution_error_ElectricalSupply                     ERRORE: PROBLEMA ELETTRICO\nNon c'è sufficiente elettricità per alimentare la Sedia Elettrica.
+execution_error_NavigationPrisoner                   ERRORE: DETENUTO IMPOSSIBILITATO\nIl Condannato non può raggiungere la Stanza delle Esecuzioni.
 
 # =============================================================================
 # Misc
 # =============================================================================
 
-tooltip_multipleobjects                              Premi TAB per serie oggetti    
+family_priest                                        Prete
+family_victims                                      La famiglia della vittima
+
+remotedoor_noservo                                  Le Porte Remote non si apriranno senza un Meccanismo per il Controllo Remoto connesso.
 
 # =============================================================================
 # Expense popups
 # =============================================================================
 
-finance_cost_prisonerintake                          Nuovi Detenuti                
-finance_cost_grantcancellation                       Costi Annullamento            
-finance_cost_grantrefund                             - Rimborso: *X                
-finance_cost_grantfine                               - Propriet‡: *X                     
+finance_cost_executionfine                           Multa Esecuzione Errata
+finance_cost_executioncompensation                   Indennità Esecuzione
