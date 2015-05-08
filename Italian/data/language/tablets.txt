@@ -1,3 +1,4 @@
+object_firemen_hosehelp                 Tieni premuto per muoverti. Premi sulle fiamme per puntare l'idrante.
 
 click_to_continue                       Clicca per Continuare..
 
@@ -8,3 +9,7 @@ adviser_deathrow_internaldoors2         Puoi ruotare un oggetto prima di posizio
 objective_deathrow_buildinternaldoors   Costruisci porte interne
 
 adviser_deathrow_transfer2              Clicca su di lui per selezionarlo, quindi clicca tenendo premuto all'esterno della Cella per iniziare il trasferimento.
+
+objective_deathrow_transferinmate       Quando hai finito inizia il trasferimento del detenuto. Premi per selezionarlo quindi  premi e tieni premuto all'esterno della cella.
+
+objective_food_extinguishflames_description  Quando hai un pompiere selezionato puoi premere sulle fiamme per puntare l'idrante , le fiamme devono essere distanti meno di 15 caselle.

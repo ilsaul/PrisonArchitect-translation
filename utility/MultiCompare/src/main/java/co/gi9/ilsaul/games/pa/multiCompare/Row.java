@@ -98,4 +98,10 @@ public class Row {
 
 		return s;
 	}
+
+	@Override
+	public String toString() {
+		return "Row [line=" + line + ", key=" + key + ", value=" + value + ", startValue=" + startValue + ", endValue="
+				+ endValue + "]";
+	}
 }

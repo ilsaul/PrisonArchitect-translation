@@ -187,6 +187,7 @@ interfacedeployment_medseczone                  Med Sec Only
 interfacedeployment_minseczone                  Min Sec Only
 interfacedeployment_protectedzone               Protected Only
 interfacedeployment_supermaxzone                SuperMax Only
+interfacedeployment_deathrowzone                Death Row Only
 interfacedeployment_unlockedzone                Unlocked
 interfacedeployment_zonered                     Red Wing
 interfacedeployment_zonegreen                   Green Wing
@@ -261,11 +262,12 @@ interfacetopbar_prisoners_types					Currently holding *X Prisoners:
 interfacetopbar_prisoners_capacity              Maximum safe capacity: *X
 interfacetopbar_prisonercells_shared            Shared capacity: *X
 interfacetopbar_prisonercells_unlocked          Unlocked capacity: *X
-interfacetopbar_prisonercells_minseconly        Minimum only capacity: *X
-interfacetopbar_prisonercells_medseconly        Medium only capacity: *X
-interfacetopbar_prisonercells_maxseconly        Maximum only capacity: *X
-interfacetopbar_prisonercells_protectedonly     Protected only capacity: *X
-interfacetopbar_prisonercells_supermaxonly      SuperMax only capacity: *X
+interfacetopbar_prisonercells_minseconly        Minimum capacity: *X
+interfacetopbar_prisonercells_medseconly        Medium capacity: *X
+interfacetopbar_prisonercells_maxseconly        Maximum capacity: *X
+interfacetopbar_prisonercells_protectedonly     Protected capacity: *X
+interfacetopbar_prisonercells_supermaxonly      SuperMax capacity: *X
+interfacetopbar_prisonercells_deathrowonly      Death Row capacity: *X
 interfacetopbar_prisonercells_staffonly         Unavailable: *X
 
 interfacetopbar_cctv_current					Currently running *C cameras
@@ -277,7 +279,7 @@ interfacetopbar_tension_decreasing              and is decreasing
 interfacetopbar_tension_description             FACTORS:
 interfacetopbar_tension_happyprisoners          - *X prisoners say they are well treated
 interfacetopbar_tension_unhappyprisoners        + *X prisoners have serious complaints
-interfacetopbar_tension_lockedupprisoners       + *X prisoners are locked up for no reason
+interfacetopbar_tension_lockedupprisoners       + *X prisoners are shackled in their cells or in solitary
 interfacetopbar_tension_riotingprisoners        + *X prisoners are rioting
 interfacetopbar_tension_wellfedprisoners        - *X prisoners are well fed
 interfacetopbar_tension_suppressedprisoners     = *X prisoners are suppressed (compliant)
@@ -354,6 +356,11 @@ hardware_compat_title					Hardware Compatibility Test
 hardware_compat_message					With your permission, we would like to collect the following hardware data from your computer.\n\nThis information is completely anonymous and will help us to ensure Prison Architect is supported on the widest possible range of computer hardware.\n\nThank you!
 hardware_compat_accept					Accept
 hardware_compat_decline					Decline
+
+connectionmenu_connect                  Connect
+connectionmenu_disconnect               Disconnect
+connectionmenu_clear                    Clear
+connectionmenu_done                     Done
 
 
 # =============================================================================
@@ -841,6 +848,7 @@ rapsheet_category_normal				Normal Security
 rapsheet_category_maxsec				Maximum Security
 rapsheet_category_protected             Protective Custody
 rapsheet_category_supermax              SuperMax
+rapsheet_category_deathrow              Death Row
 rapsheet_tab_biography                  Biography
 rapsheet_tab_experience                 Experience
 rapsheet_tab_grading                    Grading
@@ -869,6 +877,8 @@ rapsheet_grading_reform                 Reform
 rapsheet_grading_points                 *X points : 
 rapsheet_grading_penalties              *X penalties : 
 
+rapsheet_scheduleexecution              Schedule Execution
+
 
 punish_lockdown_6                       Lockdown (6hrs)
 punish_lockdown_12                      Lockdown (12hrs)
@@ -876,12 +886,15 @@ punish_lockdown_24                      Lockdown (24hrs)
 punish_solitary_6                       Solitary (6hrs)
 punish_solitary_12                      Solitary (12hrs)
 punish_solitary_24                      Solitary (24hrs)
+punish_solitary_perm                    Solitary (Permanent)
+punish_lockdown_perm                    Lockdown (Permanent)
 punish_solitary                         Solitary
 punish_lockdown                         Lockdown
 punish_none                             None
 punish_timer                            *Xh *Ym
 punish_timer_minutes                    *Xm
 punish_active                           ACTIVE
+punish_permanent                        (Permanent)
 
 # =============================================================================
 # Misconducts
@@ -953,11 +966,15 @@ research_lowertaxes2                    Offshore Tax Haven
 research_remoteaccess                   Remote Access
 research_extragrant                     Extra Grant
 research_advancedmanagement             Micromanagement
+research_deathrow                       Death Row
+research_permanentpunishment            Permanent Punishments
+research_removemincellsize              Small Cells
+research_reduceexecutionliability       Reduce Execution Liability
 
 researchtooltip_warden                  Unlocks the Warden, and the entire Bureaucracy system.  Hire him from the Staff toolbar.\n\nLike all Administrators, he requires an office to work.  
 researchtooltip_security                Unlocks the Chief of Security, who can be hired from the staff toolbar.  The chief gives you access to the Deployment screen, and will also give you a realtime report of the danger level of your prison, often predicting future trouble.\n\nLike all Administrators, he requires an office to work.  
 researchtooltip_maintenance             Unlocks the Foreman.  Hire him from the Staff toolbar.\n\nLike all Administrators, he requires an office to work.  
-researchtooltip_legal                   (CURRENTLY SERVES NO PURPOSE)\n\nUnlocks the Lawyer.\nLawyers can reduce the overall number of Penalty Points you have been awarded, and you can hire as many of them as you need.\n\nLike all Administrators, he requires an office to work.  
+researchtooltip_legal                   Unlocks the Lawyer, who can be hired from the Staff toolbar. Unlocks a number of research options to give you greater control over your prison.\n\nLike all Administrators, he requires an office to work.  
 researchtooltip_deployment              Allows you to permanently station Guards to the sectors of your Prison.
 researchtooltip_patrols                 Allows you to define patrols around crucial areas of your prison (eg the perimeter), and assign guards to walk those patrols.
 researchtooltip_dogs                    Unlocks the Dog Handler and Guard Dog.  They excel in sniffing out the smelly contraband in your prison, and detecting escape tunnels.\n\nDogs are also very fast which allows them to chase prisoners with ease. 
@@ -985,6 +1002,9 @@ researchtooltip_lowertaxes1             Takes advantage of government tax incent
 researchtooltip_lowertaxes2             Your accountant stretches the rules to breaking point, and moves all your official accounts and business processes to a foreign country with highly preferential tax rates. Your effective Corporation tax liability will drop to around 1%.\n\nYou will save a total of $3,000 taxes per $10,000 of daily profit.
 researchtooltip_extragrant              Enables you to accept up to three grants simultaneously instead of two.
 researchtooltip_advancedmanagement      Gives you the tools to micro manage aspects of your prison so they meet your exact requirements.\n\nUnlocks Food logistics, allowing you to specify which kitchens cook for which canteens, and which canteens inmates eat in.  Similarly, Laundry logistics lets you override which cell blocks are covered by which laundries.\n\nAlso unlocks the Deployment Scheduler, which lets you customise your guard deployment at different times of day.\n\nUnlocks the Reform Program Scheduler, letting you manually override the daily schedule of programs.
+researchtooltip_permanentpunishment     Sometimes being in Prison just isn't locked away enough. Your lawyer can file the necessary papers to let you confine prisoners to a cell, permanently. 
+researchtooltip_removemincellsize       The cells in your prison require a certain amount of space to fit legal requirements. But imagine how many more cells you could fit in if that wasn't the case! Removes the minimum size requirements for standard cells.
+researchtooltip_lowerconvictionstrength Your lawyer lobbies for a reduction in the required strength of the conviction before death row proceedings can be properly started. Essentially lowers the number of appeals a prisoner gets before you can schedule their execution without liability.
 
 # =============================================================================
 # Room Requirements
@@ -1098,6 +1118,7 @@ report_staff_group_prisoners_normal     Normal Risk
 report_staff_group_prisoners_low        Low Risk
 report_staff_group_prisoners_protected  Protective Custody
 report_staff_group_prisoners_supermax   SuperMax
+report_staff_group_prisoners_deathrow   Death Row
 
 report_staff_fire                       FIRE
 
@@ -1110,10 +1131,13 @@ report_intake_next_header               Next Intake : *X
 report_intake_cat_minsec                Min Sec
 report_intake_cat_normal                Med Sec
 report_intake_cat_maxsec                Max Sec
+report_intake_cat_deathrow              Death Row
 report_intake_slider_minsec             Adjust the Min Sec intake ratio
 report_intake_slider_normal             Adjust the Med Sec intake ratio
 report_intake_slider_maxsec             Adjust the Max Sec intake ratio
+report_intake_slider_deathrow           Adjust the Death Row intake ratio
 report_intake_closed                    CLOSED
+report_intake_locked                    LOCKED
 report_intakemaxperdaydesc              Daily Intake
 report_intakemaxperdaydesc_tooltip      The total number of prisoners you want delivered in the next intake
 report_intakemaxperdaydecr              <<
@@ -1125,6 +1149,7 @@ report_intakepayment                    Payment
 report_intakeall                        ALL
 report_intake_list_tooltip_title        Intake Categories
 report_intake_list_tooltip              A list of all categories you can have delivered to your prison.\n\nThe pool size shows the total number of prisoners available to be delivered in each category. This number will grow over time depending on the ratio of the sliders.\n\nYou can adjust the sliders to change the ratio of prisoner categories you will receive in the next intake.
+report_intake_list_tooltip_dr           \n\nDeathrow inmates require a specifically designated Deathrow cell before they are able to be transferred in to your prison. The Deathrow intake is also a lot slower than regular intake, and you won't always get an increase to the Deathrow pool. These inmates are few and far between.
 report_intake_buttons_tooltip_title     Next Intake
 report_intake_buttons_tooltip           You can increase or decrease the number of prisoners you wish to receive in the next intake using this section.\n\nSelecting "None" will close your prison to new prisoners, while selecting "All" will take the total number of available prisoners.\n\nThe number of prisoner from each category is adjusted with the sliders above.
 report_intake_overview_tooltip_title    Intake Overview
@@ -1207,6 +1232,7 @@ job_opendoor                            Open Locked Door
 job_giveuniform                         Give Prisoner Uniform
 job_failurecount                        Failed *X times
 job_feedprisoner                        Feed Prisoner
+job_healprisoner                        Heal Prisoner
        
 finances_title                          Finances
 finances_income                         Income
@@ -1264,6 +1290,7 @@ victory_remaining                       remaining
 victory_death                           DEATHS
 victory_escapes                         ESCAPES
 victory_counter                         (*X today)
+victory_executions                      Illegal Executions
 
 victory_warning_bankrupt                You have 24 hours to avert financial disaster.
 victory_warning_riot                    End this riot soon, or our government will be forced to assume control.
@@ -1297,6 +1324,9 @@ victory_advisernotice_wardendeaths2     We have no choice by to let you go. You 
 victory_adviserwarning_reoffenders1     A lot of the prisoners you have put up for early release have gone on to commit new crimes. This could cost us if we don't take control of the situation.
 victory_adviserwarning_reoffenders2     If too many more prisoners reoffend upon release, you'll be the one to take the blame.
 victory_advisernotice_reoffenders1      You have released too many dangerous criminals into the world. We have no choice but let you go. You have failed.
+victory_adviserwarning_executions1      This is the second time that you have put an innocent prisoner to death. The public outrage is enormous.
+victory_adviserwarning_executions2      If another innocent prisoner is executed, you will be held responsible.
+victory_advisernotice_executions1       You have allowed too many innocent people to be executed. We can not longer allow you to run this prison. You have failed.
 
 score_title                             PRISON GRADING
 score_reoffendingrate                   REOFFENDING RATE
@@ -1307,6 +1337,10 @@ score_escapes                           *X prisoners escaped
 score_reoffendingchance                 Estimated Re-offending Chance
 score_prisonersparoled                  Paroled Early (Reoffended)
 score_prisonersparoled_info             *P (*E%)
+score_clemencychance                    Likelihood of Clemency
+score_convictionstrength                State Approved Conviction Strength
+score_prisonersexecuted                 Prisoners Executed (Innocent)
+score_prisonersexecuted_info            *E (*I)
 
 score_tooltip_punishment                This is a grading of how well the prisoner has been punished for his crimes, as perceived by the public. Serving a long term in prison is the foundation of a strong punishment, but hard times locked up alone will also count towards it.\n\nKeep in mind that too much reform or free time will be seen as 'soft on crime' and will count against their punishment grade.\n\nA strong punishment score will deter the prisoner from re-offending after release.
 score_tooltip_reform                    A grading of how well you have attempted to reform and rehabilitate this prisoner through the use of Reform programs.\n\nA high reform score will give the prisoner a much greater chance of finding genuine employment after release, and will therefore reduce his re-offending chance.\n\nNote: Putting your prisoners to work around the prison also counts towards this.
@@ -1314,6 +1348,10 @@ score_tooltip_health                    A record of the prisoners health and wel
 score_tooltip_security                  A grading that represents how well you have kept this prisoner safely locked away. Keeping prisoners locked in their cells under armed guard will count heavily towards this. You will be penalised if the prisoner is involved in fights, murders or escape attempts.\n\nA low score indicates the prisoner simply continued his criminal existence once inside your prison, and hence his re-offending chance will be high upon leaving.
 
 score_tooltip_reoffendingchance         An estimate of the prisoners likelihood to re-offend after leaving prison. Many factors are taken into account to produce this value:\n\n- DECREASE Harsh/strong punishment\n- DECREASE Successful reform programs\n- INCREASE Poor health and security\n- INCREASE Untreated drug and alcohol addictions\n\n- The prisoner's age is a major factor.\n- The number of prior convictions is a strong indicator.\n- A large supporting family can help.
+score_tooltip_clemencychance_title      Likelihood of Clemency
+score_tooltip_clemencychance            The likelihood that the Appeals Board will grant clemency and commute the prisoners death row sentence. Each unsuccessful appeal lowers this value until it is below the State Approved Conviction Strength, at which point full authorisation to proceed is given. Scheduling the execution before this point will result in extreme penalties if it is later found that the prisoner's appeal would have succeeded.\n\nIf clemency is granted, the prisoner will be immediately released (if found innocent), or transferred to Maximum Security (if still judged as guilty.)
+score_tooltip_currentchance             The State Approved Conviction Strength is *X%
+score_tooltip_clemencywarning           The chance of this prisoner being granted clemency is currently above the State Approved safe level. If you proceed with this execution, you will be held personally responsible if it is later found he would have been granted clemency. 
 
 experiencefactor_FractionalLockedUp     *X% of stay locked up
 experiencefactor_FractionalReform       *X% of stay in reform programs
@@ -1375,6 +1413,7 @@ schedule_zone_medseconly                Med Sec
 schedule_zone_maxseconly                Max Sec
 schedule_zone_protectedonly             Protective Custody
 schedule_zone_supermaxonly              Super Max
+schedule_zone_deathrowonly              Death Row
 schedule_zone_staffonly                 Staff Only
 schedule_zone_unlocked                  Unlocked
 
@@ -1559,6 +1598,7 @@ objective_intake_categories             Categories:
 objective_intake_minsec                 Min, 
 objective_intake_medsec                 Normal, 
 objective_intake_maxsec                 Max
+objective_intake_deathrow               Death Row
 
 objective_outgoing                      Prisoners due for release
 objective_outgoing_count                *X prisoners due for release soon
@@ -1818,6 +1858,7 @@ object_fireman                           Fireman
 object_avatar                            Avatar
 object_actor                             Actor
 object_visitor                           Visitor
+object_executionwitness                  Execution Witness
 object_doghandler                        Dog Handler
 object_dog                               Guard Dog 
 object_dogcrate                          Dog Crate
@@ -1916,6 +1957,8 @@ object_librarybooksorted                 Library Book (Sorted)
 object_sortingtable                      Librarians Desk
 object_ruinedbook                        Ruined Book
 object_foodbowl                          Food
+object_appealslawyer                     Appeals Lawyer
+object_appealsmagistrate                 Appeals Magistrate
 
 material_none                            None
 material_building                        Building (Brick)
@@ -1983,7 +2026,7 @@ room_forestry                            Forestry
 room_classroom                           Classroom
 room_exports                             Exports
 room_chapel                              Chapel
-room_intake                              Intake
+room_intake                              Reception
 room_clearrooms                          Clear Rooms
 room_paroleroom                          Parole
 
@@ -2042,6 +2085,7 @@ reformprogram_alcoholicsmeeting         Alcoholics Group Therapy
 reformprogram_tazertraining             Guard Tazer Certification
 reformprogram_spiritualguidance         Spiritual Guidance
 reformprogram_parolehearing             Parole Hearing
+reformprogram_deathrowappeal            Death Row Appeal
 
 reformprogram_tazertrained              Certified : Tazer
 
@@ -2052,7 +2096,7 @@ reformprogram_kitcheninduction_text     Food standards are important when cateri
 reformprogram_therapy_text              Inmates often struggle to control their violent nature. These one-on-one sessions with the prison psychologist aims to give them the tools necessary to de-escalate any situation they find themselves in before it turns violent.
 reformprogram_methadone_text            A course of 5 pharmacological substitutes, used to combat a prisoner's addiction to narcotics. Each treatment helps the prisoner with their addiction need, and completing the course has a chance to remove the addiction all together.
 reformprogram_alcoholicsmeeting_text    A group therapy meeting for alcoholics. Helps reduce the desire for alcohol. Never completely removes the need.
-reformprogram_parolehearing_text        A hearing to determine is a prisoner is eligible for early release. A successful release in which a prisoner doesn't reoffend will award a nice bonus. If the prisoner does reoffend, you will instead be fined. The warden and chief must be in attendance. There can therefore only be 1 parole programming running at any time.
+reformprogram_parolehearing_text        A hearing to determine is a prisoner is eligible for early release. A successful release in which a prisoner doesn't reoffend will award a nice bonus. 
 reformprogram_spiritualguidance_text    Some prisoners are religious, or have a general need for some spirituality in their life. Bring in a spiritual leader from the local community to lead them through prayers and instil a sense of calm amongst your prisoners.
 
 reformerror_unscheduled                 UNSCHEDULED
@@ -2092,6 +2136,7 @@ reform_program_intake_referralalcoholism        Referral: Alcoholism
 reform_program_intake_guards                    For Guards Only
 reform_program_intake_parole                    After either 50% or 75% of sentence has been served
 reform_program_intake_needrequired              Each prisoner requires a specific need before joining
+reform_program_intake_deathrow                  Prisoner is on Death Row
 
 reform_program_properties_canhireexternally     Can Hire Externally
 reform_program_properties_studentssit           Students Sit
@@ -2153,6 +2198,45 @@ doortimer_security_normal               Normal Security
 doortimer_security_maxsec               Maximum Security
 doortimer_security_Protected            Protective Custody
 doortimer_security_SuperMax             SuperMax
+doortimer_security_DeathRow             Death Row
+
+
+# =============================================================================
+# Execution
+# =============================================================================
+
+execution_stage_Start                   Execution initiated
+execution_stage_Lockdown                Initiate prison-wide lockdown
+execution_stage_Testing                 Test facility
+execution_stage_Assemble                Assemble execution detail
+execution_stage_Witnesses               Escort witnesses to facility
+execution_stage_Escort                  Escort prisoner to facility
+execution_stage_Execution               EXECUTION
+execution_stage_Dismissed               Dismiss staff and witnesses
+execution_stage_FinalReport             Final report
+
+execution_stagetooltip_start            You have scheduled the execution of this inmate, and must now follow the official procedure.
+execution_stagetooltip_lockdown         All prisoners are sent back to their cells and the prison is locked down.
+execution_stagetooltip_testing          The final test pass to ensure everything is working. The electrical supply to the chair is tested under load.  In addition, the final route of the prisoner is planned out - he must be able to walk to the execution room himself.
+execution_stagetooltip_assemble         The Warden and the Chief make thier way to the condemned inmate's cell.  In addition, a priest or spiritual leader of the prisoners choice arrives on site and visits the prisoner in his cell to say final prayers.
+execution_stagetooltip_witnesses        Witnesses to the execution arrive on site, and make their way to the execution facility. This group can include family members of the condemned inmate, and also members of the victims family.\n\nNb. Execution witnesses should be provided with chairs.
+execution_stagetooltip_escort           The condemned inmate is escorted from his cell to the execution facility. The Warden, Chief, and Priest accompany him.
+execution_stagetooltip_execution        With everyone in place and all procedures followed, the final authorisation for the execution is given.
+execution_stagetooltip_dismissed        The staff and witnesses are dismissed and may leave the facility.
+execution_stagetooltip_finalreport      With the execution completed, a report is compiled, and your performance graded.
+
+execution_underway                      EXECUTION UNDERWAY
+execution_result_ok                     The mandated execution of *N was carried out at *T as scheduled, by electric chair, in the presence of witnesses. The standard compensation of $10,000 is awarded to the institution for their part in this process.
+execution_result_appealed               The mandated execution of *N was carried out at *T as scheduled, by electric chair, in the presence of witnesses. Regrettably, new information came to light after the fact that would have affected his appeal for clemency, though no action will be taken against the institution and they will receive the standard compensation of $10,000 for their part in the process.
+execution_result_innocent               The mandated execution of *N was carried out at *T as scheduled, by electric chair, in the presence of witnesses. Regrettably, evidence was later uncovered that revealed *N's innocence, though no action will be taken against the institution and they will receive the standard compensation of $10,000 for their part in the process.
+execution_result_illegal                The execution of *N was carried out at *T as scheduled, by electric chair, in the presence of witnesses. Due to the failure to follow the legally required appeals process and the discovery of information that would have ultimately resulted in a successful appeal, the institution is fined $50,000. Due to the failure to follow proper protocol, executions are suspended until a later date, and any remaining Death Row prisoners will be transferred to another facility. 
+execution_warning_one                   Should the next execution performed here not follow the correct procedure, you will be fired from your position.
+execution_warning_two                   Due to your past failures to follow correct procedure, one more breach of protocol in this manner will result in you being fired from your position.
+
+execution_error_MissingEquipment        ERROR: MISSING EQUIPMENT\nYou need an execution room with an electric chair.
+execution_error_ElectricalSupply        ERROR: POWER FAILURE\nThere is insufficient electrical power to the chair.
+execution_error_NavigationPrisoner      ERROR: PRISONER NAVIGATION\nThe condemned inmate cannot walk from his cell to the execution room.
+
 
 # =============================================================================
 # Misc
@@ -2243,6 +2327,8 @@ family_father                           Father
 family_brother                          Brother
 family_sister                           Sister
 family_lawyer                           Lawyer
+family_priest                           Priest
+family_victims                          Victim's family
 family_caption                          Family: 
 family_none                             None
 
@@ -2261,6 +2347,8 @@ supplyanddemand_supplyheader            SUPPLY
 supplyanddemand_demandheader            DEMAND
 
 tooltip_multipleobjects                 Press TAB to cycle objects
+remotedoor_noservo                      Remote Doors will not open without a working servo attached.
+
 
 # =============================================================================
 # Campaign info
@@ -2443,6 +2531,8 @@ finance_cost_prisonerintake             Prisoner Intake
 finance_cost_grantcancellation          Cancellation Costs
 finance_cost_grantrefund                - Repayment: *X
 finance_cost_grantfine                  - Fine: *X
+finance_cost_executionfine              Improper Execution Fine
+finance_cost_executioncompensation      Execution Compensation
 
 
 # =============================================================================

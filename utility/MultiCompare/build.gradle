@@ -8,7 +8,8 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 
-mainClassName = "org.gradle.sample.Main"
+mainClassName = "co.gi9.ilsaul.games.pa.multiCompare.MultiCompare"
+version = '1.0'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
